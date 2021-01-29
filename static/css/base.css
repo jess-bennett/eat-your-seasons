@@ -6,3 +6,23 @@ body {
     color: red;
     font-family: 'Tenali Ramakrishna', sans-serif;
 }
+
+#spring {
+    background: url('/media/seasons/spring.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#summer {
+    background: url('{{MEDIA_URL}}seasons/summer.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#autumn {
+    background: url('{{MEDIA_URL}}seasons/autumn.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#winter {
+    background: url('{{MEDIA_URL}}seasons/winter.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
