@@ -53,3 +53,29 @@ Eat Your Seasons is a site aimed at those wanting to live a more sustainable lif
 \
               [:trophy: Acknowledgements](#trophy-acknowledgements)
 
+## :sparkles: UX
+
+This project was inspired by the efforts my family and I are currently making to live more sustainably. After lots of research and experimentation with our dietary habits, we decided that the most environmentally-conscious diet for a family like ours is one that focuses heavily on shopping locally and seasonally.
+
+There are various sites available that give information on eating seasonally, but not one that fully supports a switch to whole, seasonal foods. For a busy family who don't always have the time to research, it helps to answer:
+
+* What's in season? 
+* What meals can I cook with those ingredients?
+* What do I need to buy and from where?
+
+The site also offers varying levels of membership, from free content for casual site visitors, to lifetime membership for those fully committed to a seasonal diet.
+
+### :books: User Stories
+
+| User Story ID      | As a/an... | I want to be able to...      | So that I can...      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |
+| 1      | site visitor       | see which foods are currently in season      | make informed choices when doing my shopping      |
+| 2   | site visitor        | read suggestions on how to shop more sustainably   | make changes to my own shopping habits   |
+| 3      | site visitor | get inspiration for meals using seasonal produce      | get an idea of how to eat more sustainably      |
+| 4    | site member       | see recipes for meal suggestions | eat more sustainably without having to do additional reseach |
+| 5    | site member    | bookmark recipes    | easily return to recipes that appeal to me |
+| 6    | site member    | share my own seasonal recipes on the site    | contribute my own knowledge to others like me |
+| 7    | paying member  | see weekly, seasonal meal plans   | eat sustainably with less work! |
+| 8    | paying member  | create my own weekly meal plans using the site recipes   |  eat seasonal meals that suit me |
+| 9    | paying member  | change the number of people a meal serves in a recipe   | avoid food waste by only buying as much as I need |
+| 10   | paying member  | see a weekly shopping list for my meal plan    | get the ingredients I need, easily |         
