@@ -1,8 +1,8 @@
 <nav class="fixed-top">
     <div class="row align-items-center">
-        <div class="col-8 col-md-10">
+        <div class="col-6 col-md-9">
             <a href="{% url 'home' %}">
-                <img id="logo" src="{{MEDIA_URL}}logo/four-seasons.jpg" alt="Home">
+                <img id="logo" src="{{MEDIA_URL}}logo/four-seasons.png" alt="Home">
              </a>
         </div>
         <div class="col-2 col-md-1 text-right">
@@ -10,6 +10,10 @@
         </div>
         <div class="col-2 col-md-1 text-right">
             <a href="#"><i class="far fa-map"></i></a>
+        </div>
+        <div class="col-2 col-md-1 text-right theme-select">
+            <i id="light-select" class="fas fa-sun"></i>
+            <i id="dark-select" class="fas fa-cloud"></i>
         </div>
     </div>
 </nav>
