@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    let today = new Date()
+    let month = today.toLocaleString('default', { month: 'long' }).toLowerCase();
+    console.log(month)
+    $("body").addClass(month);
+    $(`#${month}-select`).addClass("current");
     $("#light-select").hide();
 
     $("#dark-select").click(function() {

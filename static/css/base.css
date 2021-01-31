@@ -34,99 +34,99 @@
     --december: #83dbec;
 }
 
-.january-light {
+.january.light-theme {
     --highlights: #cd8858;
 }
 
-.january-dark {
+.january.dark-theme {
     --highlights: #eecc9f;
 }
 
-.february-light {
+.february.light-theme {
     --highlights: #602682;
 }
 
-.february-dark {
+.february.dark-theme {
     --highlights: #b793c0;
 }
 
-.march-light {
+.march.light-theme {
     --highlights: #26826f;
 }
 
-.march-dark {
+.march.dark-theme {
     --highlights: #8ad0c5;
 }
 
-.april-light {
+.april.light-theme {
     --highlights: #c32231;
 }
 
-.april-dark {
+.april.dark-theme {
     --highlights: #e59498;
 }
 
-.may-light {
+.may.light-theme {
     --highlights: #4f8739;
 }
 
-.may-dark {
+.may.dark-theme {
     --highlights: #aed1a3;
 }
 
-.june-light {
+.june.light-theme {
     --highlights: #fca22f;
 }
 
-.june-dark {
+.june.dark-theme {
     --highlights: #ffe08d;
 }
 
-.july-light {
+.july.light-theme {
     --highlights: #910024;
 }
 
-.july-dark {
+.july.dark-theme {
     --highlights: #d8808a;
 }
 
-.august-light {
+.august.light-theme {
     --highlights: #ffbd47;
 }
 
-.august-dark {
+.august.dark-theme {
     --highlights: #fff3a3;
 }
 
-.september-light {
+.september.light-theme {
     --highlights: #35438c;
 }
 
-.september-dark {
+.september.dark-theme {
     --highlights: #a0a9cf;
 }
 
-.october-light {
+.october.light-theme {
     --highlights: #37569a;
 }
 
-.october-dark {
+.october.dark-theme {
     --highlights: #98b4d4;
 }
 
-.november-light {
+.november.light-theme {
     --highlights: #b2455c;
 }
 
-.november-dark {
+.november.dark-theme {
     --highlights: #ed9aae;
 }
 
-.december-light {
+.december.light-theme {
     --highlights: #1f93a6;
 }
 
-.december-dark {
+.december.dark-theme {
     --highlights: #83dbec;
 }
 
@@ -181,73 +181,78 @@ body {
   padding: 0.5rem;
 }
 
-#january-select h2 {
+.month-select.current h2 {
+    background-color: var(--highlights);
+    color: var(--contrast-font);
+}
+
+[id="january-select"] h2 {
     border: 0.2rem solid var(--january);
     border-radius: 0.2rem;
     color: var(--january);
 }
 
-#february-select h2 {
+[id="february-select"] h2 {
     border: 2px solid var(--february);
     border-radius: 0.2rem;
     color: var(--february);
 }
 
-#march-select h2 {
+[id="march-select"] h2 {
     border: 2px solid var(--march);
     border-radius: 0.2rem;
     color: var(--march);
 }
 
-#april-select h2 {
+[id="april-select"] h2 {
     border: 2px solid var(--april);
     border-radius: 0.2rem;
     color: var(--april);
 }
 
-#may-select h2 {
+[id="may-select"] h2 {
     border: 2px solid var(--may);
     border-radius: 0.2rem;
     color: var(--may);
 }
 
-#june-select h2 {
+[id="june-select"] h2 {
     border: 2px solid var(--june);
     border-radius: 0.2rem;
     color: var(--june);
 }
 
-#july-select h2 {
+[id="july-select"] h2 {
     border: 2px solid var(--july);
     border-radius: 0.2rem;
     color: var(--july);
 }
 
-#august-select h2 {
+[id="august-select"] h2 {
     border: 2px solid var(--august);
     border-radius: 0.2rem;
     color: var(--august);
 }
 
-#september-select h2 {
+[id="september-select"] h2 {
     border: 2px solid var(--september);
     border-radius: 0.2rem;
     color: var(--september);
 }
 
-#october-select h2 {
+[id="october-select"] h2 {
     border: 2px solid var(--october);
     border-radius: 0.2rem;
     color: var(--october);
 }
 
-#november-select h2 {
+[id="november-select"] h2 {
     border: 2px solid var(--november);
     border-radius: 0.2rem;
     color: var(--november);
 }
 
-#december-select h2 {
+[id="december-select"] h2 {
     border: 2px solid var(--december);
     border-radius: 0.2rem;
     color: var(--december);
