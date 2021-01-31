@@ -1,6 +1,116 @@
+.light-theme {
+    --background: #fafafa;
+    --font: #121212;
+}
+
+.dark-theme {
+    --background: #121212;
+    --font: #fafafa;
+}
+
+.january-light {
+    --highlights: #cd8858;
+}
+
+.january-dark {
+    --highlights: #cd8858;
+}
+
+.february-light {
+    --highlights: #cd8858;
+}
+
+.february-dark {
+    --highlights: #cd8858;
+}
+
+.march-light {
+    --highlights: #cd8858;
+}
+
+.march-dark {
+    --highlights: #cd8858;
+}
+
+.april-light {
+    --highlights: #cd8858;
+}
+
+.april-dark {
+    --highlights: #cd8858;
+}
+
+.may-light {
+    --highlights: #cd8858;
+}
+
+.may-dark {
+    --highlights: #cd8858;
+}
+
+.june-light {
+    --highlights: #cd8858;
+}
+
+.june-dark {
+    --highlights: #cd8858;
+}
+
+.july-light {
+    --highlights: #cd8858;
+}
+
+.july-dark {
+    --highlights: #cd8858;
+}
+
+.august-light {
+    --highlights: #cd8858;
+}
+
+.august-dark {
+    --highlights: #cd8858;
+}
+
+.september-light {
+    --highlights: #cd8858;
+}
+
+.september-dark {
+    --highlights: #cd8858;
+}
+
+.october-light {
+    --highlights: #cd8858;
+}
+
+.october-dark {
+    --highlights: #cd8858;
+}
+
+.november-light {
+    --highlights: #cd8858;
+}
+
+.november-dark {
+    --highlights: #cd8858;
+}
+
+.december-light {
+    --highlights: #cd8858;
+}
+
+.december-dark {
+    --highlights: #cd8858;
+}
+
 nav {
     font-size: 2rem;
     padding: 1rem;
+}
+
+nav i {
+    color: var(--font);
 }
 
 #logo {
@@ -10,26 +120,23 @@ nav {
 
 body {
     padding-top: 100px;
-    color: red;
+    color: var(--font);
     font-family: 'Tenali Ramakrishna', sans-serif;
 }
 
+
 #spring {
-    background: url('/media/seasons/spring.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #8ad0c5;
 }
 
 #summer {
-    background: url('{{MEDIA_URL}}seasons/summer.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #ffe08d;
 }
 
 #autumn {
-    background: url('{{MEDIA_URL}}seasons/autumn.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #a0a9cf;
 }
 
 #winter {
-    background: url('{{MEDIA_URL}}seasons/winter.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #83dbec;
 }
