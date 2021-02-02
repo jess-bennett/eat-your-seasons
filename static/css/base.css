@@ -14,6 +14,17 @@
     --october: #37569a;
     --november: #b2455c;
     --december: #1f93a6;
+    --fruit: #32993280;
+    --veg: #b37a3780;
+    --herbs: #8c2e9380;
+    --meat: #f0253280;
+    --fish: #0f2ef880;
+    --fruit-active: #329932;
+    --veg-active: #b37a37;
+    --herbs-active: #8c2e93;
+    --meat-active: #f02532;
+    --fish-active: #0f2ef8;
+
 }
 
 .dark-theme {
@@ -32,101 +43,111 @@
     --october: #98b4d4;
     --november: #ed9aae;
     --december: #83dbec;
+    --fruit: #9fd29d80;
+    --veg: #cfad6780;
+    --herbs: #cd94cc80;
+    --meat: #f5979a80;
+    --fish: #ae9cfe80;
+    --fruit-active: #9fd29d;
+    --veg-active: #cfad67;
+    --herbs-active: #cd94cc;
+    --meat-active: #f5979a;
+    --fish-active: #ae9cfe;
 }
 
-.january-light {
+.month-january.light-theme {
     --highlights: #cd8858;
 }
 
-.january-dark {
+.month-january.dark-theme {
     --highlights: #eecc9f;
 }
 
-.february-light {
+.month-february.light-theme {
     --highlights: #602682;
 }
 
-.february-dark {
+.month-february.dark-theme {
     --highlights: #b793c0;
 }
 
-.march-light {
+.month-march.light-theme {
     --highlights: #26826f;
 }
 
-.march-dark {
+.month-march.dark-theme {
     --highlights: #8ad0c5;
 }
 
-.april-light {
+.month-april.light-theme {
     --highlights: #c32231;
 }
 
-.april-dark {
+.month-april.dark-theme {
     --highlights: #e59498;
 }
 
-.may-light {
+.month-may.light-theme {
     --highlights: #4f8739;
 }
 
-.may-dark {
+.month-may.dark-theme {
     --highlights: #aed1a3;
 }
 
-.june-light {
+.month-june.light-theme {
     --highlights: #fca22f;
 }
 
-.june-dark {
+.month-june.dark-theme {
     --highlights: #ffe08d;
 }
 
-.july-light {
+.month-july.light-theme {
     --highlights: #910024;
 }
 
-.july-dark {
+.month-july.dark-theme {
     --highlights: #d8808a;
 }
 
-.august-light {
+.month-august.light-theme {
     --highlights: #ffbd47;
 }
 
-.august-dark {
+.month-august.dark-theme {
     --highlights: #fff3a3;
 }
 
-.september-light {
+.month-september.light-theme {
     --highlights: #35438c;
 }
 
-.september-dark {
+.month-september.dark-theme {
     --highlights: #a0a9cf;
 }
 
-.october-light {
+.month-october.light-theme {
     --highlights: #37569a;
 }
 
-.october-dark {
+.month-october.dark-theme {
     --highlights: #98b4d4;
 }
 
-.november-light {
+.month-november.light-theme {
     --highlights: #b2455c;
 }
 
-.november-dark {
+.month-november.dark-theme {
     --highlights: #ed9aae;
 }
 
-.december-light {
+.month-december.light-theme {
     --highlights: #1f93a6;
 }
 
-.december-dark {
+.month-december.dark-theme {
     --highlights: #83dbec;
 }
 
@@ -179,76 +200,137 @@ body {
 
 .month-select h2 {
   padding: 0.5rem;
+  border-radius: 0.2rem;
 }
 
-#january-select h2 {
+.month-select.current h2 {
+    background-color: var(--highlights);
+    color: var(--contrast-font);
+}
+
+[id="january-select"] h2 {
     border: 0.2rem solid var(--january);
-    border-radius: 0.2rem;
     color: var(--january);
 }
 
-#february-select h2 {
+[id="february-select"] h2 {
     border: 2px solid var(--february);
-    border-radius: 0.2rem;
     color: var(--february);
 }
 
-#march-select h2 {
+[id="march-select"] h2 {
     border: 2px solid var(--march);
-    border-radius: 0.2rem;
     color: var(--march);
 }
 
-#april-select h2 {
+[id="april-select"] h2 {
     border: 2px solid var(--april);
-    border-radius: 0.2rem;
     color: var(--april);
 }
 
-#may-select h2 {
+[id="may-select"] h2 {
     border: 2px solid var(--may);
-    border-radius: 0.2rem;
     color: var(--may);
 }
 
-#june-select h2 {
+[id="june-select"] h2 {
     border: 2px solid var(--june);
-    border-radius: 0.2rem;
     color: var(--june);
 }
 
-#july-select h2 {
+[id="july-select"] h2 {
     border: 2px solid var(--july);
-    border-radius: 0.2rem;
     color: var(--july);
 }
 
-#august-select h2 {
+[id="august-select"] h2 {
     border: 2px solid var(--august);
-    border-radius: 0.2rem;
     color: var(--august);
 }
 
-#september-select h2 {
+[id="september-select"] h2 {
     border: 2px solid var(--september);
-    border-radius: 0.2rem;
     color: var(--september);
 }
 
-#october-select h2 {
+[id="october-select"] h2 {
     border: 2px solid var(--october);
-    border-radius: 0.2rem;
     color: var(--october);
 }
 
-#november-select h2 {
+[id="november-select"] h2 {
     border: 2px solid var(--november);
-    border-radius: 0.2rem;
     color: var(--november);
 }
 
-#december-select h2 {
+[id="december-select"] h2 {
     border: 2px solid var(--december);
-    border-radius: 0.2rem;
     color: var(--december);
+}
+
+.icons-large {
+    font-size: 3rem;
+    color: var(--highlights);
+    cursor: pointer;
+}
+
+.icons-small {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#fruit {
+    color: var(--fruit);
+}
+
+#fruit.icons-active {
+    color: var(--fruit-active);
+}
+
+#veg {
+    color: var(--veg);
+}
+
+#veg.icons-active {
+    color: var(--veg-active);
+}
+
+#herbs {
+    color: var(--herbs);
+}
+
+#herbs.icons-active {
+    color: var(--herbs-active);
+}
+
+#meat {
+    color: var(--meat);
+}
+
+#meat.icons-active {
+    color: var(--meat-active);
+}
+
+#fish {
+    color: var(--fish);
+}
+
+#fish.icons-active {
+    color: var(--fish-active);
+}
+
+#seasonal-box {
+    border: 2px solid var(--highlights);
+  border-radius: 0.2rem;
+}
+
+@media (min-width: 992px) {
+    .icons-large {
+    font-size: 4rem;
+    color: var(--highlights);
+}
+
+.icons-small {
+    font-size: 5rem;
+}
 }
