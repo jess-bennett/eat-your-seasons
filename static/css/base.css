@@ -14,11 +14,16 @@
     --october: #37569a;
     --november: #b2455c;
     --december: #1f93a6;
-    --fruit: #329932;
-    --veg: #b37a37;
-    --herbs: #8c2e93;
-    --meat: #f02532;
-    --fish: #0f2ef8;
+    --fruit: #32993280;
+    --veg: #b37a3780;
+    --herbs: #8c2e9380;
+    --meat: #f0253280;
+    --fish: #0f2ef880;
+    --fruit-active: #329932;
+    --veg-active: #b37a37;
+    --herbs-active: #8c2e93;
+    --meat-active: #f02532;
+    --fish-active: #0f2ef8;
 
 }
 
@@ -38,106 +43,111 @@
     --october: #98b4d4;
     --november: #ed9aae;
     --december: #83dbec;
-    --fruit: #9fd29d;
-    --veg: #cfad67;
-    --herbs: #cd94cc;
-    --meat: #f5979a;
-    --fish: #ae9cfe;
+    --fruit: #9fd29d80;
+    --veg: #cfad6780;
+    --herbs: #cd94cc80;
+    --meat: #f5979a80;
+    --fish: #ae9cfe80;
+    --fruit-active: #9fd29d;
+    --veg-active: #cfad67;
+    --herbs-active: #cd94cc;
+    --meat-active: #f5979a;
+    --fish-active: #ae9cfe;
 }
 
-.january.light-theme {
+.month-january.light-theme {
     --highlights: #cd8858;
 }
 
-.january.dark-theme {
+.month-january.dark-theme {
     --highlights: #eecc9f;
 }
 
-.february.light-theme {
+.month-february.light-theme {
     --highlights: #602682;
 }
 
-.february.dark-theme {
+.month-february.dark-theme {
     --highlights: #b793c0;
 }
 
-.march.light-theme {
+.month-march.light-theme {
     --highlights: #26826f;
 }
 
-.march.dark-theme {
+.month-march.dark-theme {
     --highlights: #8ad0c5;
 }
 
-.april.light-theme {
+.month-april.light-theme {
     --highlights: #c32231;
 }
 
-.april.dark-theme {
+.month-april.dark-theme {
     --highlights: #e59498;
 }
 
-.may.light-theme {
+.month-may.light-theme {
     --highlights: #4f8739;
 }
 
-.may.dark-theme {
+.month-may.dark-theme {
     --highlights: #aed1a3;
 }
 
-.june.light-theme {
+.month-june.light-theme {
     --highlights: #fca22f;
 }
 
-.june.dark-theme {
+.month-june.dark-theme {
     --highlights: #ffe08d;
 }
 
-.july.light-theme {
+.month-july.light-theme {
     --highlights: #910024;
 }
 
-.july.dark-theme {
+.month-july.dark-theme {
     --highlights: #d8808a;
 }
 
-.august.light-theme {
+.month-august.light-theme {
     --highlights: #ffbd47;
 }
 
-.august.dark-theme {
+.month-august.dark-theme {
     --highlights: #fff3a3;
 }
 
-.september.light-theme {
+.month-september.light-theme {
     --highlights: #35438c;
 }
 
-.september.dark-theme {
+.month-september.dark-theme {
     --highlights: #a0a9cf;
 }
 
-.october.light-theme {
+.month-october.light-theme {
     --highlights: #37569a;
 }
 
-.october.dark-theme {
+.month-october.dark-theme {
     --highlights: #98b4d4;
 }
 
-.november.light-theme {
+.month-november.light-theme {
     --highlights: #b2455c;
 }
 
-.november.dark-theme {
+.month-november.dark-theme {
     --highlights: #ed9aae;
 }
 
-.december.light-theme {
+.month-december.light-theme {
     --highlights: #1f93a6;
 }
 
-.december.dark-theme {
+.month-december.dark-theme {
     --highlights: #83dbec;
 }
 
@@ -261,30 +271,52 @@ body {
 .icons-large {
     font-size: 3rem;
     color: var(--highlights);
+    cursor: pointer;
 }
 
 .icons-small {
     font-size: 2rem;
+    cursor: pointer;
 }
 
 #fruit {
     color: var(--fruit);
 }
 
+#fruit.icons-active {
+    color: var(--fruit-active);
+}
+
 #veg {
     color: var(--veg);
+}
+
+#veg.icons-active {
+    color: var(--veg-active);
 }
 
 #herbs {
     color: var(--herbs);
 }
 
+#herbs.icons-active {
+    color: var(--herbs-active);
+}
+
 #meat {
     color: var(--meat);
 }
 
+#meat.icons-active {
+    color: var(--meat-active);
+}
+
 #fish {
     color: var(--fish);
+}
+
+#fish.icons-active {
+    color: var(--fish-active);
 }
 
 #seasonal-box {
