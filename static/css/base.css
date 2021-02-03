@@ -223,22 +223,63 @@ body {
 .info-box {
     color: var(--font);
     border-radius: 0.2rem;
+    cursor: pointer;
 }
 
-#spring {
+#spring, #spring-box {
     border: 0.5rem solid var(--march);
 }
 
-#summer {
+#spring-box {
+    border-radius: 0.2rem;
+    font-size: 1.8rem;
+}
+
+#spring.info-active {
+    background-color: var(--march);
+    color: var(--contrast-font);
+}
+
+#summer, #summer-box {
     border: 0.5rem solid var(--june);
 }
 
-#autumn {
+#summer-box {
+    border-radius: 0.2rem;
+    font-size: 1.8rem;
+}
+
+#summer.info-active {
+    background-color: var(--june);
+    color: var(--contrast-font);
+}
+
+#autumn, #autumn-box {
     border: 0.5rem solid var(--september);
 }
 
-#winter {
+#autumn-box {
+    border-radius: 0.2rem;
+    font-size: 1.8rem;
+}
+
+#autumn.info-active {
+    background-color: var(--september);
+    color: var(--contrast-font);
+}
+
+#winter, #winter-box {
     border: 0.5rem solid var(--december);
+}
+
+#winter-box {
+    border-radius: 0.2rem;
+    font-size: 1.8rem;
+}
+
+#winter.info-active {
+    background-color: var(--december);
+    color: var(--contrast-font);
 }
 
 .month-select {

@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $("#summer-box").hide();
+    $("#autumn-box").hide();
+    $("#winter-box").hide();
     let today = new Date()
     let month = today.toLocaleString('default', { month: 'long' }).toLowerCase();
     $("body").addClass(`month-${month}`);
@@ -32,5 +35,13 @@ $(document).ready(function() {
 $(".icons-small").click(function() {
     $(".icons-small").removeClass("icons-active");
     $(this).addClass("icons-active");
+});
+
+$(".info-box").click(function() {
+    $(".info-box").removeClass("info-active");
+    $(this).addClass("info-active");
+    $(".info-text").hide();
+    let selectBox = $(this).attr("id");
+    $(`#${selectBox}-box`).show();
 });
 });
