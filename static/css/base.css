@@ -161,9 +161,48 @@ nav i {
     cursor: pointer;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 #logo {
     height: 5rem;
+    width: 5rem;
+    font-size: 1.5rem;
+    border: 0.2rem solid var(--font);
     border-radius: 50%;
+}
+
+#logo-tl {
+    border-right: 0.1rem solid var(--font);
+    vertical-align: bottom;
+    color: var(--march);
+}
+
+#logo-tl i {
+    color: var(--march);
+}
+
+#logo-tr i {
+    color: var(--june);
+}
+
+#logo-bl {
+    border-right: 0.1rem solid var(--font);
+}
+
+#logo-bl i {
+    color: var(--september);
+}
+
+#logo-br i {
+    color: var(--december);
+}
+
+#logo-bottom {
+    
+    border-top: 0.1rem solid var(--font);
+
 }
 
 body {
@@ -173,25 +212,33 @@ body {
     font-family: 'Tenali Ramakrishna', sans-serif;
 }
 
+.page-heading {
+    font-size: 3rem;
+}
+
+.page-subheading {
+    font-size: 2rem;
+}
+
+.info-box {
+    color: var(--font);
+    border-radius: 0.2rem;
+}
 
 #spring {
-    background-color: var(--march);
-    color: var(--contrast-font);
+    border: 0.5rem solid var(--march);
 }
 
 #summer {
-    background-color: var(--june);
-    color: var(--contrast-font);
+    border: 0.5rem solid var(--june);
 }
 
 #autumn {
-    background-color: var(--september);
-    color: var(--contrast-font);
+    border: 0.5rem solid var(--september);
 }
 
 #winter {
-    background-color: var(--december);
-    color: var(--contrast-font);
+    border: 0.5rem solid var(--december);
 }
 
 .month-select {
@@ -332,5 +379,13 @@ body {
 
 .icons-small {
     font-size: 5rem;
+}
+
+.page-heading {
+    font-size: 4rem;
+}
+
+.page-subheading {
+    font-size: 3rem;
 }
 }
