@@ -161,9 +161,48 @@ nav i {
     cursor: pointer;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 #logo {
     height: 5rem;
+    width: 5rem;
+    font-size: 1.5rem;
+    border: 0.2rem solid var(--font);
     border-radius: 50%;
+}
+
+#logo-tl {
+    border-right: 0.1rem solid var(--font);
+    vertical-align: bottom;
+    color: var(--march);
+}
+
+#logo-tl i {
+    color: var(--march);
+}
+
+#logo-tr i {
+    color: var(--june);
+}
+
+#logo-bl {
+    border-right: 0.1rem solid var(--font);
+}
+
+#logo-bl i {
+    color: var(--september);
+}
+
+#logo-br i {
+    color: var(--december);
+}
+
+#logo-bottom {
+    
+    border-top: 0.1rem solid var(--font);
+
 }
 
 body {
@@ -173,23 +212,72 @@ body {
     font-family: 'Tenali Ramakrishna', sans-serif;
 }
 
+.page-heading {
+    font-size: 3rem;
+}
 
-#spring {
+.page-subheading {
+    font-size: 2rem;
+}
+
+.info-box {
+    color: var(--font);
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+#spring, #spring-box {
+    border: 0.5rem solid var(--march);
+}
+
+#spring-box {
+    border-radius: 0.2rem;
+    font-size: 1.8rem;
+}
+
+#spring.info-active {
     background-color: var(--march);
     color: var(--contrast-font);
 }
 
-#summer {
+#summer, #summer-box {
+    border: 0.5rem solid var(--june);
+}
+
+#summer-box {
+    border-radius: 0.2rem;
+    font-size: 1.8rem;
+}
+
+#summer.info-active {
     background-color: var(--june);
     color: var(--contrast-font);
 }
 
-#autumn {
+#autumn, #autumn-box {
+    border: 0.5rem solid var(--september);
+}
+
+#autumn-box {
+    border-radius: 0.2rem;
+    font-size: 1.8rem;
+}
+
+#autumn.info-active {
     background-color: var(--september);
     color: var(--contrast-font);
 }
 
-#winter {
+#winter, #winter-box {
+    border: 0.5rem solid var(--december);
+}
+
+#winter-box {
+    border-radius: 0.2rem;
+    font-size: 1.8rem;
+}
+
+#winter.info-active {
     background-color: var(--december);
     color: var(--contrast-font);
 }
@@ -332,5 +420,13 @@ body {
 
 .icons-small {
     font-size: 5rem;
+}
+
+.page-heading {
+    font-size: 4rem;
+}
+
+.page-subheading {
+    font-size: 3rem;
 }
 }
