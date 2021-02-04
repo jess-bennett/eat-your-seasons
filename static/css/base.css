@@ -356,55 +356,57 @@ body {
     color: var(--december);
 }
 
-.icons-large {
-    font-size: 3rem;
-    color: var(--highlights);
+.plan-icons {
+    width: 3.25rem;
+    height: 3.25rem;
+    fill: var(--highlights);
     cursor: pointer;
 }
 
-.icons-small {
-    font-size: 2rem;
+.food-icons {
+    width: 2.25rem;
+    height: 2.25rem;
     cursor: pointer;
 }
 
-#fruit {
-    color: var(--fruit);
+#fruit-svg {
+    fill: var(--fruit);
 }
 
-#fruit.icons-active {
-    color: var(--fruit-active);
+#fruit-svg.food-icons-active {
+    fill: var(--fruit-active);
 }
 
-#veg {
-    color: var(--veg);
+#vegetables-svg {
+    fill: var(--veg);
 }
 
-#veg.icons-active {
-    color: var(--veg-active);
+#vegetables-svg.food-icons-active {
+    fill: var(--veg-active);
 }
 
-#herbs {
-    color: var(--herbs);
+#herbs-svg {
+    fill: var(--herbs);
 }
 
-#herbs.icons-active {
-    color: var(--herbs-active);
+#herbs-svg.food-icons-active {
+    fill: var(--herbs-active);
 }
 
-#meat {
-    color: var(--meat);
+#meat-svg {
+    fill: var(--meat);
 }
 
-#meat.icons-active {
-    color: var(--meat-active);
+#meat-svg.food-icons-active {
+    fill: var(--meat-active);
 }
 
-#fish {
-    color: var(--fish);
+#fish-svg {
+    fill: var(--fish);
 }
 
-#fish.icons-active {
-    color: var(--fish-active);
+#fish-svg.food-icons-active {
+    fill: var(--fish-active);
 }
 
 #seasonal-box {
@@ -418,8 +420,14 @@ body {
     color: var(--highlights);
 }
 
-.icons-small {
-    font-size: 5rem;
+.plan-icons {
+    width: 7.25rem;
+    height: 7.25rem;
+}
+
+.food-icons {
+    width: 6.25rem;
+    height: 6.25rem;
 }
 
 .page-heading {
