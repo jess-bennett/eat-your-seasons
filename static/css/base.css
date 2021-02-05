@@ -156,7 +156,7 @@ nav {
     padding: 1rem;
 }
 
-nav i {
+nav svg {
     color: var(--font);
     cursor: pointer;
 }
