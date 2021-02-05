@@ -157,8 +157,10 @@ nav {
 }
 
 nav svg {
-    color: var(--font);
+    fill: var(--font);
     cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 nav a {
@@ -173,37 +175,12 @@ nav a {
     border-radius: 50%;
 }
 
-#logo-tl {
-    border-right: 0.1rem solid var(--font);
-    vertical-align: bottom;
-    color: var(--march);
+#logo svg {
+    height: 4rem;
+    width: 4rem;
+    fill: var(--font);
 }
 
-#logo-tl i {
-    color: var(--march);
-}
-
-#logo-tr i {
-    color: var(--june);
-}
-
-#logo-bl {
-    border-right: 0.1rem solid var(--font);
-}
-
-#logo-bl i {
-    color: var(--september);
-}
-
-#logo-br i {
-    color: var(--december);
-}
-
-#logo-bottom {
-    
-    border-top: 0.1rem solid var(--font);
-
-}
 
 body {
     padding-top: 100px;
@@ -415,6 +392,14 @@ body {
 }
 
 @media (min-width: 992px) {
+
+    nav svg {
+    fill: var(--font);
+    cursor: pointer;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
     .icons-large {
     font-size: 4rem;
     color: var(--highlights);
