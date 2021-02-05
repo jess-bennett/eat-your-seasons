@@ -183,10 +183,13 @@ nav a {
 
 
 body {
-    padding-top: 100px;
     background-color: var(--background);
     color: var(--font);
     font-family: 'Tenali Ramakrishna', sans-serif;
+}
+
+#landing-page {
+    height: 90vh;
 }
 
 .page-heading {
