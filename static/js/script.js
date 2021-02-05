@@ -32,9 +32,9 @@ $(document).ready(function() {
     $("body").addClass(`month-${selectMonth}`);
 });
 
-$(".icons-small").click(function() {
-    $(".icons-small").removeClass("icons-active");
-    $(this).addClass("icons-active");
+$(".food-icons").click(function() {
+    $(".food-icons").removeClass("food-icons-active");
+    $(this).addClass("food-icons-active");
 });
 
 $(".info-box").click(function() {
