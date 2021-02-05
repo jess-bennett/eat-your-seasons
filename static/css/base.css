@@ -190,11 +190,11 @@ body {
 }
 
 .page-heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .page-subheading {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .info-box {
@@ -204,7 +204,7 @@ body {
 }
 
 #spring, #spring-box {
-    border: 0.5rem solid var(--march);
+    border: 0.5rem solid var(--may);
 }
 
 #spring-box {
@@ -213,8 +213,12 @@ body {
 }
 
 #spring.info-active {
-    background-color: var(--march);
+    background-color: var(--may);
     color: var(--contrast-font);
+}
+
+.spring > a > svg {
+    fill: var(--may);
 }
 
 #summer, #summer-box {
@@ -231,6 +235,10 @@ body {
     color: var(--contrast-font);
 }
 
+.summer > a > svg {
+    fill: var(--june);
+}
+
 #autumn, #autumn-box {
     border: 0.5rem solid var(--september);
 }
@@ -245,8 +253,12 @@ body {
     color: var(--contrast-font);
 }
 
+.autumn > a > svg {
+    fill: var(--september);
+}
+
 #winter, #winter-box {
-    border: 0.5rem solid var(--december);
+    border: 0.5rem solid var(--november);
 }
 
 #winter-box {
@@ -255,8 +267,12 @@ body {
 }
 
 #winter.info-active {
-    background-color: var(--december);
+    background-color: var(--november);
     color: var(--contrast-font);
+}
+
+.winter > a > svg {
+    fill: var(--november);
 }
 
 .month-select {
@@ -333,7 +349,17 @@ body {
     color: var(--december);
 }
 
-.plan-icons {
+.home-icons > a > svg {
+    width: 5.25rem;
+    height: 5.25rem;
+}
+
+.home-icons > a {
+    text-decoration: none;
+    color: var(--font);
+}
+
+.plan-icons > svg {
     width: 3.25rem;
     height: 3.25rem;
     fill: var(--highlights);
@@ -400,12 +426,25 @@ body {
     width: 3.5rem;
 }
 
+.page-heading {
+    font-size: 3rem;
+}
+
+.page-subheading {
+    font-size: 2rem;
+}
+
     .icons-large {
     font-size: 4rem;
     color: var(--highlights);
 }
 
-.plan-icons {
+.home-icons > a > svg {
+    width: 9.25rem;
+    height: 9.25rem;
+}
+
+.plan-icons > svg {
     width: 7.25rem;
     height: 7.25rem;
 }
