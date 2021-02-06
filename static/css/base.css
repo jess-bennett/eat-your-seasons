@@ -201,77 +201,39 @@ body {
 }
 
 .info-box {
-    color: var(--font);
     border-radius: 0.2rem;
-    cursor: pointer;
 }
 
-#spring, #spring-box {
-    border: 0.5rem solid var(--may);
+.info-box p {
+    font-size: 1.3rem;
 }
 
-#spring-box {
-    border-radius: 0.2rem;
-    font-size: 1.8rem;
-}
-
-#spring.info-active {
-    background-color: var(--may);
-    color: var(--contrast-font);
+#spring {
+    border: 0.2rem solid var(--may);
 }
 
 .spring > a > svg {
     fill: var(--may);
 }
 
-#summer, #summer-box {
-    border: 0.5rem solid var(--june);
-}
-
-#summer-box {
-    border-radius: 0.2rem;
-    font-size: 1.8rem;
-}
-
-#summer.info-active {
-    background-color: var(--june);
-    color: var(--contrast-font);
+#summer {
+    border: 0.2rem solid var(--june);
 }
 
 .summer > a > svg {
     fill: var(--june);
 }
 
-#autumn, #autumn-box {
-    border: 0.5rem solid var(--september);
-}
-
-#autumn-box {
-    border-radius: 0.2rem;
-    font-size: 1.8rem;
-}
-
-#autumn.info-active {
-    background-color: var(--september);
-    color: var(--contrast-font);
+#autumn {
+    border: 0.2rem solid var(--september);
 }
 
 .autumn > a > svg {
     fill: var(--september);
 }
 
-#winter, #winter-box {
-    border: 0.5rem solid var(--november);
-}
-
-#winter-box {
-    border-radius: 0.2rem;
-    font-size: 1.8rem;
-}
-
-#winter.info-active {
-    background-color: var(--november);
-    color: var(--contrast-font);
+#winter {
+    border: 0.2rem solid var(--november);
 }
 
 .winter > a > svg {
@@ -293,62 +255,62 @@ body {
 }
 
 [id="january-select"] h2 {
-    border: 0.2rem solid var(--january);
+    border: 0.15rem solid var(--january);
     color: var(--january);
 }
 
 [id="february-select"] h2 {
-    border: 2px solid var(--february);
+    border: 0.15rem solid var(--february);
     color: var(--february);
 }
 
 [id="march-select"] h2 {
-    border: 2px solid var(--march);
+    border: 0.15rem solid var(--march);
     color: var(--march);
 }
 
 [id="april-select"] h2 {
-    border: 2px solid var(--april);
+    border: 0.15rem solid var(--april);
     color: var(--april);
 }
 
 [id="may-select"] h2 {
-    border: 2px solid var(--may);
+    border: 0.15rem solid var(--may);
     color: var(--may);
 }
 
 [id="june-select"] h2 {
-    border: 2px solid var(--june);
+    border: 0.15rem solid var(--june);
     color: var(--june);
 }
 
 [id="july-select"] h2 {
-    border: 2px solid var(--july);
+    border: 0.15rem solid var(--july);
     color: var(--july);
 }
 
 [id="august-select"] h2 {
-    border: 2px solid var(--august);
+    border: 0.15rem solid var(--august);
     color: var(--august);
 }
 
 [id="september-select"] h2 {
-    border: 2px solid var(--september);
+    border: 0.15rem solid var(--september);
     color: var(--september);
 }
 
 [id="october-select"] h2 {
-    border: 2px solid var(--october);
+    border: 0.15rem solid var(--october);
     color: var(--october);
 }
 
 [id="november-select"] h2 {
-    border: 2px solid var(--november);
+    border: 0.15rem solid var(--november);
     color: var(--november);
 }
 
 [id="december-select"] h2 {
-    border: 2px solid var(--december);
+    border: 0.15rem solid var(--december);
     color: var(--december);
 }
 
