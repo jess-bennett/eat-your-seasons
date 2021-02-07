@@ -1,0 +1,7 @@
+[{"pk": 1, "model": "dashboard.category", "fields": {"name": "vegetables",
+"friendly_name": "Vegetables"}}, {"pk": 2, "model": "dashboard.category",
+"fields": {"name": "fruit", "friendly_name": "Fruit"}}, {"pk": 3,
+"model": "dashboard.category", "fields": {"name": "nuts_herbs", "friendly_name":
+"Nuts & Herbs"}}, {"pk": 4, "model": "dashboard.category", "fields": {"name":
+"meat", "friendly_name": "Meat"}}, {"pk": 5, "model": "dashboard.category",
+"fields": {"name": "fish", "friendly_name": "Fish"}}]
