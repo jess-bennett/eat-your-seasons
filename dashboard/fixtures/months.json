@@ -1,0 +1,12 @@
+[{"pk": 1, "model": "dashboard.month", "fields": {"name": "january"}}, {"pk": 2, "model": "dashboard.month",
+"fields": {"name": "february"}}, {"pk": 3,
+"model": "dashboard.month", "fields": {"name": "march"}}, {"pk": 4, "model": "dashboard.month", "fields": {"name":
+"april"}}, {"pk": 5, "model": "dashboard.month",
+"fields": {"name": "may"}}, {"pk": 6, "model": "dashboard.month",
+"fields": {"name": "june"}}, {"pk": 7, "model": "dashboard.month",
+"fields": {"name": "july"}}, {"pk": 8, "model": "dashboard.month",
+"fields": {"name": "august"}}, {"pk": 9, "model": "dashboard.month",
+"fields": {"name": "september"}}, {"pk": 10, "model": "dashboard.month",
+"fields": {"name": "october"}}, {"pk": 11, "model": "dashboard.month",
+"fields": {"name": "november"}}, {"pk": 12, "model": "dashboard.month",
+"fields": {"name": "december"}}]
