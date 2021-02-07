@@ -22,25 +22,31 @@
         </div>
         <div class="row pt-3">
             <div class="offset-1 col-2 text-center">
-                {% include "layout/icons/fruit.html" %}
+                <a href="{% url 'dashboard' %}?category=fruit">{% include "layout/icons/fruit.html" %}</a>
             </div>
             <div class="col-2 text-center">
-                {% include "layout/icons/vegetables.html" %}
+                <a href="{% url 'dashboard' %}?category=vegetables">{% include "layout/icons/vegetables.html" %}</a>
             </div>
             <div class="col-2 text-center">
-                {% include "layout/icons/herbs.html" %}
+                <a href="{% url 'dashboard' %}?category=nuts_herbs">{% include "layout/icons/herbs.html" %}</a>
             </div>
             <div class="col-2 text-center">
-                {% include "layout/icons/meat.html" %}
+                <a href="{% url 'dashboard' %}?category=meat">{% include "layout/icons/meat.html" %}</a>
             </div>
             <div class="col-2 text-center">
-                {% include "layout/icons/fish.html" %}
+                <a href="{% url 'dashboard' %}?category=fish">{% include "layout/icons/fish.html" %}</a>
             </div>
         </div>
         <div class="row pt-3">
             <div id="seasonal-box" class="offset-1 col-10">
                 <h4>In season this month:</h4>
-                {{ items }}
+                <div class="row">
+                {% for item in items %}
+                <div class="col-3">
+                {{ item }}
+                </div>
+                {% endfor %}
+                </div>
             </div>
         </div>
     </div>
