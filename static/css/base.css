@@ -212,7 +212,7 @@ body {
     border: 0.2rem solid var(--may);
 }
 
-.spring > a > svg {
+.spring svg {
     fill: var(--may);
 }
 
@@ -220,7 +220,7 @@ body {
     border: 0.2rem solid var(--june);
 }
 
-.summer > a > svg {
+.summer svg {
     fill: var(--june);
 }
 
@@ -228,7 +228,7 @@ body {
     border: 0.2rem solid var(--september);
 }
 
-.autumn > a > svg {
+.autumn svg {
     fill: var(--september);
 }
 
@@ -236,7 +236,7 @@ body {
     border: 0.2rem solid var(--november);
 }
 
-.winter > a > svg {
+.winter svg {
     fill: var(--november);
 }
 
@@ -314,9 +314,10 @@ body {
     color: var(--december);
 }
 
-.home-icons > a > svg {
+.home-icons svg {
     width: 5.25rem;
     height: 5.25rem;
+    cursor: pointer;
 }
 
 .home-icons > a {
@@ -404,7 +405,7 @@ body {
     color: var(--highlights);
 }
 
-.home-icons > a > svg {
+.home-icons svg {
     width: 9.25rem;
     height: 9.25rem;
 }

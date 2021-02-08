@@ -33,33 +33,32 @@ $(document).ready(function() {
     localStorage.setItem("chosentheme", "light-theme");
 });
 
-    $("#cta-season").click(function() {
-    // let url = "{% url 'dashboard' %}?month=february&category=fruit";
-    // let queryMonth = sessionStorage.getItem("selectedmonth");
-    // let queryFood = sessionStorage.getItem("selectedfood");
-    // window.location = `/dashboard/?month=${queryMonth}&category=${queryFood}`;
+    $("#nav-dashboard").click(function() {
     setDashboardParams();
-    // document.location.href = url.replace('february', queryMonth.toString());
-    // window.location="{% url 'dashboard' %}?month=february&category=fruit".replace('february', queryMonth);
+});
+
+    $("#cta-season").click(function() {
+    setDashboardParams();
 });
 
     $(".month-select").click(function() {
+    let selectedMonth = $(this).attr("id").substr(0, $(this).attr("id").indexOf('-'));
+    sessionStorage.setItem("selectedmonth", selectedMonth);
+    setDashboardParams();
+    $("body").addClass(`month-${selectedMonth}`);
     $("body[class*='month']").removeClass (function (index, css) {
     return (css.match (/(^|\s)month\S+/g) || []).join(' ');
     });
     $(".month-select").removeClass("current");
     $(this).addClass("current");
-    let selectedMonth = $(this).attr("id").substr(0, $(this).attr("id").indexOf('-'));
-    $("body").addClass(`month-${selectedMonth}`);
-    sessionStorage.setItem("selectedmonth", selectedMonth);
 });
 
     $(".food-icons").click(function() {
-    $(".food-icons").removeClass("food-icons-active");
-    $(this).addClass("food-icons-active");
     let selectedFood = $(this).attr("id");
     sessionStorage.setItem("selectedfood", selectedFood);
-    console.log(selectedFood);
+    setDashboardParams();
+    $(".food-icons").removeClass("food-icons-active");
+    $(this).addClass("food-icons-active");
 });
     
 });
