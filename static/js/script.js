@@ -2,28 +2,32 @@ $(document).ready(function() {
     let today = new Date()
     let month = today.toLocaleString('default', { month: 'long' }).toLowerCase();
     let currentMonth = sessionStorage.getItem("selectedmonth") || month;
+    let chosenTheme = localStorage.getItem("chosentheme") || "light-theme";
 
     $("body").addClass(`month-${currentMonth}`);
+    $("body").addClass(`${chosenTheme}`);
     $(`#${currentMonth}-select`).addClass("current");
-    $("#light-select").hide();
+    $(`#${chosenTheme}-select`).hide();
     $(".food-icons").removeClass("food-icons-active");
     let searchParams = new URLSearchParams(window.location.search);
     let currentCategory = searchParams.get('category');
     $(`#${currentCategory}`).addClass("food-icons-active");
 
 
-    $("#dark-select").click(function() {
+    $("#dark-theme-select").click(function() {
     $("body").addClass("dark-theme");
     $("body").removeClass("light-theme");
-    $("#dark-select").hide();
-    $("#light-select").show();
+    $("#dark-theme-select").hide();
+    $("#light-theme-select").show();
+    localStorage.setItem("chosentheme", "dark-theme");
 });
 
-    $("#light-select").click(function() {
+    $("#light-theme-select").click(function() {
     $("body").addClass("light-theme");
     $("body").removeClass("dark-theme");
-    $("#light-select").hide();
-    $("#dark-select").show();
+    $("#light-theme-select").hide();
+    $("#dark-theme-select").show();
+    localStorage.setItem("chosentheme", "light-theme");
 });
 
     $(".month-select").click(function() {
