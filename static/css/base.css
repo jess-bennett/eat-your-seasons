@@ -337,43 +337,43 @@ body {
     cursor: pointer;
 }
 
-#fruit-svg {
+#fruit {
     fill: var(--fruit);
 }
 
-#fruit-svg.food-icons-active {
+#fruit.food-icons-active {
     fill: var(--fruit-active);
 }
 
-#vegetables-svg {
+#vegetables {
     fill: var(--veg);
 }
 
-#vegetables-svg.food-icons-active {
+#vegetables.food-icons-active {
     fill: var(--veg-active);
 }
 
-#herbs-svg {
+#nuts_herbs {
     fill: var(--herbs);
 }
 
-#herbs-svg.food-icons-active {
+#nuts_herbs.food-icons-active {
     fill: var(--herbs-active);
 }
 
-#meat-svg {
+#meat {
     fill: var(--meat);
 }
 
-#meat-svg.food-icons-active {
+#meat.food-icons-active {
     fill: var(--meat-active);
 }
 
-#fish-svg {
+#fish {
     fill: var(--fish);
 }
 
-#fish-svg.food-icons-active {
+#fish.food-icons-active {
     fill: var(--fish-active);
 }
 

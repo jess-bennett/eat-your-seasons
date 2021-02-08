@@ -17,6 +17,7 @@ def dashboard(request):
 
     context = {
         'items': items,
+        'current_category': categories,
     }
 
     return render(request, 'dashboard/dashboard.html', context)

@@ -4,6 +4,11 @@ $(document).ready(function() {
     $("body").addClass(`month-${month}`);
     $(`#${month}-select`).addClass("current");
     $("#light-select").hide();
+    $(".food-icons").removeClass("food-icons-active");
+    let searchParams = new URLSearchParams(window.location.search);
+    let currentCategory = searchParams.get('category');
+    $(`#${currentCategory}`).addClass("food-icons-active");
+
 
     $("#dark-select").click(function() {
     $("body").addClass("dark-theme");
@@ -27,10 +32,5 @@ $(document).ready(function() {
     $(this).addClass("current");
     let selectMonth = $(this).attr("id").substr(0, $(this).attr("id").indexOf('-'));
     $("body").addClass(`month-${selectMonth}`);
-});
-
-$(".food-icons").click(function() {
-    $(".food-icons").removeClass("food-icons-active");
-    $(this).addClass("food-icons-active");
 });
 });
