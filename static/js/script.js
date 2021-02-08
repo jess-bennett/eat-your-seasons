@@ -1,8 +1,10 @@
 $(document).ready(function() {
     let today = new Date()
     let month = today.toLocaleString('default', { month: 'long' }).toLowerCase();
-    $("body").addClass(`month-${month}`);
-    $(`#${month}-select`).addClass("current");
+    let currentMonth = sessionStorage.getItem("selectedmonth") || month;
+
+    $("body").addClass(`month-${currentMonth}`);
+    $(`#${currentMonth}-select`).addClass("current");
     $("#light-select").hide();
     $(".food-icons").removeClass("food-icons-active");
     let searchParams = new URLSearchParams(window.location.search);
@@ -30,7 +32,8 @@ $(document).ready(function() {
     });
     $(".month-select").removeClass("current");
     $(this).addClass("current");
-    let selectMonth = $(this).attr("id").substr(0, $(this).attr("id").indexOf('-'));
-    $("body").addClass(`month-${selectMonth}`);
+    let selectedMonth = $(this).attr("id").substr(0, $(this).attr("id").indexOf('-'));
+    $("body").addClass(`month-${selectedMonth}`);
+    sessionStorage.setItem("selectedmonth", selectedMonth);
 });
 });
