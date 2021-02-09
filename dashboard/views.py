@@ -14,7 +14,7 @@ def dashboard(request):
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             months = request.GET['month'].split(',')
-            items = items.filter(category__name__in=categories, month__name__in=months)
+            items = items.filter(category__name__in=categories, month__name__in=months).order_by('name')
             categories = Category.objects.filter(name__in=categories)
             months = Month.objects.filter(name__in=months)
 
