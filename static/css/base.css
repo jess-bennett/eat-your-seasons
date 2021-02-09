@@ -194,6 +194,7 @@ body {
 
 .page-heading {
     font-size: 2.5rem;
+    font-family: 'Merienda One', cursive;
 }
 
 .page-subheading {
@@ -383,6 +384,10 @@ body {
   border-radius: 0.2rem;
 }
 
+#seasonal-items {
+    font-size: 1.2rem;
+}
+
 @media (min-width: 992px) {
 
     nav svg {
@@ -426,5 +431,9 @@ body {
 
 .page-subheading {
     font-size: 3rem;
+}
+
+#seasonal-items {
+    font-size: 1.4rem;
 }
 }
