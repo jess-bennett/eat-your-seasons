@@ -16,7 +16,8 @@
     {% block corecss %}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Tenali+Ramakrishna&display=swap">
+        
         <!-- Main CSS Files -->
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
@@ -37,7 +38,7 @@
 
     <title>Eat Your Seasons{% block extra_title %}{% endblock %}</title>
     </head>
-    <body class="light-theme">
+    <body>
         <header>
             {% include "layout/navigation.html" %}
         </header>

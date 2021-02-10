@@ -10,8 +10,8 @@
     --june: #fca22f;
     --july: #910024;
     --august: #ffbd47;
-    --september: #35438c;
-    --october: #37569a;
+    --september: #2e397f;
+    --october: #4473b9;
     --november: #b2455c;
     --december: #1f93a6;
     --fruit: #32993280;
@@ -39,8 +39,8 @@
     --june: #ffe08d;
     --july: #d8808a;
     --august: #fff3a3;
-    --september: #a0a9cf;
-    --october: #98b4d4;
+    --september: #7b88bc;
+    --october: #bed1e6;
     --november: #ed9aae;
     --december: #83dbec;
     --fruit: #9fd29d80;
@@ -120,19 +120,19 @@
 }
 
 .month-september.light-theme {
-    --highlights: #35438c;
+    --highlights: #2e397f;
 }
 
 .month-september.dark-theme {
-    --highlights: #a0a9cf;
+    --highlights: #7b88bc;
 }
 
 .month-october.light-theme {
-    --highlights: #37569a;
+    --highlights: #4473b9;
 }
 
 .month-october.dark-theme {
-    --highlights: #98b4d4;
+    --highlights: #bed1e6;
 }
 
 .month-november.light-theme {
@@ -149,6 +149,42 @@
 
 .month-december.dark-theme {
     --highlights: #83dbec;
+}
+
+/* Pop */
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pop:hover,
+.hvr-pop:focus,
+.hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 nav {
@@ -194,6 +230,7 @@ body {
 
 .page-heading {
     font-size: 2.5rem;
+    font-family: 'Merienda One', cursive;
 }
 
 .page-subheading {
@@ -212,7 +249,7 @@ body {
     border: 0.2rem solid var(--may);
 }
 
-.spring > a > svg {
+.spring svg {
     fill: var(--may);
 }
 
@@ -220,7 +257,7 @@ body {
     border: 0.2rem solid var(--june);
 }
 
-.summer > a > svg {
+.summer svg {
     fill: var(--june);
 }
 
@@ -228,7 +265,7 @@ body {
     border: 0.2rem solid var(--september);
 }
 
-.autumn > a > svg {
+.autumn svg {
     fill: var(--september);
 }
 
@@ -236,7 +273,7 @@ body {
     border: 0.2rem solid var(--november);
 }
 
-.winter > a > svg {
+.winter svg {
     fill: var(--november);
 }
 
@@ -314,9 +351,10 @@ body {
     color: var(--december);
 }
 
-.home-icons > a > svg {
+.home-icons svg {
     width: 5.25rem;
     height: 5.25rem;
+    cursor: pointer;
 }
 
 .home-icons > a {
@@ -337,49 +375,53 @@ body {
     cursor: pointer;
 }
 
-#fruit-svg {
+#fruit {
     fill: var(--fruit);
 }
 
-#fruit-svg.food-icons-active {
+#fruit.food-icons-active {
     fill: var(--fruit-active);
 }
 
-#vegetables-svg {
+#vegetables {
     fill: var(--veg);
 }
 
-#vegetables-svg.food-icons-active {
+#vegetables.food-icons-active {
     fill: var(--veg-active);
 }
 
-#herbs-svg {
+#nuts_herbs {
     fill: var(--herbs);
 }
 
-#herbs-svg.food-icons-active {
+#nuts_herbs.food-icons-active {
     fill: var(--herbs-active);
 }
 
-#meat-svg {
+#meat {
     fill: var(--meat);
 }
 
-#meat-svg.food-icons-active {
+#meat.food-icons-active {
     fill: var(--meat-active);
 }
 
-#fish-svg {
+#fish {
     fill: var(--fish);
 }
 
-#fish-svg.food-icons-active {
+#fish.food-icons-active {
     fill: var(--fish-active);
 }
 
 #seasonal-box {
     border: 2px solid var(--highlights);
   border-radius: 0.2rem;
+}
+
+#seasonal-items {
+    font-size: 1.2rem;
 }
 
 @media (min-width: 992px) {
@@ -404,7 +446,7 @@ body {
     color: var(--highlights);
 }
 
-.home-icons > a > svg {
+.home-icons svg {
     width: 9.25rem;
     height: 9.25rem;
 }
@@ -425,5 +467,9 @@ body {
 
 .page-subheading {
     font-size: 3rem;
+}
+
+#seasonal-items {
+    font-size: 1.4rem;
 }
 }

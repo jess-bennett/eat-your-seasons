@@ -1,17 +1,17 @@
 <nav class="container-fluid">
     <div class="row align-items-center">
         <div class="col-2">
-            <a href="{% url 'home' %}">
+            <a href="{% url 'home' %}" class="hvr-pop">
                     {% include "layout/icons/seasons.html" %}
             </a>
         </div>
         <div class="offset-4 offset-md-7 col-2 col-md-1 text-right">
-            <a href="#">{% include "layout/icons/member.html" %}</a>
+            <a href="#" class="hvr-pop">{% include "layout/icons/member.html" %}</a>
         </div>
-        <div class="col-2 col-md-1 text-right">
-            <a href="{% url 'dashboard' %}">{% include "layout/icons/notes.html" %}</a>
+        <div id="nav-dashboard" class="col-2 col-md-1 text-right hvr-pop">
+            {% include "layout/icons/notes.html" %}
         </div>
-        <div class="col-2 col-md-1 text-right theme-select">
+        <div class="col-2 col-md-1 text-right theme-select hvr-pop">
                 {% include "layout/icons/sun.html" %}
                 {% include "layout/icons/cloud.html" %}
         </div>
