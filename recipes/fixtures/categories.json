@@ -1,0 +1,23 @@
+[
+  {
+    "pk": 1,
+    "model": "recipes.category",
+    "fields": {
+    "name": "omni",
+    "friendly_name": "Omni"
+  }},
+  {
+    "pk": 2,
+    "model": "recipes.category",
+    "fields": {
+    "name": "vegan",
+    "friendly_name": "Vegan"
+  }},
+  {
+    "pk": 3,
+    "model": "recipes.category",
+    "fields": {
+    "name": "veggie",
+    "friendly_name": "Veggie"
+  }}
+]
