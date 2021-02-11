@@ -27,8 +27,7 @@ class Month(models.Model):
 class Item(models.Model):
     category = models.ForeignKey(
         'Category', null=True, blank=True, on_delete=models.SET_NULL)
-    month = models.ForeignKey(
-        'Month', null=True, blank=True, on_delete=models.SET_NULL)
+    month = models.ManyToManyField(Month)
     name = models.CharField(max_length=254)
 
     def __str__(self):

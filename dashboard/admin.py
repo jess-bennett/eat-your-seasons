@@ -8,7 +8,6 @@ class ItemAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'category',
-        'month'
     )
 
     ordering = ('month', 'category', 'name')

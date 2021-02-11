@@ -362,7 +362,7 @@ body {
     color: var(--font);
 }
 
-.plan-icons > svg {
+.plan-icons svg {
     width: 3.25rem;
     height: 3.25rem;
     fill: var(--highlights);
@@ -441,17 +441,12 @@ body {
     font-size: 2rem;
 }
 
-    .icons-large {
-    font-size: 4rem;
-    color: var(--highlights);
-}
-
 .home-icons svg {
     width: 9.25rem;
     height: 9.25rem;
 }
 
-.plan-icons > svg {
+.plan-icons svg {
     width: 7.25rem;
     height: 7.25rem;
 }
