@@ -3,6 +3,7 @@ from .models import Item, Category, Month
 
 # Create your views here.
 
+
 def dashboard(request):
     """ A view to return the dashboard page """
 
@@ -17,7 +18,6 @@ def dashboard(request):
             items = items.filter(category__name__in=categories, month__name__in=months).order_by('name')
             categories = Category.objects.filter(name__in=categories)
             months = Month.objects.filter(name__in=months)
-
 
     context = {
         'items': items,
