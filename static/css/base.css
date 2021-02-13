@@ -439,6 +439,10 @@ div.container {
   padding: 10px 20px;
 }
 
+.polaroid {
+    cursor: pointer;
+}
+
 .polaroid > img {
     display: block;
     margin-left: auto;
@@ -446,6 +450,19 @@ div.container {
     margin-top: 6%;
     width: 88%;
     border-radius: 0.2rem;
+}
+
+.polaroid p {
+    font-size: 1.2rem;
+}
+
+.exit-button {
+    width: 3rem;
+    cursor: pointer;
+}
+
+.modal-footer {
+    justify-content: center;
 }
 
 @media (min-width: 992px) {
@@ -490,5 +507,9 @@ div.container {
 
 #seasonal-items {
     font-size: 1.4rem;
+}
+
+.polaroid p {
+    font-size: 1.5rem;
 }
 }
