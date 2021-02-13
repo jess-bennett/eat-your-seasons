@@ -4,7 +4,7 @@
     "fields": {
       "name": "Baked cod",
       "notes": "",
-      "image": "Cod",
+      "image": "fish.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -18,7 +18,7 @@
     "fields": {
       "name": "Baked trout with garlic mushrooms",
       "notes": "",
-      "image": "Trout",
+      "image": "fish.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -33,7 +33,7 @@
     "fields": {
       "name": "Cod in cider",
       "notes": "",
-      "image": "Cod",
+      "image": "fish.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -48,7 +48,7 @@
     "fields": {
       "name": "Crab with mushrooms",
       "notes": "",
-      "image": "Crab",
+      "image": "crab.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -62,7 +62,7 @@
     "fields": {
       "name": "Sole Duglere",
       "notes": "",
-      "image": "Sole",
+      "image": "fish.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -76,7 +76,7 @@
     "fields": {
       "name": "Finnan haddock pancakes",
       "notes": "",
-      "image": "Haddock",
+      "image": "fish.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -91,7 +91,7 @@
     "fields": {
       "name": "Sole goujons with tartare sauce",
       "notes": "",
-      "image": "Sole",
+      "image": "fish.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -105,7 +105,7 @@
     "fields": {
       "name": "Fish pie with prawns",
       "notes": "",
-      "image": "Prawns",
+      "image": "prawns.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -120,7 +120,7 @@
     "fields": {
       "name": "Haddock Barrie",
       "notes": "",
-      "image": "Haddock",
+      "image": "fish.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -135,7 +135,7 @@
     "fields": {
       "name": "Mackerel with potato hash",
       "notes": "",
-      "image": "Mackerel",
+      "image": "fish.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -149,12 +149,12 @@
     "fields": {
       "name": "Moules mariniere",
       "notes": "",
-      "image": "Mussels",
+      "image": "mussles.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
-        2
-      ]
+          2
+        ]
     }
   },
   {
@@ -163,7 +163,7 @@
     "fields": {
       "name": "Paella with chicken, chorizo, mussels and prawns",
       "notes": "",
-      "image": "Mussels",
+      "image": "paella.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -177,7 +177,7 @@
     "fields": {
       "name": "Prawns with mange-tout",
       "notes": "",
-      "image": "Prawns",
+      "image": "prawns.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -191,7 +191,7 @@
     "fields": {
       "name": "Roast sea bream with fennel and sourdough",
       "notes": "",
-      "image": "Sea bream",
+      "image": "fish.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -205,7 +205,7 @@
     "fields": {
       "name": "Salade Niçoise",
       "notes": "",
-      "image": "Tuna",
+      "image": "fish.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -219,7 +219,7 @@
     "fields": {
       "name": "Salmon with fromage frais",
       "notes": "",
-      "image": "Salmon",
+      "image": "fish.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -233,7 +233,7 @@
     "fields": {
       "name": "Scalloped potatoes",
       "notes": "",
-      "image": "Cod",
+      "image": "fish.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -248,7 +248,7 @@
     "fields": {
       "name": "Turbot au gratin",
       "notes": "",
-      "image": "Turbot",
+      "image": "fish.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -262,7 +262,7 @@
     "fields": {
       "name": "Arancini Siciliano",
       "notes": "",
-      "image": "Arancini",
+      "image": "rice.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -277,7 +277,7 @@
     "fields": {
       "name": "Boeuf Stroganoff",
       "notes": "",
-      "image": "Beef",
+      "image": "mushrooms.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -291,7 +291,7 @@
     "fields": {
       "name": "Leg of lamb with mint pesto",
       "notes": "",
-      "image": "Lamb",
+      "image": "mint.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -305,7 +305,7 @@
     "fields": {
       "name": "Cassoulet",
       "notes": "",
-      "image": "Sausage",
+      "image": "beans.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -319,7 +319,7 @@
     "fields": {
       "name": "Lamb and aubergine stew with houmous",
       "notes": "",
-      "image": "Lamb",
+      "image": "aubergine.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -334,7 +334,7 @@
     "fields": {
       "name": "Moussaka",
       "notes": "",
-      "image": "Beef",
+      "image": "aubergine.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -348,7 +348,7 @@
     "fields": {
       "name": "Pork tenderloin with mushrooms",
       "notes": "",
-      "image": "Pork",
+      "image": "mushrooms.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -362,7 +362,7 @@
     "fields": {
       "name": "Sausage and kale gnocchi bake",
       "notes": "",
-      "image": "Sausage",
+      "image": "kale.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -376,7 +376,7 @@
     "fields": {
       "name": "Italian sausage casserole",
       "notes": "",
-      "image": "Sausage",
+      "image": "beans.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -390,7 +390,7 @@
     "fields": {
       "name": "Spaghetti bolognaise",
       "notes": "",
-      "image": "Beef",
+      "image": "spaghetti.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -404,7 +404,7 @@
     "fields": {
       "name": "Asparagus and lemon risotto",
       "notes": "",
-      "image": "Asparagus",
+      "image": "asparagus.jpg",
       "category": 2,
       "isfrozen": "No",
       "month": [
@@ -418,7 +418,7 @@
     "fields": {
       "name": "Asparagus quiche",
       "notes": "",
-      "image": "Asparagus",
+      "image": "asparagus.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -432,7 +432,7 @@
     "fields": {
       "name": "Baked broccoli and parmesan eggs",
       "notes": "",
-      "image": "Broccoli",
+      "image": "broccoli.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -446,7 +446,7 @@
     "fields": {
       "name": "Baked pasta with peas and broad beans",
       "notes": "",
-      "image": "Peas",
+      "image": "peas.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -460,7 +460,7 @@
     "fields": {
       "name": "Vegetable patties",
       "notes": "",
-      "image": "Vegetables",
+      "image": "vegetables.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -474,7 +474,7 @@
     "fields": {
       "name": "Broccoli with pasta",
       "notes": "",
-      "image": "Broccoli",
+      "image": "broccoli.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -488,7 +488,7 @@
     "fields": {
       "name": "Cauliflower and leek lasagne",
       "notes": "",
-      "image": "Cauliflower",
+      "image": "cauliflower.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -504,7 +504,7 @@
     "fields": {
       "name": "Celeriac and potato dauphinois",
       "notes": "",
-      "image": "Celeriac",
+      "image": "celeriac.jpg",
       "category": 2,
       "isfrozen": "No",
       "month": [
@@ -518,7 +518,7 @@
     "fields": {
       "name": "Celeriac, potato and beetroot gratin",
       "notes": "",
-      "image": "Celeriac",
+      "image": "celeriac.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -533,7 +533,7 @@
     "fields": {
       "name": "Cheese and broccoli bake",
       "notes": "",
-      "image": "Broccoli",
+      "image": "broccoli.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -548,7 +548,7 @@
     "fields": {
       "name": "Cheesy asparagus eggs on toast",
       "notes": "",
-      "image": "Asparagus",
+      "image": "asparagus.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -562,7 +562,7 @@
     "fields": {
       "name": "Cherry tomato and herb puff tarts",
       "notes": "",
-      "image": "Tomatoes",
+      "image": "tomatoes.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -576,7 +576,7 @@
     "fields": {
       "name": "Chestnut roulade",
       "notes": "",
-      "image": "Chestnuts",
+      "image": "chestnuts.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -590,7 +590,7 @@
     "fields": {
       "name": "Colcannon",
       "notes": "",
-      "image": "Cabbage",
+      "image": "cabbage.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -604,7 +604,7 @@
     "fields": {
       "name": "Courgette, potato and cheddar soup",
       "notes": "",
-      "image": "Courgette",
+      "image": "courgettes.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -618,7 +618,7 @@
     "fields": {
       "name": "Creamy leek and gorgonzola risotto",
       "notes": "",
-      "image": "Leek",
+      "image": "leeks.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -633,7 +633,7 @@
     "fields": {
       "name": "Potato and halloumi bake",
       "notes": "",
-      "image": "Potato",
+      "image": "potatoes.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -647,7 +647,7 @@
     "fields": {
       "name": "Black bean enchiladas",
       "notes": "",
-      "image": "Black beans",
+      "image": "beans.jpg",
       "category": 2,
       "isfrozen": "Yes",
       "month": [
@@ -665,7 +665,7 @@
     "fields": {
       "name": "Farinata with glazed mushrooms",
       "notes": "",
-      "image": "Mushrooms",
+      "image": "mushrooms.jpg",
       "category": 2,
       "isfrozen": "No",
       "month": [
@@ -680,7 +680,7 @@
     "fields": {
       "name": "Fondue hasselback potato bake",
       "notes": "",
-      "image": "Potato",
+      "image": "potatoes.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -695,7 +695,7 @@
     "fields": {
       "name": "Gennaro Contaldo's baked aubergine rolls",
       "notes": "",
-      "image": "Aubergine",
+      "image": "aubergine.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -710,7 +710,7 @@
     "fields": {
       "name": "Gnocchi and roasted vegetables",
       "notes": "",
-      "image": "Roasted vegetables",
+      "image": "vegetables.jpg",
       "category": 2,
       "isfrozen": "No",
       "month": [
@@ -728,7 +728,7 @@
     "fields": {
       "name": "Gnocchi gratin with broccoli and spinach",
       "notes": "",
-      "image": "Broccoli",
+      "image": "spinach.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -742,7 +742,7 @@
     "fields": {
       "name": "Gnocchi verdi",
       "notes": "",
-      "image": "Spinach",
+      "image": "spinach.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -757,7 +757,7 @@
     "fields": {
       "name": "Spinach and hummus tart",
       "notes": "",
-      "image": "Spinach",
+      "image": "spinach.jpg",
       "category": 2,
       "isfrozen": "No",
       "month": [
@@ -791,7 +791,7 @@
     "fields": {
       "name": "Kale, chestnut and mushroom pie",
       "notes": "",
-      "image": "Kale",
+      "image": "kale.jpg",
       "category": 2,
       "isfrozen": "Yes",
       "month": [
@@ -808,7 +808,7 @@
     "fields": {
       "name": "Leek, kale and Gruyere quiche",
       "notes": "",
-      "image": "Leek",
+      "image": "leeks.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -823,7 +823,7 @@
     "fields": {
       "name": "Leek, potato and Stilton tart",
       "notes": "",
-      "image": "Potato",
+      "image": "leeks.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -838,7 +838,7 @@
     "fields": {
       "name": "Macaroni cheese with tomatoes",
       "notes": "",
-      "image": "Tomatoes",
+      "image": "tomatoes.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -852,7 +852,7 @@
     "fields": {
       "name": "Mushroom and chard baked eggs",
       "notes": "",
-      "image": "Mushrooms",
+      "image": "mushrooms.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -866,7 +866,7 @@
     "fields": {
       "name": "Mushroom and leek filo pie",
       "notes": "",
-      "image": "Mushrooms",
+      "image": "mushrooms.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -882,7 +882,7 @@
     "fields": {
       "name": "Mushroom and thyme spelt-otto",
       "notes": "",
-      "image": "Mushrooms",
+      "image": "mushrooms.jpg",
       "category": 2,
       "isfrozen": "No",
       "month": [
@@ -897,7 +897,7 @@
     "fields": {
       "name": "Mushroom pancakes",
       "notes": "",
-      "image": "Mushrooms",
+      "image": "mushrooms.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -911,7 +911,7 @@
     "fields": {
       "name": "Mushroom pasta with spinach",
       "notes": "",
-      "image": "Mushrooms",
+      "image": "mushrooms.jpg",
       "category": 2,
       "isfrozen": "No",
       "month": [
@@ -926,7 +926,7 @@
     "fields": {
       "name": "New potato, bean and Mozzarella frittata",
       "notes": "",
-      "image": "New potatoes",
+      "image": "new-potatoes.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -940,7 +940,7 @@
     "fields": {
       "name": "Parsnip pie",
       "notes": "",
-      "image": "Parsnips",
+      "image": "parsnips.jpg",
       "category": 2,
       "isfrozen": "No",
       "month": [
@@ -954,7 +954,7 @@
     "fields": {
       "name": "Orzo with broad beans, basil and feta",
       "notes": "",
-      "image": "Broad beans",
+      "image": "broad-beans.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -968,7 +968,7 @@
     "fields": {
       "name": "Parsnips Molly Parkin",
       "notes": "",
-      "image": "Parsnips",
+      "image": "parsnips.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -982,7 +982,7 @@
     "fields": {
       "name": "Pasta with pea pesto",
       "notes": "",
-      "image": "Peas",
+      "image": "peas.jpg",
       "category": 2,
       "isfrozen": "No",
       "month": [
@@ -996,7 +996,7 @@
     "fields": {
       "name": "Porcini mushroom and vegetable nut roast",
       "notes": "",
-      "image": "Mushrooms",
+      "image": "mushrooms.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -1010,7 +1010,7 @@
     "fields": {
       "name": "Potato and mushroom stew",
       "notes": "",
-      "image": "Potato",
+      "image": "mushrooms.jpg",
       "category": 2,
       "isfrozen": "Yes",
       "month": [
@@ -1027,7 +1027,7 @@
     "fields": {
       "name": "Purple sprouting broccoli with soft boiled egg and rosemary breadcrumbs",
       "notes": "",
-      "image": "Purple sprouting broccoli",
+      "image": "purple-broccoli.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -1041,7 +1041,7 @@
     "fields": {
       "name": "Sweet potato quesadillas",
       "notes": "",
-      "image": "Sweet potato",
+      "image": "sweet-potatoes.jpg",
       "category": 2,
       "isfrozen": "No",
       "month": [
@@ -1073,7 +1073,7 @@
     "fields": {
       "name": "Roast pumpkin with mushrooms, leeks and stilton",
       "notes": "",
-      "image": "Pumpkin",
+      "image": "pumpkin.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -1088,7 +1088,7 @@
     "fields": {
       "name": "Roasted vegetable Yorkshire pudding traybake",
       "notes": "",
-      "image": "Roasted vegetables",
+      "image": "vegetables.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -1103,7 +1103,7 @@
     "fields": {
       "name": "Ricotta and spring greens fritters",
       "notes": "",
-      "image": "Spring greens",
+      "image": "spring-greens.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -1117,7 +1117,7 @@
     "fields": {
       "name": "Spaghetti with artichoke sauce",
       "notes": "",
-      "image": "Artichoke",
+      "image": "artichoke.jpg",
       "category": 2,
       "isfrozen": "No",
       "month": [
@@ -1131,7 +1131,7 @@
     "fields": {
       "name": "Spinach and ricotta lasagne",
       "notes": "",
-      "image": "Spinach",
+      "image": "spinach.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -1145,7 +1145,7 @@
     "fields": {
       "name": "Spinach and lentil lasagne",
       "notes": "",
-      "image": "Spinach",
+      "image": "spinach.jpg",
       "category": 2,
       "isfrozen": "Yes",
       "month": [
@@ -1163,7 +1163,7 @@
     "fields": {
       "name": "Spinach with mushrooms",
       "notes": "",
-      "image": "Spinach",
+      "image": "spinach.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -1177,7 +1177,7 @@
     "fields": {
       "name": "Summer risotto",
       "notes": "",
-      "image": "Asparagus",
+      "image": "courgettes.jpg",
       "category": 2,
       "isfrozen": "No",
       "month": [
@@ -1192,7 +1192,7 @@
     "fields": {
       "name": "Stuffed mushrooms",
       "notes": "",
-      "image": "Mushrooms",
+      "image": "mushrooms.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -1206,7 +1206,7 @@
     "fields": {
       "name": "Tomato, thyme and ricotta tart",
       "notes": "",
-      "image": "Tomatoes",
+      "image": "tomatoes.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -1221,7 +1221,7 @@
     "fields": {
       "name": "Tortellini with pumpkin, brown butter and sage",
       "notes": "",
-      "image": "Pumpkin",
+      "image": "pumpkin.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -1235,7 +1235,7 @@
     "fields": {
       "name": "Vegan macaroni cheese",
       "notes": "",
-      "image": "Macaroni",
+      "image": "pasta.jpg",
       "category": 2,
       "isfrozen": "Yes",
       "month": [
@@ -1250,7 +1250,7 @@
     "fields": {
       "name": "Carrot toad in the hole",
       "notes": "",
-      "image": "Carrots",
+      "image": "carrots.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
@@ -1265,7 +1265,7 @@
     "fields": {
       "name": "Wild garlic pesto pappardelle with breadcrumbs",
       "notes": "",
-      "image": "Wild garlic",
+      "image": "garlic.jpg",
       "category": 2,
       "isfrozen": "No",
       "month": [
@@ -1279,7 +1279,7 @@
     "fields": {
       "name": "Berbere spiced chicken, potato and greens traybake",
       "notes": "",
-      "image": "Chicken",
+      "image": "potatoes.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -1293,7 +1293,7 @@
     "fields": {
       "name": "Celeriac bake with chicken and pumpkin fritters",
       "notes": "",
-      "image": "Chicken",
+      "image": "celeriac.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -1307,7 +1307,7 @@
     "fields": {
       "name": "Charred chicken ramen bowls",
       "notes": "",
-      "image": "Chicken",
+      "image": "noodles.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -1322,7 +1322,7 @@
     "fields": {
       "name": "Chicken and charred corn tacos",
       "notes": "",
-      "image": "Chicken",
+      "image": "corn.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -1336,7 +1336,7 @@
     "fields": {
       "name": "Cheesy baked leeks with chicken",
       "notes": "",
-      "image": "Chicken",
+      "image": "leeks.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -1351,7 +1351,7 @@
     "fields": {
       "name": "Chicken in mushroom sauce",
       "notes": "",
-      "image": "Chicken",
+      "image": "mushrooms.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -1365,7 +1365,7 @@
     "fields": {
       "name": "Chicken pie",
       "notes": "",
-      "image": "Chicken",
+      "image": "mushrooms.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -1379,7 +1379,7 @@
     "fields": {
       "name": "Chicken supremes with wild mushroom and tarragon sauce",
       "notes": "",
-      "image": "Chicken",
+      "image": "mushrooms.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -1394,7 +1394,7 @@
     "fields": {
       "name": "Chicken with broccoli",
       "notes": "",
-      "image": "Chicken",
+      "image": "broccoli.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
@@ -1409,7 +1409,7 @@
     "fields": {
       "name": "Chicken with pumpkin, pancetta chickpea stir fry",
       "notes": "",
-      "image": "Chicken",
+      "image": "pumpkin.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -1423,7 +1423,7 @@
     "fields": {
       "name": "Chicken, artichoke and spinach filo-topped pie",
       "notes": "",
-      "image": "Chicken",
+      "image": "artichoke.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -1437,7 +1437,7 @@
     "fields": {
       "name": "Crisp-skinned chicken breast with salsa verde",
       "notes": "",
-      "image": "Chicken",
+      "image": "spinach.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -1451,7 +1451,7 @@
     "fields": {
       "name": "Pulled chicken burger",
       "notes": "",
-      "image": "Chicken",
+      "image": "red-onion.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -1468,7 +1468,7 @@
     "fields": {
       "name": "Roast chicken breasts with broad beans and herbs",
       "notes": "",
-      "image": "Chicken",
+      "image": "broad-beans.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -1482,7 +1482,7 @@
     "fields": {
       "name": "Tray-baked chicken with parsley, brazil nut and pecorino pesto",
       "notes": "",
-      "image": "Chicken",
+      "image": "parsley.jpg",
       "category": 1,
       "isfrozen": "No",
       "month": [
@@ -1497,11 +1497,12 @@
     "fields": {
       "name": "Turkey and chorizo stew with chickpeas",
       "notes": "",
-      "image": "Turkey",
+      "image": "chickpeas.jpg",
       "category": 1,
       "isfrozen": "Yes",
       "month": [
         12
       ]
-    }}
-  ]
+    }
+  }
+]
