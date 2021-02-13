@@ -457,12 +457,45 @@ div.container {
 }
 
 .exit-button {
-    width: 3rem;
     cursor: pointer;
+}
+
+.modal-header > img {
+    width: 30%;
+    border: 2px solid var(--highlights);
+    border-radius: .2rem;    
+}
+
+.modal-header > h4 {
+    text-align: right;
+}
+
+.modal-notes {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-notes div {
+    text-align: center;
+}
+
+.modal-content {
+    background-color: var(--background);
+    border: 2px solid var(--highlights);
+    border-radius: .2rem;
 }
 
 .modal-footer {
     justify-content: center;
+}
+
+.modal-icons {
+    fill: var(--highlights);
+    width: 2.5rem;
 }
 
 @media (min-width: 992px) {
