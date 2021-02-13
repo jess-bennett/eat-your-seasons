@@ -424,6 +424,30 @@ body {
     font-size: 1.2rem;
 }
 
+div.polaroid {
+  width: 90%;
+  height: 90%;
+  background-color: var(--background);;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid var(--highlights);
+  border-radius: 0.2rem;
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.polaroid > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    width: 88%;
+    border-radius: 0.2rem;
+}
+
 @media (min-width: 992px) {
 
     nav svg {

@@ -19,8 +19,13 @@
         </div>
         <div class="row pt-3">
                 {% for recipe in recipes %}
-            <div class="col-6 col-sm-4 col-md-2">
-                {{ recipe }}
+            <div class="col-6 col-sm-4 col-md-3">
+                <div class="polaroid hvr-pop">
+                    <img src="{{  MEDIA_URL }}/recipe_images/{{ recipe.image }}" alt="{{ recipe.image }}">
+                    <div class="container">
+                        <p>{{ recipe.name }}</p>
+                    </div>
+                </div>
             </div>
                 {% endfor %}
         </div>
