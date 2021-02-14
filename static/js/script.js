@@ -61,7 +61,7 @@ $(document).ready(function() {
     $(this).addClass("food-icons-active");
 });
 
-    $("#recipes-anchor").click(function() {
+    $(".recipes-anchor").click(function() {
     locationRecipes();
 });
     
