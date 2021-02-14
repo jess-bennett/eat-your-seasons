@@ -489,6 +489,10 @@ div.container {
     border-radius: .2rem;
 }
 
+.modal-body li {
+    font-size: 1.2rem;
+}
+
 .modal-footer {
     justify-content: center;
 }
