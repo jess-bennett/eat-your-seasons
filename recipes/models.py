@@ -24,6 +24,13 @@ class Month(models.Model):
         return self.name
 
 
+class Ingredient(models.Model):
+    name = models.CharField(max_length=254)
+
+    def __str__(self):
+        return self.name
+
+
 class Recipe(models.Model):
     category = models.ForeignKey(
         'Category', null=True, blank=True, on_delete=models.SET_NULL)
@@ -32,6 +39,7 @@ class Recipe(models.Model):
     notes = models.CharField(max_length=254)
     image = models.CharField(max_length=254)
     isfrozen = models.CharField(max_length=254)
+    ingredients = models.ManyToManyField(Ingredient)
 
     def __str__(self):
         return self.name
