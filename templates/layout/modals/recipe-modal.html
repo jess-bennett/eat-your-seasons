@@ -1,0 +1,39 @@
+<div class="modal fade" id="modal{{ recipe.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        
+      <div class="modal-header">
+        <img src="{{  MEDIA_URL }}/recipe_images/{{ recipe.image }}" alt="{{ recipe.image }}">
+        <h3 class="modal-title" id="exampleModalLongTitle">{{ recipe.name }}</h3>
+      </div>
+      <div class="modal-notes">
+        <div class="col-2">
+            {% if recipe.category|cut:" " == "omni" %}
+                {% include "layout/icons/omni.html" %}
+            {% elif recipe.category|cut:" " == "veggie" %}
+                {% include "layout/icons/veggie.html" %}
+            {% elif recipe.category|cut:" " == "vegan" %}
+                {% include "layout/icons/vegan.html" %}
+            {% endif %}
+        </div>
+        <div class="col-2">
+            {% if recipe.isfrozen == "Yes" %}
+                {% include "layout/icons/freeze.html" %}
+            {% endif %}
+        </div>
+      </div>
+      <div class="modal-body text-left">
+          <h4>Ingredients:</h4>
+          <ul>
+            {% for ingredient in recipe.ingredients.all %}
+              <li>{{ ingredient }}</li>
+            {% endfor %}
+          </ul>
+        
+      </div>
+      <div class="modal-footer">
+        <div data-dismiss="modal">{% include "layout/icons/exit.html" %}</div>
+      </div>
+    </div>
+  </div>
+</div>

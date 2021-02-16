@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {% include "layout/month-header.html" %}
+    <div class="container-fluid">
+        <div class="row pt-5">
+            <div class="offset-5 col-2 text-center icons-large plan-icons">
+                {% include "layout/icons/food.html" %}
+            </div>
+        </div>
+        <div class="row pt-3 text-center">
+                {% for recipe in recipes %}
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="polaroid hvr-pop" data-toggle="modal" data-target="#modal{{ recipe.id }}">
+                            <img src="{{  MEDIA_URL }}/recipe_images/{{ recipe.image }}" alt="{{ recipe.image }}">
+                            <div class="container">
+                                <p>{{ recipe.name }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% include "layout/modals/recipe-modal.html" %}     
+                {% endfor %}
+        </div>
+    </div>
+
+
+{% endblock %}

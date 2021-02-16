@@ -34,17 +34,17 @@ $(document).ready(function() {
 });
 
     $("#nav-dashboard").click(function() {
-    setDashboardParams();
+    locationDashboard();
 });
 
     $("#cta-season").click(function() {
-    setDashboardParams();
+    locationDashboard();
 });
 
     $(".month-select").click(function() {
     let selectedMonth = $(this).attr("id").substr(0, $(this).attr("id").indexOf('-'));
     sessionStorage.setItem("selectedmonth", selectedMonth);
-    setDashboardParams();
+    changeMonthParams();
     $("body").addClass(`month-${selectedMonth}`);
     $("body[class*='month']").removeClass (function (index, css) {
     return (css.match (/(^|\s)month\S+/g) || []).join(' ');
@@ -56,15 +56,44 @@ $(document).ready(function() {
     $(".food-icons").click(function() {
     let selectedFood = $(this).attr("id");
     sessionStorage.setItem("selectedfood", selectedFood);
-    setDashboardParams();
+    changeFoodParams();
     $(".food-icons").removeClass("food-icons-active");
     $(this).addClass("food-icons-active");
+});
+
+    $(".recipes-anchor").click(function() {
+    locationRecipes();
 });
     
 });
 
-function setDashboardParams() {
+function locationDashboard() {
     let queryMonth = sessionStorage.getItem("selectedmonth");
     let queryFood = sessionStorage.getItem("selectedfood");
     window.location = `/dashboard/?month=${queryMonth}&category=${queryFood}`;
 };
+
+function locationRecipes() {
+    let queryMonth = sessionStorage.getItem("selectedmonth");
+    window.location = `/recipes/?month=${queryMonth}`;
+};
+
+function changeMonthParams() {
+    let queryMonth = sessionStorage.getItem("selectedmonth");
+    let url = (new URL(document.location))
+    let search_params  = url.searchParams;
+    search_params.set('month', queryMonth);
+    url.search = search_params.toString();
+    let new_url = url.toString();
+    window.location = new_url;
+}
+
+function changeFoodParams() {
+    let queryFood = sessionStorage.getItem("selectedfood");
+    let url = (new URL(document.location))
+    let search_params  = url.searchParams;
+    search_params.set('category', queryFood);
+    url.search = search_params.toString();
+    let new_url = url.toString();
+    window.location = new_url;
+}

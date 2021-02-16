@@ -1,0 +1,12 @@
+[{"pk": 1, "model": "recipes.month", "fields": {"name": "january"}}, {"pk": 2, "model": "recipes.month",
+"fields": {"name": "february"}}, {"pk": 3,
+"model": "recipes.month", "fields": {"name": "march"}}, {"pk": 4, "model": "recipes.month", "fields": {"name":
+"april"}}, {"pk": 5, "model": "recipes.month",
+"fields": {"name": "may"}}, {"pk": 6, "model": "recipes.month",
+"fields": {"name": "june"}}, {"pk": 7, "model": "recipes.month",
+"fields": {"name": "july"}}, {"pk": 8, "model": "recipes.month",
+"fields": {"name": "august"}}, {"pk": 9, "model": "recipes.month",
+"fields": {"name": "september"}}, {"pk": 10, "model": "recipes.month",
+"fields": {"name": "october"}}, {"pk": 11, "model": "recipes.month",
+"fields": {"name": "november"}}, {"pk": 12, "model": "recipes.month",
+"fields": {"name": "december"}}]
