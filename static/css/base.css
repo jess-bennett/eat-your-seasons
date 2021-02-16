@@ -188,23 +188,28 @@
 }
 
 nav {
-    background-image: linear-gradient(var(--font), var(--contrast-font));
+    fill: var(--contrast-font);
     font-size: 2rem;
     padding: 1rem;
 }
 
 nav svg {
-    fill: var(--contrast-font);
+    fill: inherit;
     cursor: pointer;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 nav a {
     text-decoration: none;
 }
 
+nav:hover {
+    fill: var(--font);
+}
+
 #logo {
+    fill: var(--font);
     height: 3rem;
     width: 3rem;
 }
@@ -213,6 +218,7 @@ body {
     background-color: var(--background);
     color: var(--font);
     font-family: 'Tenali Ramakrishna', sans-serif;
+    padding-bottom: 2.5rem;
 }
 
 #landing-page {
@@ -494,6 +500,7 @@ div.container {
 }
 
 #footer {
+  fill: var(--contrast-font);
   position: fixed;
   left: 0;
   bottom: 0;
@@ -502,17 +509,27 @@ div.container {
 }
 
 .footer-icon {
-    fill: var(--font);
+    fill: inherit;
     cursor: pointer;
-    height: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#footer:hover {
+    fill: var(--font);
 }
 
 
 @media (min-width: 992px) {
 
+body {
+    padding-bottom: 3.5rem;
+}
+
     nav svg {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 #logo {
@@ -560,6 +577,7 @@ div.container {
 }
 
 .footer-icon {
-    height: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 }
