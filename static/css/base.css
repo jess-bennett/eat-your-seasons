@@ -188,24 +188,36 @@
 }
 
 nav {
-    fill: var(--contrast-font);
     font-size: 2rem;
     padding: 1rem;
 }
 
-nav svg {
-    fill: inherit;
+.nav-icons {
+    fill: var(--font);
     cursor: pointer;
     height: 2rem;
     width: 2rem;
+}
+
+.nav-item {
+    display: none;
+}
+
+#menu-vertical {
+    display: block;
+    margin-left: auto;
 }
 
 nav a {
     text-decoration: none;
 }
 
-nav:hover {
-    fill: var(--font);
+nav:hover .nav-item {
+    display: block;
+}
+
+nav:hover .nav-menu {
+    display: none;
 }
 
 #logo {
@@ -218,7 +230,7 @@ body {
     background-color: var(--background);
     color: var(--font);
     font-family: 'Tenali Ramakrishna', sans-serif;
-    padding-bottom: 2.5rem;
+    padding-bottom: 3rem;
 }
 
 #landing-page {
@@ -500,7 +512,6 @@ div.container {
 }
 
 #footer {
-  fill: var(--contrast-font);
   position: fixed;
   left: 0;
   bottom: 0;
@@ -509,16 +520,27 @@ div.container {
 }
 
 .footer-icon {
-    fill: inherit;
+    display: none;
+    fill: var(--font);
     cursor: pointer;
     height: 1.5rem;
     width: 1.5rem;
     margin-bottom: 1rem;
 }
 
-#footer:hover {
-    fill: var(--font);
+#menu-horizontal {
+    display: block;
+    margin: 0 auto;
 }
+
+#footer:hover .footer-icon {
+    display: block;
+}
+
+#footer:hover #menu-horizontal {
+    display: none;
+}
+
 
 
 @media (min-width: 992px) {
@@ -527,7 +549,7 @@ body {
     padding-bottom: 3.5rem;
 }
 
-    nav svg {
+    .nav-icons {
     height: 3rem;
     width: 3rem;
 }
