@@ -192,36 +192,45 @@ nav {
     padding: 1rem;
 }
 
-nav svg {
+.nav-icons {
     fill: var(--font);
     cursor: pointer;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+.nav-item {
+    display: none;
+}
+
+#menu-vertical {
+    display: block;
+    margin-left: auto;
 }
 
 nav a {
     text-decoration: none;
 }
 
+nav:hover .nav-item {
+    display: block;
+}
+
+nav:hover .nav-menu {
+    display: none;
+}
+
 #logo {
-    height: 5rem;
-    width: 5rem;
-    font-size: 1.5rem;
-    border: 0.2rem solid var(--font);
-    border-radius: 50%;
-}
-
-#logo svg {
-    height: 4rem;
-    width: 4rem;
     fill: var(--font);
+    height: 3rem;
+    width: 3rem;
 }
-
 
 body {
     background-color: var(--background);
     color: var(--font);
     font-family: 'Tenali Ramakrishna', sans-serif;
+    padding-bottom: 3rem;
 }
 
 #landing-page {
@@ -502,13 +511,52 @@ div.container {
     width: 2.5rem;
 }
 
-@media (min-width: 992px) {
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
 
-    nav svg {
+.footer-icon {
+    display: none;
     fill: var(--font);
     cursor: pointer;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#menu-horizontal {
+    display: block;
+    margin: 0 auto;
+}
+
+#footer:hover .footer-icon {
+    display: block;
+}
+
+#footer:hover #menu-horizontal {
+    display: none;
+}
+
+
+
+@media (min-width: 992px) {
+
+body {
+    padding-bottom: 3.5rem;
+}
+
+    .nav-icons {
+    height: 3rem;
+    width: 3rem;
+}
+
+#logo {
+    height: 4rem;
+    width: 4rem;
 }
 
 .page-heading {
@@ -548,5 +596,10 @@ div.container {
 
 .polaroid p {
     font-size: 1.5rem;
+}
+
+.footer-icon {
+    height: 2.5rem;
+    width: 2.5rem;
 }
 }
