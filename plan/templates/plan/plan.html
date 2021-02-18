@@ -36,16 +36,13 @@
                         <th>Meal</th>
                         <th>Quantity</th>
                     </tr>
+                    {% for plan in plans %}
                     <tr>
-                        <td>January</td>
-                        <td>$100</td>
+                        <td>{{ plan.day }}</td>
+                        <td>{{ plan.recipe }}</td>
                         <td>$100</td>
                     </tr>
-                    <tr>
-                        <td>February</td>
-                        <td>$50</td>
-                        <td>$50</td>
-                    </tr>
+                    {% endfor %}
                 </table>
             </div>
         </div>

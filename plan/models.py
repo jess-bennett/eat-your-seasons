@@ -34,3 +34,5 @@ class Plan(models.Model):
     recipe = models.ForeignKey(
         'recipes.Recipe', null=True, blank=True, on_delete=models.SET_NULL)
 
+    def __str__(self):
+        return self.recipe
