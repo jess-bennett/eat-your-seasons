@@ -1,0 +1,33 @@
+[{
+    "pk": 1,
+    "model": "plan.week",
+    "fields": {
+      "name": 1,
+      "friendly_name": "Week One"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "plan.week",
+    "fields": {
+      "name": 2,
+      "friendly_name": "Week Two"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "plan.week",
+    "fields": {
+      "name": 3,
+      "friendly_name": "Week Three"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "plan.week",
+    "fields": {
+      "name": 4,
+      "friendly_name": "Week Four"
+    }
+  }
+]
