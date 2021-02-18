@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {% include "layout/month-header.html" %}
+    <div class="container-fluid">
+        <div class="row pt-5">
+            <div class="offset-5 col-2 text-center icons-large plan-icons">
+                {% include "layout/icons/calendar.html" %}
+            </div>
+        </div>
+        <div class="row pt-3 text-center">
+            <div class="offset-3 col-1 hvr-pop">
+                {% include "layout/icons/arrow-left.html" %}
+            </div>
+            <div class="col-4 align-self-center">
+                <h4 class="page-subheading">Week One</h4>
+            </div>
+            <div class="col-1 hvr-pop">
+                {% include "layout/icons/arrow-right.html" %}
+            </div>
+        </div>
+        <div class="row pt-3 text-center">
+            <div class="col offset-md-2 col-md-8">
+                <table class="table">
+                    <tr>
+                        <th>Day</th>
+                        <th>Meal</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <tr>
+                        <td>January</td>
+                        <td>$100</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>$50</td>
+                        <td>$50</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+{% endblock %}

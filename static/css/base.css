@@ -511,6 +511,26 @@ div.container {
     width: 2.5rem;
 }
 
+.arrows {
+    fill: var(--font);
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.table {
+    border: 2px solid var(--highlights);
+    color: var(--font);
+}
+
+.table th {
+    font-size: 1.5rem;
+}
+
+.table td {
+    font-size: 1.2rem;
+}
+
 #footer {
   position: fixed;
   left: 0;
@@ -565,6 +585,7 @@ body {
 
 .page-subheading {
     font-size: 2rem;
+    margin: 0;
 }
 
 .home-icons svg {
