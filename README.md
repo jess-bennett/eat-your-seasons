@@ -100,3 +100,17 @@ Meal suggestions | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: 
 Recipes | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 Meal plans | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 Shopping lists | :x: | :x: | :x: | :heavy_check_mark: |
+
+### :rainbow: Surface Plane/Design Choices
+---
+:pencil2: **Font families**
+
+Tenali Ramakrishna and Merienda One
+
+[Merienda One](https://fonts.google.com/specimen/Merienda+One?preview.text_type=custom) was chosen for main headings as I feel it reflects the natural theme of the site.
+
+![Merienda One](/wireframes/merienda-font.jpg)
+
+[Tenali Ramakrishna](https://fonts.google.com/specimen/Tenali+Ramakrishna?preview.text_type=custom) was chosen for all other text as it is clean-looking and legible at all sizes.
+
+![Tenali Ramakrishna](/wireframes/tenali-font.jpg)
