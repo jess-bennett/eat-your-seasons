@@ -531,6 +531,10 @@ div.container {
     font-size: 1.2rem;
 }
 
+.select-recipe {
+    cursor: pointer;
+}
+
 #footer {
   position: fixed;
   left: 0;

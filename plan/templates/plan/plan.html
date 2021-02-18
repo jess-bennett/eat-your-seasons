@@ -39,14 +39,16 @@
                     {% for plan in plans %}
                     <tr>
                         <td>{{ plan.day.friendly_name }}</td>
-                        <td class="hvr-pop" data-toggle="modal" data-target="#modal{{ plan.recipe.pk }}">{{ plan.recipe }}</td>
-                        <td>{{ plan.recipe.pk }}</td>
-                    </tr>
-                    {% include "layout/modals/recipe-modal.html" %}     
+                        <td class="select-recipe hvr-pop" data-toggle="modal" data-target="#modal{{ plan.recipe.pk }}">{{ plan.recipe }}</td>
+                        <td>2</td>
+                    </tr>    
                     {% endfor %}
                 </table>
             </div>
         </div>
         
     </div>
+    {% for recipe in recipes %}
+        {% include "layout/modals/recipe-modal.html" %} 
+    {% endfor %}
 {% endblock %}
