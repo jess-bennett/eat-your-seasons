@@ -79,3 +79,24 @@ The site also offers varying levels of membership, from free content for casual 
 | 8    | paying member  | create my own weekly meal plans using the site recipes   |  eat seasonal meals that suit me |
 | 9    | paying member  | change the number of people a meal serves in a recipe   | avoid food waste by only buying as much as I need |
 | 10   | paying member  | see a weekly shopping list for my meal plan    | get the ingredients I need, easily |         
+
+### :earth_africa: Scope Plane
+---
+:loop: **Site Logic**\
+**Membership plan types**
+| Plan type    | Monthly Price | Yearly Price      | 
+| ------------------ | ---------- | ---------------------------- | --------------------- |
+| Site visitor     | N/A       | N/A      |
+| Site member - Bronze     | £0       | £0       |
+| Site member - Silver     | £3.99       | £40.00       |
+| Site member - Gold     | £5.99       | £55.00       |
+
+
+**Site access**
+| Feature    | Visitor Access | Bronze member Access      | Silver member Access      |Gold member Access      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |--------------------- |
+Seasonal items | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+Meal suggestions | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+Recipes | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+Meal plans | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
+Shopping lists | :x: | :x: | :x: | :heavy_check_mark: |
