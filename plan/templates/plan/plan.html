@@ -22,7 +22,7 @@
                 {% include "layout/icons/arrow-left.html" %}
             </div>
             <div class="col-4 align-self-center">
-                <h4 class="page-subheading">Week One</h4>
+                <h4 id="week-title" class="page-subheading">Week </h4>
             </div>
             <div id="arrow-right" class="col-1 hvr-pop">
                 {% include "layout/icons/arrow-right.html" %}
@@ -38,10 +38,11 @@
                     </tr>
                     {% for plan in plans %}
                     <tr>
-                        <td>{{ plan.day }}</td>
-                        <td>{{ plan.recipe }}</td>
-                        <td>$100</td>
+                        <td>{{ plan.day.friendly_name }}</td>
+                        <td class="hvr-pop" data-toggle="modal" data-target="#modal{{ plan.recipe.pk }}">{{ plan.recipe }}</td>
+                        <td>{{ plan.recipe.pk }}</td>
                     </tr>
+                    {% include "layout/modals/recipe-modal.html" %}     
                     {% endfor %}
                 </table>
             </div>

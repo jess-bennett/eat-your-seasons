@@ -3,9 +3,11 @@ $(document).ready(function() {
     let month = today.toLocaleString('default', { month: 'long' }).toLowerCase();
     let chosenTheme = localStorage.getItem("chosentheme") || "light-theme";
     let currentMonth = sessionStorage.getItem("selectedmonth") || month;
+    let currentWeek = sessionStorage.getItem("selectedweek") || 1;
     // Set session storage so that it is never undefined
     sessionStorage.setItem("selectedmonth", currentMonth);
-    sessionStorage.setItem("selectedweek", 1);
+    
+    $("#week-title").html(`Week ${currentWeek}`);
     let currentFood = sessionStorage.getItem("selectedfood") || "fruit";
     sessionStorage.setItem("selectedfood", currentFood);
 
@@ -72,6 +74,7 @@ $(".plan-anchor").click(function() {
 
 $("#arrow-left").click(function() {
     let currentWeek = parseInt(sessionStorage.getItem("selectedweek"))
+    console.log(currentWeek);
     if (currentWeek > 1) {
     currentWeek -= 1;
     sessionStorage.setItem("selectedweek", currentWeek);
@@ -81,6 +84,7 @@ $("#arrow-left").click(function() {
 
 $("#arrow-right").click(function() {
     let currentWeek = parseInt(sessionStorage.getItem("selectedweek"))
+    console.log(currentWeek);
     if (currentWeek < 4) {
     currentWeek += 1;
     sessionStorage.setItem("selectedweek", currentWeek);
