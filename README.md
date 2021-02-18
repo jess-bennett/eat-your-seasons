@@ -132,3 +132,42 @@ Background colours and fonts were kept neutral to avoid clashing with the theme 
 The site was designed with a mobile-first approach. 
 
 [Wireframe document can be seen here](/wireframes/wireframe.pdf)
+
+:bulb: **Deviation from wireframe**
+
+TBC
+
+### :dvd: Database Design
+---
+
+TBC
+
+### :crystal_ball: Future Developments
+---
+
+TBC
+
+## :construction: Development Process
+
+### :unlock: Technologies Used
+---
+**Languages**
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Python](https://www.python.org/)
+
+**Libraries & Frameworks**
+* [Bootstrap](https://getbootstrap.com/)
+* [Noun Project](https://thenounproject.com/)
+* [Google Fonts](https://fonts.google.com/)
+* [jQuery](https://jquery.com/)
+* [Popper](https://popper.js.org/)
+* [NeedPix](https://www.needpix.com/)
+
+**Tools**
+* [GitHub](https://github.com/)
+* [Gitpod](https://gitpod.io/)
+* [Heroku](https://heroku.com/)
+* [Favicon.io](https://favicon.io/)
+* [Gimp](https://www.gimp.org/)
