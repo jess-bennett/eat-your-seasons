@@ -5,6 +5,7 @@ $(document).ready(function() {
     let currentMonth = sessionStorage.getItem("selectedmonth") || month;
     // Set session storage so that it is never undefined
     sessionStorage.setItem("selectedmonth", currentMonth);
+    sessionStorage.setItem("selectedweek", 1);
     let currentFood = sessionStorage.getItem("selectedfood") || "fruit";
     sessionStorage.setItem("selectedfood", currentFood);
 
@@ -37,7 +38,7 @@ $(document).ready(function() {
     locationDashboard();
 });
 
-    $("#cta-season").click(function() {
+    $(".seasons-anchor").click(function() {
     locationDashboard();
 });
 
@@ -64,6 +65,30 @@ $(document).ready(function() {
     $(".recipes-anchor").click(function() {
     locationRecipes();
 });
+
+$(".plan-anchor").click(function() {
+    locationPlans();
+});
+
+$("#arrow-left").click(function() {
+    let currentWeek = parseInt(sessionStorage.getItem("selectedweek"))
+    if (currentWeek > 1) {
+    currentWeek -= 1;
+    sessionStorage.setItem("selectedweek", currentWeek);
+}
+    locationPlans();
+});
+
+$("#arrow-right").click(function() {
+    let currentWeek = parseInt(sessionStorage.getItem("selectedweek"))
+    if (currentWeek < 4) {
+    currentWeek += 1;
+    sessionStorage.setItem("selectedweek", currentWeek);
+}
+    locationPlans();
+});
+
+
     
 });
 
@@ -76,6 +101,12 @@ function locationDashboard() {
 function locationRecipes() {
     let queryMonth = sessionStorage.getItem("selectedmonth");
     window.location = `/recipes/?month=${queryMonth}`;
+};
+
+function locationPlans() {
+    let queryMonth = sessionStorage.getItem("selectedmonth");
+    let queryWeek = sessionStorage.getItem("selectedweek");
+    window.location = `/plan/?month=${queryMonth}&week=${queryWeek}`;
 };
 
 function changeMonthParams() {
