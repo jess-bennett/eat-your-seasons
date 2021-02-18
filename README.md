@@ -158,6 +158,7 @@ TBC
 * [Python](https://www.python.org/)
 
 **Libraries & Frameworks**
+* [Django](https://www.djangoproject.com/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Noun Project](https://thenounproject.com/)
 * [Google Fonts](https://fonts.google.com/)
@@ -171,3 +172,83 @@ TBC
 * [Heroku](https://heroku.com/)
 * [Favicon.io](https://favicon.io/)
 * [Gimp](https://www.gimp.org/)
+* [Stripe](https://stripe.com/)
+
+
+### :bug: Bugs
+---
+
+TBC
+
+## :test_tube: Testing  
+
+### :people_holding_hands: Peer Tests
+---
+
+TBC
+
+### :raising_hand: Target User Tests
+---
+
+TBC
+
+
+### :memo: Manual Tests
+---
+Manual testing was carried out on all devices available to me:
+* Google Dev Tools:
+    * Mobile device
+    * iPad vertical
+    * iPad horizontal
+    * Desktop
+
+* Published site:
+    * Samsung Galaxy S8
+    * Desktop
+
+* Browser
+    * Chrome
+    * Edge
+    * Firefox
+    * Safari (Using [Lambdatest](https://www.lambdatest.com/))
+    * Opera 
+
+    TBC
+
+### :heavy_check_mark: Online Validators
+---
+
+#### [JSHint](https://jshint.com/)
+
+The [script.js](/static/js/script.js) file was run through [JSHint.com](https://jshint.com/) TBC
+
+#### [W3C CSS Validator](http://jigsaw.w3.org/css-validator/)
+
+The [style.css](/static/css/base.css) file was run through [W3C CSS Validator](http://jigsaw.w3.org/css-validator/) TBC
+
+#### [W3C Markup Validation Service](https://validator.w3.org/)
+
+Due to the use of Django templating language across the site, it was not possible to copy the code from each internal file to use as direct input on the [W3C Markup Validation Service](https://validator.w3.org/).
+
+Because the site is largely hidden from unregistered users, I also couldn't check via URI.
+
+Therefore, I used the source code shown in Google Dev Tools for direct input. 
+
+TBC
+
+### :rotating_light: Lighthouse Tests
+---
+
+TBC
+
+## :flight_departure: Deployment 
+
+TBC
+
+## :clapper: Credits
+
+### :movie_camera: Media
+---
+
+### :trophy: Acknowledgements
+---
