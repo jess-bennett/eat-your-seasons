@@ -83,7 +83,7 @@ The site also offers varying levels of membership, from free content for casual 
 ### :earth_africa: Scope Plane
 ---
 :loop: **Site Logic**\
-**Membership plan types**
+**Membership plan types**\
 | Plan type    | Monthly Price | Yearly Price      | 
 | ------------------ | ---------- | ---------------------------- | --------------------- |
 | Site visitor     | N/A       | N/A      |
@@ -92,7 +92,7 @@ The site also offers varying levels of membership, from free content for casual 
 | Site member - Gold     | £5.99       | £55.00       |
 
 
-**Site access**
+**Site access**\
 | Feature    | Visitor Access | Bronze member Access      | Silver member Access      |Gold member Access      |
 | ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |--------------------- |
 Seasonal items | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -224,7 +224,7 @@ The [script.js](/static/js/script.js) file was run through [JSHint.com](https://
 
 #### [W3C CSS Validator](http://jigsaw.w3.org/css-validator/)
 
-The [style.css](/static/css/base.css) file was run through [W3C CSS Validator](http://jigsaw.w3.org/css-validator/) TBC
+The [base.css](/static/css/base.css) file was run through [W3C CSS Validator](http://jigsaw.w3.org/css-validator/) TBC
 
 #### [W3C Markup Validation Service](https://validator.w3.org/)
 
