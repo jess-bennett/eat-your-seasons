@@ -84,6 +84,7 @@ The site also offers varying levels of membership, from free content for casual 
 ---
 :loop: **Site Logic**\
 **Membership plan types**\
+
 | Plan type    | Monthly Price | Yearly Price      | 
 | ------------------ | ---------- | ---------------------------- | --------------------- |
 | Site visitor     | N/A       | N/A      |
@@ -93,6 +94,7 @@ The site also offers varying levels of membership, from free content for casual 
 
 
 **Site access**\
+
 | Feature    | Visitor Access | Bronze member Access      | Silver member Access      |Gold member Access      |
 | ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |--------------------- |
 Seasonal items | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
