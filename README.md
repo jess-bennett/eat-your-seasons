@@ -114,3 +114,21 @@ Tenali Ramakrishna and Merienda One
 [Tenali Ramakrishna](https://fonts.google.com/specimen/Tenali+Ramakrishna?preview.text_type=custom) was chosen for all other text as it is clean-looking and legible at all sizes.
 
 ![Tenali Ramakrishna](/wireframes/tenali-font.jpg)
+
+:art: **Colour choices**
+
+The site was built around a different colour theme for each month, to highlight the key aspect of seasonality. 
+
+The monthly colours were taken from the article on [this site](https://www.womenshealthmag.com/life/a28447752/birthday-colors-colorstrology/) about 'birthday colours'. As the site has a light and dark theme, each colour was checked using 
+the tonal colour tool on [this site](https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+). A tonal value of 200 was chosen for colours appearing in the dark theme, and 700 for colours appearing in the light theme. 
+
+Background colours and fonts were kept neutral to avoid clashing with the theme colours, and to ensure good legibility of text.
+
+![Colours](/wireframes/colours.jpg)
+
+### :clipboard: Wireframes
+---
+The site was designed with a mobile-first approach. 
+
+[Wireframe document can be seen here](/wireframes/wireframe.pdf)
