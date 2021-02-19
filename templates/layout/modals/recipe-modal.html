@@ -9,16 +9,16 @@
       <div class="modal-notes">
         <div class="col-2">
             {% if recipe.category|cut:" " == "omni" %}
-                {% include "layout/icons/omni.svg" %}
+                {% include "icons/omni.svg" %}
             {% elif recipe.category|cut:" " == "veggie" %}
-                {% include "layout/icons/veggie.svg" %}
+                {% include "icons/veggie.svg" %}
             {% elif recipe.category|cut:" " == "vegan" %}
-                {% include "layout/icons/vegan.svg" %}
+                {% include "icons/vegan.svg" %}
             {% endif %}
         </div>
         <div class="col-2">
             {% if recipe.isfrozen == "Yes" %}
-                {% include "layout/icons/freeze.svg" %}
+                {% include "icons/freeze.svg" %}
             {% endif %}
         </div>
       </div>
@@ -32,7 +32,7 @@
         
       </div>
       <div class="modal-footer">
-        <div data-dismiss="modal">{% include "layout/icons/exit.svg" %}</div>
+        <div data-dismiss="modal">{% include "icons/exit.svg" %}</div>
       </div>
     </div>
   </div>
