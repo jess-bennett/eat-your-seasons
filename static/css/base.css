@@ -475,7 +475,7 @@ div.container {
     border-radius: .2rem;    
 }
 
-.modal-header > h4 {
+.modal-title {
     text-align: right;
 }
 

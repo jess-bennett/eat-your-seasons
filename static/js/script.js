@@ -6,6 +6,8 @@ $(document).ready(function() {
     let currentWeek = sessionStorage.getItem("selectedweek") || 1;
     // Set session storage so that it is never undefined
     sessionStorage.setItem("selectedmonth", currentMonth);
+    sessionStorage.setItem("selectedweek", currentWeek);
+    console.log(currentWeek);
     
     $("#week-title").html(`Week ${currentWeek}`);
     let currentFood = sessionStorage.getItem("selectedfood") || "fruit";
