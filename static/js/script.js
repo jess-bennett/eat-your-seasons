@@ -134,3 +134,4 @@ function changeFoodParams() {
     let new_url = url.toString();
     window.location = new_url;
 }
+
