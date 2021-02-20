@@ -1,6 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
-from .models import Recipe, Category, Month
+from .models import Recipe, Category, Month, Quantity
 
 # Create your views here.
 
@@ -10,6 +10,7 @@ def recipes(request):
     """ A view to return the recipe page """
 
     recipes = Recipe.objects.all()
+    quantities = Quantity.objects.all()
     months = None
 
     if request.GET:
@@ -20,6 +21,7 @@ def recipes(request):
 
     context = {
         'recipes': recipes,
+        'quantities': quantities,
         'current_month': months,
     }
 
