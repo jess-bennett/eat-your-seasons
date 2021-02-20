@@ -520,6 +520,11 @@ div.container {
     cursor: pointer;
 }
 
+.disabled > .arrows {
+    fill: var(--contrast-font);
+    cursor: auto;
+}
+
 .table {
     border: 2px solid var(--highlights);
     color: var(--font);

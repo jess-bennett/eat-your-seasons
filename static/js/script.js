@@ -7,7 +7,15 @@ $(document).ready(function() {
     // Set session storage so that it is never undefined
     sessionStorage.setItem("selectedmonth", currentMonth);
     sessionStorage.setItem("selectedweek", currentWeek);
-    console.log(currentWeek);
+
+    if (currentWeek == 1) {
+    $("#arrow-left").addClass("disabled");
+    $("#arrow-left").removeClass("hvr-pop");
+}
+    if (currentWeek == 4) {
+    $("#arrow-right").addClass("disabled");
+    $("#arrow-right").removeClass("hvr-pop");
+}
     
     $("#week-title").html(`Week ${currentWeek}`);
     let currentFood = sessionStorage.getItem("selectedfood") || "fruit";
@@ -76,20 +84,28 @@ $(".plan-anchor").click(function() {
 
 $("#arrow-left").click(function() {
     let currentWeek = parseInt(sessionStorage.getItem("selectedweek"))
-    console.log(currentWeek);
     if (currentWeek > 1) {
+    $("#arrow-left").removeClass("disabled");
+    $("#arrow-left").addClass("hvr-pop");
     currentWeek -= 1;
     sessionStorage.setItem("selectedweek", currentWeek);
+}   else {
+    $("#arrow-left").addClass("disabled");
+    $("#arrow-left").removeClass("hvr-pop");
 }
     locationPlans();
 });
 
 $("#arrow-right").click(function() {
     let currentWeek = parseInt(sessionStorage.getItem("selectedweek"))
-    console.log(currentWeek);
     if (currentWeek < 4) {
+    $("#arrow-right").removeClass("disabled");
+    $("#arrow-right").addClass("hvr-pop");
     currentWeek += 1;
     sessionStorage.setItem("selectedweek", currentWeek);
+}   else {
+    $("#arrow-right").addClass("disabled");
+    $("#arrow-right").removeClass("hvr-pop");
 }
     locationPlans();
 });
