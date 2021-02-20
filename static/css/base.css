@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Tenali+Ramakrishna&display=swap');
+
 .light-theme {
     --background: #fafafa;
     --font: #121212;
@@ -475,7 +477,7 @@ div.container {
     border-radius: .2rem;    
 }
 
-.modal-header > h4 {
+.modal-title {
     text-align: right;
 }
 
@@ -509,6 +511,30 @@ div.container {
 .modal-icons {
     fill: var(--highlights);
     width: 2.5rem;
+}
+
+.arrows {
+    fill: var(--font);
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.table {
+    border: 2px solid var(--highlights);
+    color: var(--font);
+}
+
+.table th {
+    font-size: 1.5rem;
+}
+
+.table td {
+    font-size: 1.2rem;
+}
+
+.select-recipe {
+    cursor: pointer;
 }
 
 #footer {
@@ -565,6 +591,7 @@ body {
 
 .page-subheading {
     font-size: 2rem;
+    margin: 0;
 }
 
 .home-icons svg {

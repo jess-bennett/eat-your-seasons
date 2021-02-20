@@ -83,7 +83,7 @@ The site also offers varying levels of membership, from free content for casual 
 ### :earth_africa: Scope Plane
 ---
 :loop: **Site Logic**\
-**Membership plan types**\
+**Membership plan types**
 
 | Plan type    | Monthly Price | Yearly Price      | 
 | ------------------ | ---------- | ---------------------------- | --------------------- |
@@ -93,7 +93,7 @@ The site also offers varying levels of membership, from free content for casual 
 | Site member - Gold     | £5.99       | £55.00       |
 
 
-**Site access**\
+**Site access**
 
 | Feature    | Visitor Access | Bronze member Access      | Silver member Access      |Gold member Access      |
 | ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |--------------------- |

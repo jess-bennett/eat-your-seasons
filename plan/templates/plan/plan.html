@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {% include "layout/month-header.html" %}
+    <div class="container-fluid">
+        <div class="row pt-5">
+            <div class="offset-5 col-2 text-center icons-large plan-icons">
+                {% include "icons/calendar.svg" %}
+            </div>
+        </div>
+        <div class="row pt-3 text-center">
+            <div id="arrow-left" class="offset-3 col-1 hvr-pop">
+                {% include "icons/arrow-left.svg" %}
+            </div>
+            <div class="col-4 align-self-center">
+                <h4 id="week-title" class="page-subheading">Week </h4>
+            </div>
+            <div id="arrow-right" class="col-1 hvr-pop">
+                {% include "icons/arrow-right.svg" %}
+            </div>
+        </div>
+        <div class="row pt-3 text-center">
+            <div class="col offset-md-2 col-md-8">
+                <table class="table">
+                    <tr>
+                        <th>Day</th>
+                        <th>Meal</th>
+                        <th>Quantity</th>
+                    </tr>
+                    {% for plan in plans %}
+                    <tr>
+                        <td>{{ plan.day.friendly_name }}</td>
+                        <td class="select-recipe hvr-pop" data-toggle="modal" data-target="#modal{{ plan.recipe.pk }}">{{ plan.recipe }}</td>
+                        <td>2</td>
+                    </tr>    
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+        
+    </div>
+    {% for recipe in recipes %}
+        {% include "layout/modals/recipe-modal.html" %} 
+    {% endfor %}
+{% endblock %}
