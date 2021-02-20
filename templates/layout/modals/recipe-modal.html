@@ -31,6 +31,16 @@
           </ul>
         
       </div>
+      
+      <div class="modal-body text-left">
+          <h4>Steps:</h4>
+          <ol>
+            {% for step in recipe.steps.all %}
+              <li>{{ step }}</li>
+            {% endfor %}
+          </ol>
+        
+      </div>
       <div class="modal-footer">
         <div data-dismiss="modal">{% include "icons/exit.svg" %}</div>
       </div>

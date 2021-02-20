@@ -520,6 +520,11 @@ div.container {
     cursor: pointer;
 }
 
+.disabled > .arrows {
+    fill: var(--contrast-font);
+    cursor: auto;
+}
+
 .table {
     border: 2px solid var(--highlights);
     color: var(--font);
@@ -535,6 +540,16 @@ div.container {
 
 .select-recipe {
     cursor: pointer;
+}
+
+.feature-list li {
+    list-style-type: none;
+}
+
+.subscription-icons {
+    fill: var(--font);
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 #footer {
