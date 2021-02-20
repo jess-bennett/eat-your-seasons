@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Recipe, Category, Month, Ingredient, Step
+from .models import Recipe, Category, Month, Ingredient, Step, Quantity
 
 # Register your models here.
 
@@ -19,3 +19,4 @@ admin.site.register(Category)
 admin.site.register(Month)
 admin.site.register(Ingredient)
 admin.site.register(Step)
+admin.site.register(Quantity)
