@@ -537,6 +537,16 @@ div.container {
     cursor: pointer;
 }
 
+.feature-list li {
+    list-style-type: none;
+}
+
+.subscription-icons {
+    fill: var(--font);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 #footer {
   position: fixed;
   left: 0;
