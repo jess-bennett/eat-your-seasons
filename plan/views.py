@@ -1,10 +1,10 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from .models import Plan, Week
 from recipes.models import Month, Recipe
 
-# Create your views here.
 
-
+@login_required
 def plan(request):
     """ A view to return the plan page """
 

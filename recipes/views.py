@@ -1,9 +1,11 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from .models import Recipe, Category, Month
 
 # Create your views here.
 
 
+@login_required
 def recipes(request):
     """ A view to return the recipe page """
 
