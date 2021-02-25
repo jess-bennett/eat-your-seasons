@@ -7,18 +7,21 @@
         <h3 class="modal-title" id="exampleModalLongTitle">{{ recipe.name }}</h3>
       </div>
       <div class="modal-notes">
-        <div class="col-2">
+        <div class="col-8 text-left">
+            <h4><em>Serves 4</em></h4>
+        </div>
+        <div class="col-2 text-right">
+            {% if recipe.isfrozen == "Yes" %}
+                {% include "icons/freeze.svg" %}
+            {% endif %}
+        </div>
+        <div class="col-2 text-right">
             {% if recipe.category|cut:" " == "omni" %}
                 {% include "icons/omni.svg" %}
             {% elif recipe.category|cut:" " == "veggie" %}
                 {% include "icons/veggie.svg" %}
             {% elif recipe.category|cut:" " == "vegan" %}
                 {% include "icons/vegan.svg" %}
-            {% endif %}
-        </div>
-        <div class="col-2">
-            {% if recipe.isfrozen == "Yes" %}
-                {% include "icons/freeze.svg" %}
             {% endif %}
         </div>
       </div>

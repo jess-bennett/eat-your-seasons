@@ -109,8 +109,6 @@ $("#arrow-right").click(function() {
 }
     locationPlans();
 });
-
-
     
 });
 
