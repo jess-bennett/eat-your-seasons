@@ -4,9 +4,11 @@ $(document).ready(function() {
     let chosenTheme = localStorage.getItem("chosentheme") || "light-theme";
     let currentMonth = sessionStorage.getItem("selectedmonth") || month;
     let currentWeek = sessionStorage.getItem("selectedweek") || 1;
+    let currentQuantity = sessionStorage.getItem("selectedquantity") || 2;
     // Set session storage so that it is never undefined
     sessionStorage.setItem("selectedmonth", currentMonth);
     sessionStorage.setItem("selectedweek", currentWeek);
+    sessionStorage.setItem("selectedquantity", currentQuantity);
 
     if (currentWeek == 1) {
     $("#arrow-left").addClass("disabled");
@@ -109,6 +111,14 @@ $("#arrow-right").click(function() {
 }
     locationPlans();
 });
+
+$(".quantity-icons").click(function() {
+    let selectedQuantity = $(this).attr("id").substr(1, $(this).attr("id").indexOf('-'));
+    sessionStorage.setItem("selectedquantity", selectedQuantity);
+    changeQuantityParams();
+    $(".quantity-icons").removeClass("quantity-icons-active");
+    $(this).addClass("quantity-icons-active");
+});
     
 });
 
@@ -126,7 +136,8 @@ function locationRecipes() {
 function locationPlans() {
     let queryMonth = sessionStorage.getItem("selectedmonth");
     let queryWeek = sessionStorage.getItem("selectedweek");
-    window.location = `/plan/?month=${queryMonth}&week=${queryWeek}`;
+    let queryQuantity = sessionStorage.getItem("selectedquantity");
+    window.location = `/plan/?month=${queryMonth}&week=${queryWeek}&quantity=${queryQuantity}`;
 };
 
 function changeMonthParams() {
@@ -144,6 +155,16 @@ function changeFoodParams() {
     let url = (new URL(document.location))
     let search_params  = url.searchParams;
     search_params.set('category', queryFood);
+    url.search = search_params.toString();
+    let new_url = url.toString();
+    window.location = new_url;
+}
+
+function changeQuantityParams() {
+    let queryQuantity = sessionStorage.getItem("selectedquantity");
+    let url = (new URL(document.location))
+    let search_params  = url.searchParams;
+    search_params.set('quantity', queryQuantity);
     url.search = search_params.toString();
     let new_url = url.toString();
     window.location = new_url;

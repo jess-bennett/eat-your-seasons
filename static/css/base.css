@@ -525,14 +525,14 @@ div.container {
     cursor: auto;
 }
 
-.icons-small {
+.quantity-icons {
     width: 2.5rem;
     height: 2.5rem;
     fill: var(--font);
     cursor: pointer;
 }
 
-.icons-small.selected {
+.quantity-icons.quantity-icons-active {
     fill: var(--highlights);
 }
 
