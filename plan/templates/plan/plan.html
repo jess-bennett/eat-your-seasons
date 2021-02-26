@@ -33,35 +33,51 @@
         </div>
         <div class="row pt-3 text-center">
             <div class="offset-3 col-6 align-self-center quantity-options">
-                <div id="one-select" class="col-2 hvr-pop quantity-icons">
+                <div id="one-select" class="hvr-pop quantity-icons">
                     {% include "icons/one-person.svg" %}
                 </div>
-                <div id="two-select" class="col-2 hvr-pop quantity-icons">
+                <div id="two-select" class="hvr-pop quantity-icons">
                     {% include "icons/two-people.svg" %}
                 </div>
-                <div id="four-select" class="col-2 hvr-pop quantity-icons">
-                    {% include "icons/four-people.svg" %}
-                </div>
+            </div>
+            <div class="col-3 col-md-1 text-right" data-toggle="modal" data-target="#modal-shopping">
+                    {% include "icons/shopping.svg" %}
             </div>
         </div>
         <div class="row pt-3 text-center">
+            <h5>Portions are doubled per person to allow for lunch the next day, and doubled again if freezable for batch cooking.</h5>
+        </div>
+        <div class="row pt-3">
             <div class="col offset-md-2 col-md-8">
                 <table class="table">
                     <tr>
-                        <th>Day</th>
-                        <th>Meal</th>
+                        <th class="text-left">Day</th>
+                        <th class="text-center">Meal</th>
+                        <th class="text-right">Notes</th>
                     </tr>
                     {% for plan in plans %}
                     <tr>
-                        <td>{{ plan.day.friendly_name }}</td>
-                        <td class="select-recipe" data-toggle="modal" data-target="#modal{{ plan.recipe.pk }}"><span class="hvr-pop">{{ plan.recipe }}</span></td>
+                        <td class="text-left">{{ plan.day.friendly_name }}</td>
+                        <td class="select-recipe text-center" data-toggle="modal" data-target="#modal{{ plan.recipe.pk }}"><span class="hvr-pop">{{ plan.recipe }}</span></td>
+                        <td class="text-right">
+                            {% if plan.recipe.isfrozen == "Yes" %}
+                                {% include "icons/freeze.svg" %}
+                            {% endif %}
+                            {% if plan.recipe.category|cut:" " == "omni" %}
+                                {% include "icons/omni.svg" %}
+                            {% elif plan.recipe.category|cut:" " == "veggie" %}
+                                {% include "icons/veggie.svg" %}
+                            {% elif plan.recipe.category|cut:" " == "vegan" %}
+                                {% include "icons/vegan.svg" %}
+                            {% endif %}
+                        </td>
                     </tr>    
                     {% endfor %}
                 </table>
             </div>
         </div>
-        
     </div>
+        {% include "layout/modals/shopping-modal.html" %} 
     {% for recipe in recipes %}
         {% include "layout/modals/recipe-modal.html" %} 
     {% endfor %}

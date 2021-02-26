@@ -504,13 +504,18 @@ div.container {
     font-size: 1.2rem;
 }
 
+.modal-body > li:only-child {
+  display: none;
+}
+
 .modal-footer {
     justify-content: center;
 }
 
 .modal-icons {
     fill: var(--highlights);
-    width: 2.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .arrows {
@@ -525,7 +530,7 @@ div.container {
     cursor: auto;
 }
 
-.quantity-icons {
+.quantity-icons, #shopping-icon {
     width: 2.5rem;
     height: 2.5rem;
     fill: var(--font);
@@ -654,6 +659,12 @@ body {
 .icons-small {
     width: 4.5rem;
     height: 4.5rem;
+}
+
+.modal-icons {
+    fill: var(--highlights);
+    width: 2rem;
+    height: 2rem;
 }
 
 .footer-icon {

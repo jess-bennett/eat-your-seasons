@@ -33,6 +33,7 @@ class Plan(models.Model):
         'recipes.Month', null=True, blank=True, on_delete=models.SET_NULL)
     recipe = models.ForeignKey(
         'recipes.Recipe', null=True, blank=True, on_delete=models.SET_NULL)
+    batch_cook = models.CharField(max_length=254)
 
     def __str__(self):
         return str(self.recipe)
