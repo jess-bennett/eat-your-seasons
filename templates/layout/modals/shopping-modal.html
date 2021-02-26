@@ -1,0 +1,112 @@
+<div class="modal fade" id="modal{{ recipe.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        
+      <div class="modal-header">
+        <img src="{{  MEDIA_URL }}/recipe_images/{{ recipe.image }}" alt="{{ recipe.image }}">
+        <h3 class="modal-title" id="exampleModalLongTitle">{{ recipe.name }}</h3>
+      </div>
+      <div class="modal-notes">
+        <div class="col-8 text-left">
+            <h4><em>{% if quantity %}
+                        {% if recipe.isfrozen == 'Yes' %}
+                            {% if current_week == '1' or current_week == '2' %}
+                                Batch Cook - Make double and freeze half
+                            {% else %}
+                                Defrost previous batch cook and reheat
+                            {% endif %}
+                        {% endif %}<br>
+                        {% if quantity == 'one' %}
+                            {% if recipe.isfrozen == 'Yes' %}
+                                {% if current_week == '1' or current_week == '2' %}
+                                    Makes 4 portions
+                                {% endif %}
+                            {% else %}
+                                Makes 2 portions
+                            {% endif %}
+                        {% elif quantity == 'two' %}
+                            {% if recipe.isfrozen == 'Yes' %}
+                                {% if current_week == '1' or current_week == '2' %}
+                                    Makes 8 portions
+                                {% endif %}
+                            {% else %}
+                                Makes 4 portions
+                            {% endif %}
+                        {% endif %}
+                    {% else %}
+                        Serves 4
+                    {% endif %}
+            </em></h4>
+        </div>
+        <div class="col-2 text-right">
+            {% if recipe.isfrozen == "Yes" %}
+                {% include "icons/freeze.svg" %}
+            {% endif %}
+        </div>
+        <div class="col-2 text-right">
+            {% if recipe.category|cut:" " == "omni" %}
+                {% include "icons/omni.svg" %}
+            {% elif recipe.category|cut:" " == "veggie" %}
+                {% include "icons/veggie.svg" %}
+            {% elif recipe.category|cut:" " == "vegan" %}
+                {% include "icons/vegan.svg" %}
+            {% endif %}
+        </div>
+      </div>
+      <div class="modal-body text-left recipe-text">
+          <h4>Ingredients:</h4>
+          <ul>
+            {% for ingredient in recipe.quantity_set.all %}
+                <li>
+                    {% if quantity == 'one' %}
+                            {% if recipe.isfrozen == 'Yes' %}
+                                {% if current_week == '1' or current_week == '2' %}
+                                    {{ ingredient.for_4 }} {{ ingredient.ingredients }}
+                                {% endif %}
+                            {% else %}
+                                {{ ingredient.for_2 }} {{ ingredient.ingredients }}
+                            {% endif %}
+                    {% elif quantity == 'two' %}
+                            {% if recipe.isfrozen == 'Yes' %}
+                                {% if current_week == '1' or current_week == '2' %}
+                                    {{ ingredient.for_8 }} {{ ingredient.ingredients }}
+                                {% endif %}
+                            {% else %}
+                                {{ ingredient.for_4 }} {{ ingredient.ingredients }}
+                            {% endif %}
+                    {% else %}
+                        {{ ingredient.for_4 }} {{ ingredient.ingredients }}
+                    {% endif %}
+                </li>
+            {% endfor %}
+          </ul>
+        
+      </div>
+      
+      <div class="modal-body text-left recipe-text">
+          <h4>Steps:</h4>
+          <ol>
+            {% for step in recipe.steps.all %}
+              <li>
+            {% if quantity %}
+                {% if recipe.isfrozen == 'Yes' %}
+                    {% if current_week == '1' or current_week == '2' %}
+                        {{ step }}
+                    {% endif %}
+                {% else %}
+                    {{ step }}
+                {% endif %}
+            {% else %}
+                {{ step }}
+            {% endif %}
+            </li>
+            {% endfor %}
+          </ol>
+        
+      </div>
+      <div class="modal-footer">
+        <div data-dismiss="modal">{% include "icons/exit.svg" %}</div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -44,19 +44,26 @@
         <div class="row pt-3 text-center">
             <h5>Portions are doubled per person to allow for lunch the next day, and doubled again if freezable for batch cooking.</h5>
         </div>
-        <div class="row pt-3 text-center">
+        <div>
+                {% for recipe in recipes %}
+                    {% for ingredient in recipe.quantity_set.all %}
+                        {{ ingredient.ingredients }}
+                    {% endfor %}
+                {% endfor %}
+        </div>
+        <div class="row pt-3">
             <div class="col offset-md-2 col-md-8">
                 <table class="table">
                     <tr>
-                        <th>Day</th>
-                        <th>Meal</th>
-                        <th>Notes</th>
+                        <th class="text-left">Day</th>
+                        <th class="text-center">Meal</th>
+                        <th class="text-right">Notes</th>
                     </tr>
                     {% for plan in plans %}
                     <tr>
-                        <td>{{ plan.day.friendly_name }}</td>
-                        <td class="select-recipe" data-toggle="modal" data-target="#modal{{ plan.recipe.pk }}"><span class="hvr-pop">{{ plan.recipe }}</span></td>
-                        <td>
+                        <td class="text-left">{{ plan.day.friendly_name }}</td>
+                        <td class="select-recipe text-center" data-toggle="modal" data-target="#modal{{ plan.recipe.pk }}"><span class="hvr-pop">{{ plan.recipe }}</span></td>
+                        <td class="text-right">
                             {% if plan.recipe.isfrozen == "Yes" %}
                                 {% include "icons/freeze.svg" %}
                             {% endif %}
@@ -73,7 +80,6 @@
                 </table>
             </div>
         </div>
-        
     </div>
     {% for recipe in recipes %}
         {% include "layout/modals/recipe-modal.html" %} 

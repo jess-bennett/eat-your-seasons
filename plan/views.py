@@ -20,7 +20,8 @@ def plan(request):
             quantity = request.GET.get('quantity', 'four')
             current_week = request.GET.get('week', '')
             plans = plans.filter(month__name__in=months, week__name__in=weeks)
-            recipes = recipes.filter(month__name__in=months).order_by('name')
+            recipe_ids = plans.filter(month__name__in=months, week__name__in=weeks).values_list('recipe')
+            recipes = recipes.filter(pk__in=recipe_ids).order_by('name')
             months = Month.objects.filter(name__in=months)
             weeks = Week.objects.filter(name__in=weeks)
 
