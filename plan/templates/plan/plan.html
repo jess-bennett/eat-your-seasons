@@ -42,16 +42,32 @@
             </div>
         </div>
         <div class="row pt-3 text-center">
+            <h5>Portions are doubled per person to allow for lunch the next day, and doubled again if freezable for batch cooking.</h5>
+        </div>
+        <div class="row pt-3 text-center">
             <div class="col offset-md-2 col-md-8">
                 <table class="table">
                     <tr>
                         <th>Day</th>
                         <th>Meal</th>
+                        <th>Notes</th>
                     </tr>
                     {% for plan in plans %}
                     <tr>
                         <td>{{ plan.day.friendly_name }}</td>
                         <td class="select-recipe" data-toggle="modal" data-target="#modal{{ plan.recipe.pk }}"><span class="hvr-pop">{{ plan.recipe }}</span></td>
+                        <td>
+                            {% if plan.recipe.isfrozen == "Yes" %}
+                                {% include "icons/freeze.svg" %}
+                            {% endif %}
+                            {% if plan.recipe.category|cut:" " == "omni" %}
+                                {% include "icons/omni.svg" %}
+                            {% elif plan.recipe.category|cut:" " == "veggie" %}
+                                {% include "icons/veggie.svg" %}
+                            {% elif plan.recipe.category|cut:" " == "vegan" %}
+                                {% include "icons/vegan.svg" %}
+                            {% endif %}
+                        </td>
                     </tr>    
                     {% endfor %}
                 </table>

@@ -514,7 +514,8 @@ div.container {
 
 .modal-icons {
     fill: var(--highlights);
-    width: 2.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .arrows {
@@ -658,6 +659,12 @@ body {
 .icons-small {
     width: 4.5rem;
     height: 4.5rem;
+}
+
+.modal-icons {
+    fill: var(--highlights);
+    width: 2rem;
+    height: 2rem;
 }
 
 .footer-icon {
