@@ -9,11 +9,11 @@
       <div class="modal-notes">
         <div class="col-8 text-left">
             <h4><em>{% if quantity %}
-                        {% if quantity == '1' %}
+                        {% if quantity == 'one' %}
                             Makes 2 portions
-                        {% elif quantity == '2' %}
+                        {% elif quantity == 'two' %}
                             Makes 4 portions
-                        {% elif quantity == '4' %}
+                        {% elif quantity == 'four' %}
                             Makes 8 portions
                         {% endif %}
                     {% else %}
@@ -40,7 +40,7 @@
           <h4>Ingredients:</h4>
           <ul>
             {% for ingredient in recipe.quantity_set.all %}
-              <li>{% if quantity == '1' %}{{ ingredient.for_2 }}{% elif quantity == '4' %}{{ ingredient.for_8 }}{% else %}{{ ingredient.for_4 }}{% endif %} {{ ingredient.ingredients }}</li>
+              <li>{% if quantity == 'one' %}{{ ingredient.for_2 }}{% elif quantity == 'four' %}{{ ingredient.for_8 }}{% else %}{{ ingredient.for_4 }}{% endif %} {{ ingredient.ingredients }}</li>
             {% endfor %}
           </ul>
         

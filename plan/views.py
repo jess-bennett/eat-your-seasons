@@ -17,7 +17,7 @@ def plan(request):
         if 'month' in request.GET:
             months = request.GET['month'].split(',')
             weeks = request.GET['week'].split(',')
-            quantity = request.GET.get('quantity', 4)
+            quantity = request.GET.get('quantity', 'four')
             plans = plans.filter(month__name__in=months, week__name__in=weeks)
             recipes = recipes.filter(month__name__in=months).order_by('name')
             months = Month.objects.filter(name__in=months)

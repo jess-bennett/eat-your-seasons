@@ -4,7 +4,7 @@ $(document).ready(function() {
     let chosenTheme = localStorage.getItem("chosentheme") || "light-theme";
     let currentMonth = sessionStorage.getItem("selectedmonth") || month;
     let currentWeek = sessionStorage.getItem("selectedweek") || 1;
-    let currentQuantity = sessionStorage.getItem("selectedquantity") || 2;
+    let currentQuantity = sessionStorage.getItem("selectedquantity") || 'four';
     // Set session storage so that it is never undefined
     sessionStorage.setItem("selectedmonth", currentMonth);
     sessionStorage.setItem("selectedweek", currentWeek);
@@ -29,6 +29,8 @@ $(document).ready(function() {
     $(`#${currentMonth}-select`).addClass("current");
 
     $(`#${chosenTheme}-select`).hide();
+
+    $(`#${currentQuantity}-select`).addClass("quantity-icons-active");
 
     $(`#${currentFood}`).addClass("food-icons-active");
 
@@ -113,7 +115,7 @@ $("#arrow-right").click(function() {
 });
 
 $(".quantity-icons").click(function() {
-    let selectedQuantity = $(this).attr("id").substr(1, $(this).attr("id").indexOf('-'));
+    let selectedQuantity = $(this).attr("id").substr(0, $(this).attr("id").indexOf('-'));
     sessionStorage.setItem("selectedquantity", selectedQuantity);
     changeQuantityParams();
     $(".quantity-icons").removeClass("quantity-icons-active");
