@@ -525,6 +525,17 @@ div.container {
     cursor: auto;
 }
 
+.quantity-icons {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: var(--font);
+    cursor: pointer;
+}
+
+.quantity-icons.quantity-icons-active {
+    fill: var(--highlights);
+}
+
 .table {
     border: 2px solid var(--highlights);
     color: var(--font);
@@ -638,6 +649,11 @@ body {
 
 .polaroid p {
     font-size: 1.5rem;
+}
+
+.icons-small {
+    width: 4.5rem;
+    height: 4.5rem;
 }
 
 .footer-icon {

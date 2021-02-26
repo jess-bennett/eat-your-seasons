@@ -7,7 +7,26 @@
         <h3 class="modal-title" id="exampleModalLongTitle">{{ recipe.name }}</h3>
       </div>
       <div class="modal-notes">
-        <div class="col-2">
+        <div class="col-8 text-left">
+            <h4><em>{% if quantity %}
+                        {% if quantity == 'one' %}
+                            Makes 2 portions
+                        {% elif quantity == 'two' %}
+                            Makes 4 portions
+                        {% elif quantity == 'four' %}
+                            Makes 8 portions
+                        {% endif %}
+                    {% else %}
+                        Serves 4
+                    {% endif %}
+            </em></h4>
+        </div>
+        <div class="col-2 text-right">
+            {% if recipe.isfrozen == "Yes" %}
+                {% include "icons/freeze.svg" %}
+            {% endif %}
+        </div>
+        <div class="col-2 text-right">
             {% if recipe.category|cut:" " == "omni" %}
                 {% include "icons/omni.svg" %}
             {% elif recipe.category|cut:" " == "veggie" %}
@@ -16,17 +35,12 @@
                 {% include "icons/vegan.svg" %}
             {% endif %}
         </div>
-        <div class="col-2">
-            {% if recipe.isfrozen == "Yes" %}
-                {% include "icons/freeze.svg" %}
-            {% endif %}
-        </div>
       </div>
       <div class="modal-body text-left">
           <h4>Ingredients:</h4>
           <ul>
-            {% for ingredient in recipe.ingredients.all %}
-              <li>{{ ingredient }}</li>
+            {% for ingredient in recipe.quantity_set.all %}
+              <li>{% if quantity == 'one' %}{{ ingredient.for_2 }}{% elif quantity == 'four' %}{{ ingredient.for_8 }}{% else %}{{ ingredient.for_4 }}{% endif %} {{ ingredient.ingredients }}</li>
             {% endfor %}
           </ul>
         
