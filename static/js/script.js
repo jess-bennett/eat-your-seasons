@@ -124,6 +124,10 @@ $(".quantity-icons").click(function() {
 
 $('li').filter(function(){
     return $.trim($(this).html()) == '';
+}).hide()
+
+$('li').filter(function(){
+    return $.trim($(this).html()) == '';
 }).parents(".recipe-text").hide()
     
 });
