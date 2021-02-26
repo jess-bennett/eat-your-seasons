@@ -1,3361 +1,3362 @@
-[{
+[
+  {
     "pk": 1,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 1,
-      "month": 1,
-      "recipe": 55
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 1,
+    "month": 1,
+    "recipe": 55,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 2,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 1,
-      "month": 1,
-      "recipe": 58
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 1,
+    "month": 1,
+    "recipe": 58,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 3,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 1,
-      "month": 1,
-      "recipe": 65
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 1,
+    "month": 1,
+    "recipe": 65,
+    "batch_cook": ""
+  }},
   {
     "pk": 4,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 1,
-      "month": 1,
-      "recipe": 57
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 1,
+    "month": 1,
+    "recipe": 57,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 5,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 1,
-      "month": 1,
-      "recipe": 8
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 1,
+    "month": 1,
+    "recipe": 8,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 6,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 1,
-      "month": 1,
-      "recipe": 100
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 1,
+    "month": 1,
+    "recipe": 100,
+    "batch_cook": ""
+  }},
   {
     "pk": 7,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 1,
-      "month": 1,
-      "recipe": 22
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 1,
+    "month": 1,
+    "recipe": 22,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 8,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 2,
-      "month": 1,
-      "recipe": 48
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 2,
+    "month": 1,
+    "recipe": 48,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 9,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 2,
-      "month": 1,
-      "recipe": 70
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 2,
+    "month": 1,
+    "recipe": 70,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 10,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 2,
-      "month": 1,
-      "recipe": 72
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 2,
+    "month": 1,
+    "recipe": 72,
+    "batch_cook": ""
+  }},
   {
     "pk": 11,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 2,
-      "month": 1,
-      "recipe": 60
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 2,
+    "month": 1,
+    "recipe": 60,
+    "batch_cook": ""
+  }},
   {
     "pk": 12,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 2,
-      "month": 1,
-      "recipe": 3
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 2,
+    "month": 1,
+    "recipe": 3,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 13,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 2,
-      "month": 1,
-      "recipe": 89
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 2,
+    "month": 1,
+    "recipe": 89,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 14,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 2,
-      "month": 1,
-      "recipe": 86
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 2,
+    "month": 1,
+    "recipe": 86,
+    "batch_cook": ""
+  }},
   {
     "pk": 15,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 3,
-      "month": 1,
-      "recipe": 55
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 3,
+    "month": 1,
+    "recipe": 55,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 16,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 3,
-      "month": 1,
-      "recipe": 58
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 3,
+    "month": 1,
+    "recipe": 58,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 17,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 3,
-      "month": 1,
-      "recipe": 65
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 3,
+    "month": 1,
+    "recipe": 65,
+    "batch_cook": ""
+  }},
   {
     "pk": 18,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 3,
-      "month": 1,
-      "recipe": 57
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 3,
+    "month": 1,
+    "recipe": 57,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 19,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 3,
-      "month": 1,
-      "recipe": 8
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 3,
+    "month": 1,
+    "recipe": 8,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 20,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 3,
-      "month": 1,
-      "recipe": 100
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 3,
+    "month": 1,
+    "recipe": 100,
+    "batch_cook": ""
+  }},
   {
     "pk": 21,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 3,
-      "month": 1,
-      "recipe": 22
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 3,
+    "month": 1,
+    "recipe": 22,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 22,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 4,
-      "month": 1,
-      "recipe": 48
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 4,
+    "month": 1,
+    "recipe": 48,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 23,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 4,
-      "month": 1,
-      "recipe": 70
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 4,
+    "month": 1,
+    "recipe": 70,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 24,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 4,
-      "month": 1,
-      "recipe": 72
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 4,
+    "month": 1,
+    "recipe": 72,
+    "batch_cook": ""
+  }},
   {
     "pk": 25,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 4,
-      "month": 1,
-      "recipe": 60
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 4,
+    "month": 1,
+    "recipe": 60,
+    "batch_cook": ""
+  }},
   {
     "pk": 26,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 4,
-      "month": 1,
-      "recipe": 3
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 4,
+    "month": 1,
+    "recipe": 3,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 27,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 4,
-      "month": 1,
-      "recipe": 89
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 4,
+    "month": 1,
+    "recipe": 89,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 28,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 4,
-      "month": 1,
-      "recipe": 86
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 4,
+    "month": 1,
+    "recipe": 86,
+    "batch_cook": ""
+  }},
   {
     "pk": 29,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 1,
-      "month": 2,
-      "recipe": 62
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 1,
+    "month": 2,
+    "recipe": 62,
+    "batch_cook": ""
+  }},
   {
     "pk": 30,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 1,
-      "month": 2,
-      "recipe": 71
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 1,
+    "month": 2,
+    "recipe": 71,
+    "batch_cook": ""
+  }},
   {
     "pk": 31,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 1,
-      "month": 2,
-      "recipe": 35
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 1,
+    "month": 2,
+    "recipe": 35,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 32,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 1,
-      "month": 2,
-      "recipe": 55
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 1,
+    "month": 2,
+    "recipe": 55,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 33,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 1,
-      "month": 2,
-      "recipe": 11
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 1,
+    "month": 2,
+    "recipe": 11,
+    "batch_cook": ""
+  }},
   {
     "pk": 34,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 1,
-      "month": 2,
-      "recipe": 100
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 1,
+    "month": 2,
+    "recipe": 100,
+    "batch_cook": ""
+  }},
   {
     "pk": 35,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 1,
-      "month": 2,
-      "recipe": 25
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 1,
+    "month": 2,
+    "recipe": 25,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 36,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 2,
-      "month": 2,
-      "recipe": 42
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 2,
+    "month": 2,
+    "recipe": 42,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 37,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 2,
-      "month": 2,
-      "recipe": 72
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 2,
+    "month": 2,
+    "recipe": 72,
+    "batch_cook": ""
+  }},
   {
     "pk": 38,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 2,
-      "month": 2,
-      "recipe": 76
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 2,
+    "month": 2,
+    "recipe": 76,
+    "batch_cook": ""
+  }},
   {
     "pk": 39,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 2,
-      "month": 2,
-      "recipe": 44
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 2,
+    "month": 2,
+    "recipe": 44,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 40,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 2,
-      "month": 2,
-      "recipe": 14
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 2,
+    "month": 2,
+    "recipe": 14,
+    "batch_cook": ""
+  }},
   {
     "pk": 41,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 2,
-      "month": 2,
-      "recipe": 92
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 2,
+    "month": 2,
+    "recipe": 92,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 42,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 2,
-      "month": 2,
-      "recipe": 36
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 2,
+    "month": 2,
+    "recipe": 36,
+    "batch_cook": ""
+  }},
   {
     "pk": 43,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 3,
-      "month": 2,
-      "recipe": 62
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 3,
+    "month": 2,
+    "recipe": 62,
+    "batch_cook": ""
+  }},
   {
     "pk": 44,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 3,
-      "month": 2,
-      "recipe": 71
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 3,
+    "month": 2,
+    "recipe": 71,
+    "batch_cook": ""
+  }},
   {
     "pk": 45,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 3,
-      "month": 2,
-      "recipe": 35
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 3,
+    "month": 2,
+    "recipe": 35,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 46,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 3,
-      "month": 2,
-      "recipe": 55
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 3,
+    "month": 2,
+    "recipe": 55,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 47,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 3,
-      "month": 2,
-      "recipe": 11
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 3,
+    "month": 2,
+    "recipe": 11,
+    "batch_cook": ""
+  }},
   {
     "pk": 48,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 3,
-      "month": 2,
-      "recipe": 100
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 3,
+    "month": 2,
+    "recipe": 100,
+    "batch_cook": ""
+  }},
   {
     "pk": 49,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 3,
-      "month": 2,
-      "recipe": 25
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 3,
+    "month": 2,
+    "recipe": 25,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 50,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 4,
-      "month": 2,
-      "recipe": 42
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 4,
+    "month": 2,
+    "recipe": 42,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 51,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 4,
-      "month": 2,
-      "recipe": 72
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 4,
+    "month": 2,
+    "recipe": 72,
+    "batch_cook": ""
+  }},
   {
     "pk": 52,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 4,
-      "month": 2,
-      "recipe": 76
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 4,
+    "month": 2,
+    "recipe": 76,
+    "batch_cook": ""
+  }},
   {
     "pk": 53,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 4,
-      "month": 2,
-      "recipe": 44
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 4,
+    "month": 2,
+    "recipe": 44,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 54,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 4,
-      "month": 2,
-      "recipe": 14
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 4,
+    "month": 2,
+    "recipe": 14,
+    "batch_cook": ""
+  }},
   {
     "pk": 55,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 4,
-      "month": 2,
-      "recipe": 92
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 4,
+    "month": 2,
+    "recipe": 92,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 56,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 4,
-      "month": 2,
-      "recipe": 36
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 4,
+    "month": 2,
+    "recipe": 36,
+    "batch_cook": ""
+  }},
   {
     "pk": 57,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 1,
-      "month": 3,
-      "recipe": 34
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 1,
+    "month": 3,
+    "recipe": 34,
+    "batch_cook": ""
+  }},
   {
     "pk": 58,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 1,
-      "month": 3,
-      "recipe": 70
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 1,
+    "month": 3,
+    "recipe": 70,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 59,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 1,
-      "month": 3,
-      "recipe": 35
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 1,
+    "month": 3,
+    "recipe": 35,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 60,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 1,
-      "month": 3,
-      "recipe": 75
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 1,
+    "month": 3,
+    "recipe": 75,
+    "batch_cook": ""
+  }},
   {
     "pk": 61,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 1,
-      "month": 3,
-      "recipe": 7
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 1,
+    "month": 3,
+    "recipe": 7,
+    "batch_cook": ""
+  }},
   {
     "pk": 62,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 1,
-      "month": 3,
-      "recipe": 94
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 1,
+    "month": 3,
+    "recipe": 94,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 63,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 1,
-      "month": 3,
-      "recipe": 24
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 1,
+    "month": 3,
+    "recipe": 24,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 64,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 2,
-      "month": 3,
-      "recipe": 53
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 2,
+    "month": 3,
+    "recipe": 53,
+    "batch_cook": ""
+  }},
   {
     "pk": 65,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 2,
-      "month": 3,
-      "recipe": 87
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 2,
+    "month": 3,
+    "recipe": 87,
+    "batch_cook": ""
+  }},
   {
     "pk": 66,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 2,
-      "month": 3,
-      "recipe": 44
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 2,
+    "month": 3,
+    "recipe": 44,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 67,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 2,
-      "month": 3,
-      "recipe": 31
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 2,
+    "month": 3,
+    "recipe": 31,
+    "batch_cook": ""
+  }},
   {
     "pk": 68,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 2,
-      "month": 3,
-      "recipe": 3
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 2,
+    "month": 3,
+    "recipe": 3,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 69,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 2,
-      "month": 3,
-      "recipe": 92
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 2,
+    "month": 3,
+    "recipe": 92,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 70,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 2,
-      "month": 3,
-      "recipe": 37
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 2,
+    "month": 3,
+    "recipe": 37,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 71,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 3,
-      "month": 3,
-      "recipe": 34
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 3,
+    "month": 3,
+    "recipe": 34,
+    "batch_cook": ""
+  }},
   {
     "pk": 72,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 3,
-      "month": 3,
-      "recipe": 70
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 3,
+    "month": 3,
+    "recipe": 70,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 73,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 3,
-      "month": 3,
-      "recipe": 35
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 3,
+    "month": 3,
+    "recipe": 35,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 74,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 3,
-      "month": 3,
-      "recipe": 75
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 3,
+    "month": 3,
+    "recipe": 75,
+    "batch_cook": ""
+  }},
   {
     "pk": 75,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 3,
-      "month": 3,
-      "recipe": 7
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 3,
+    "month": 3,
+    "recipe": 7,
+    "batch_cook": ""
+  }},
   {
     "pk": 76,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 3,
-      "month": 3,
-      "recipe": 94
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 3,
+    "month": 3,
+    "recipe": 94,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 77,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 3,
-      "month": 3,
-      "recipe": 24
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 3,
+    "month": 3,
+    "recipe": 24,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 78,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 4,
-      "month": 3,
-      "recipe": 53
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 4,
+    "month": 3,
+    "recipe": 53,
+    "batch_cook": ""
+  }},
   {
     "pk": 79,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 4,
-      "month": 3,
-      "recipe": 87
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 4,
+    "month": 3,
+    "recipe": 87,
+    "batch_cook": ""
+  }},
   {
     "pk": 80,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 4,
-      "month": 3,
-      "recipe": 44
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 4,
+    "month": 3,
+    "recipe": 44,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 81,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 4,
-      "month": 3,
-      "recipe": 31
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 4,
+    "month": 3,
+    "recipe": 31,
+    "batch_cook": ""
+  }},
   {
     "pk": 82,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 4,
-      "month": 3,
-      "recipe": 3
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 4,
+    "month": 3,
+    "recipe": 3,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 83,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 4,
-      "month": 3,
-      "recipe": 92
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 4,
+    "month": 3,
+    "recipe": 92,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 84,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 4,
-      "month": 3,
-      "recipe": 37
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 4,
+    "month": 3,
+    "recipe": 37,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 85,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 1,
-      "month": 4,
-      "recipe": 63
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 1,
+    "month": 4,
+    "recipe": 63,
+    "batch_cook": ""
+  }},
   {
     "pk": 86,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 1,
-      "month": 4,
-      "recipe": 54
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 1,
+    "month": 4,
+    "recipe": 54,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 87,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 1,
-      "month": 4,
-      "recipe": 29
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 1,
+    "month": 4,
+    "recipe": 29,
+    "batch_cook": ""
+  }},
   {
     "pk": 88,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 1,
-      "month": 4,
-      "recipe": 37
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 1,
+    "month": 4,
+    "recipe": 37,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 89,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 1,
-      "month": 4,
-      "recipe": 18
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 1,
+    "month": 4,
+    "recipe": 18,
+    "batch_cook": ""
+  }},
   {
     "pk": 90,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 1,
-      "month": 4,
-      "recipe": 96
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 1,
+    "month": 4,
+    "recipe": 96,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 91,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 1,
-      "month": 4,
-      "recipe": 21
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 1,
+    "month": 4,
+    "recipe": 21,
+    "batch_cook": ""
+  }},
   {
     "pk": 92,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 2,
-      "month": 4,
-      "recipe": 35
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 2,
+    "month": 4,
+    "recipe": 35,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 93,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 2,
-      "month": 4,
-      "recipe": 53
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 2,
+    "month": 4,
+    "recipe": 53,
+    "batch_cook": ""
+  }},
   {
     "pk": 94,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 2,
-      "month": 4,
-      "recipe": 78
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 2,
+    "month": 4,
+    "recipe": 78,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 95,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 2,
-      "month": 4,
-      "recipe": 73
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 2,
+    "month": 4,
+    "recipe": 73,
+    "batch_cook": ""
+  }},
   {
     "pk": 96,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 2,
-      "month": 4,
-      "recipe": 10
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 2,
+    "month": 4,
+    "recipe": 10,
+    "batch_cook": ""
+  }},
   {
     "pk": 97,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 2,
-      "month": 4,
-      "recipe": 88
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 2,
+    "month": 4,
+    "recipe": 88,
+    "batch_cook": ""
+  }},
   {
     "pk": 98,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 2,
-      "month": 4,
-      "recipe": 75
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 2,
+    "month": 4,
+    "recipe": 75,
+    "batch_cook": ""
+  }},
   {
     "pk": 99,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 3,
-      "month": 4,
-      "recipe": 63
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 3,
+    "month": 4,
+    "recipe": 63,
+    "batch_cook": ""
+  }},
   {
     "pk": 100,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 3,
-      "month": 4,
-      "recipe": 54
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 3,
+    "month": 4,
+    "recipe": 54,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 101,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 3,
-      "month": 4,
-      "recipe": 29
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 3,
+    "month": 4,
+    "recipe": 29,
+    "batch_cook": ""
+  }},
   {
     "pk": 102,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 3,
-      "month": 4,
-      "recipe": 37
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 3,
+    "month": 4,
+    "recipe": 37,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 103,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 3,
-      "month": 4,
-      "recipe": 18
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 3,
+    "month": 4,
+    "recipe": 18,
+    "batch_cook": ""
+  }},
   {
     "pk": 104,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 3,
-      "month": 4,
-      "recipe": 96
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 3,
+    "month": 4,
+    "recipe": 96,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 105,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 3,
-      "month": 4,
-      "recipe": 21
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 3,
+    "month": 4,
+    "recipe": 21,
+    "batch_cook": ""
+  }},
   {
     "pk": 106,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 4,
-      "month": 4,
-      "recipe": 35
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 4,
+    "month": 4,
+    "recipe": 35,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 107,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 4,
-      "month": 4,
-      "recipe": 53
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 4,
+    "month": 4,
+    "recipe": 53,
+    "batch_cook": ""
+  }},
   {
     "pk": 108,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 4,
-      "month": 4,
-      "recipe": 78
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 4,
+    "month": 4,
+    "recipe": 78,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 109,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 4,
-      "month": 4,
-      "recipe": 73
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 4,
+    "month": 4,
+    "recipe": 73,
+    "batch_cook": ""
+  }},
   {
     "pk": 110,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 4,
-      "month": 4,
-      "recipe": 10
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 4,
+    "month": 4,
+    "recipe": 10,
+    "batch_cook": ""
+  }},
   {
     "pk": 111,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 4,
-      "month": 4,
-      "recipe": 88
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 4,
+    "month": 4,
+    "recipe": 88,
+    "batch_cook": ""
+  }},
   {
     "pk": 112,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 4,
-      "month": 4,
-      "recipe": 75
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 4,
+    "month": 4,
+    "recipe": 75,
+    "batch_cook": ""
+  }},
   {
     "pk": 113,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 1,
-      "month": 5,
-      "recipe": 50
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 1,
+    "month": 5,
+    "recipe": 50,
+    "batch_cook": ""
+  }},
   {
     "pk": 114,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 1,
-      "month": 5,
-      "recipe": 64
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 1,
+    "month": 5,
+    "recipe": 64,
+    "batch_cook": ""
+  }},
   {
     "pk": 115,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 1,
-      "month": 5,
-      "recipe": 54
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 1,
+    "month": 5,
+    "recipe": 54,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 116,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 1,
-      "month": 5,
-      "recipe": 32
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 1,
+    "month": 5,
+    "recipe": 32,
+    "batch_cook": ""
+  }},
   {
     "pk": 117,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 1,
-      "month": 5,
-      "recipe": 16
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 1,
+    "month": 5,
+    "recipe": 16,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 118,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 1,
-      "month": 5,
-      "recipe": 100
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 1,
+    "month": 5,
+    "recipe": 100,
+    "batch_cook": ""
+  }},
   {
     "pk": 119,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 1,
-      "month": 5,
-      "recipe": 19
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 1,
+    "month": 5,
+    "recipe": 19,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 120,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 2,
-      "month": 5,
-      "recipe": 63
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 2,
+    "month": 5,
+    "recipe": 63,
+    "batch_cook": ""
+  }},
   {
     "pk": 121,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 2,
-      "month": 5,
-      "recipe": 39
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 2,
+    "month": 5,
+    "recipe": 39,
+    "batch_cook": ""
+  }},
   {
     "pk": 122,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 2,
-      "month": 5,
-      "recipe": 53
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 2,
+    "month": 5,
+    "recipe": 53,
+    "batch_cook": ""
+  }},
   {
     "pk": 123,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 2,
-      "month": 5,
-      "recipe": 68
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 2,
+    "month": 5,
+    "recipe": 68,
+    "batch_cook": ""
+  }},
   {
     "pk": 124,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 2,
-      "month": 5,
-      "recipe": 2
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 2,
+    "month": 5,
+    "recipe": 2,
+    "batch_cook": ""
+  }},
   {
     "pk": 125,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 2,
-      "month": 5,
-      "recipe": 96
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 2,
+    "month": 5,
+    "recipe": 96,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 126,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 2,
-      "month": 5,
-      "recipe": 46
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 2,
+    "month": 5,
+    "recipe": 46,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 127,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 3,
-      "month": 5,
-      "recipe": 50
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 3,
+    "month": 5,
+    "recipe": 50,
+    "batch_cook": ""
+  }},
   {
     "pk": 128,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 3,
-      "month": 5,
-      "recipe": 64
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 3,
+    "month": 5,
+    "recipe": 64,
+    "batch_cook": ""
+  }},
   {
     "pk": 129,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 3,
-      "month": 5,
-      "recipe": 54
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 3,
+    "month": 5,
+    "recipe": 54,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 130,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 3,
-      "month": 5,
-      "recipe": 32
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 3,
+    "month": 5,
+    "recipe": 32,
+    "batch_cook": ""
+  }},
   {
     "pk": 131,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 3,
-      "month": 5,
-      "recipe": 16
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 3,
+    "month": 5,
+    "recipe": 16,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 132,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 3,
-      "month": 5,
-      "recipe": 100
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 3,
+    "month": 5,
+    "recipe": 100,
+    "batch_cook": ""
+  }},
   {
     "pk": 133,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 3,
-      "month": 5,
-      "recipe": 19
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 3,
+    "month": 5,
+    "recipe": 19,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 134,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 4,
-      "month": 5,
-      "recipe": 63
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 4,
+    "month": 5,
+    "recipe": 63,
+    "batch_cook": ""
+  }},
   {
     "pk": 135,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 4,
-      "month": 5,
-      "recipe": 39
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 4,
+    "month": 5,
+    "recipe": 39,
+    "batch_cook": ""
+  }},
   {
     "pk": 136,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 4,
-      "month": 5,
-      "recipe": 53
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 4,
+    "month": 5,
+    "recipe": 53,
+    "batch_cook": ""
+  }},
   {
     "pk": 137,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 4,
-      "month": 5,
-      "recipe": 68
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 4,
+    "month": 5,
+    "recipe": 68,
+    "batch_cook": ""
+  }},
   {
     "pk": 138,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 4,
-      "month": 5,
-      "recipe": 2
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 4,
+    "month": 5,
+    "recipe": 2,
+    "batch_cook": ""
+  }},
   {
     "pk": 139,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 4,
-      "month": 5,
-      "recipe": 96
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 4,
+    "month": 5,
+    "recipe": 96,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 140,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 4,
-      "month": 5,
-      "recipe": 46
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 4,
+    "month": 5,
+    "recipe": 46,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 141,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 1,
-      "month": 6,
-      "recipe": 30
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 1,
+    "month": 6,
+    "recipe": 30,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 142,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 1,
-      "month": 6,
-      "recipe": 51
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 1,
+    "month": 6,
+    "recipe": 51,
+    "batch_cook": ""
+  }},
   {
     "pk": 143,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 1,
-      "month": 6,
-      "recipe": 79
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 1,
+    "month": 6,
+    "recipe": 79,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 144,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 1,
-      "month": 6,
-      "recipe": 45
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 1,
+    "month": 6,
+    "recipe": 45,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 145,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 1,
-      "month": 6,
-      "recipe": 9
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 1,
+    "month": 6,
+    "recipe": 9,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 146,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 1,
-      "month": 6,
-      "recipe": 93
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 1,
+    "month": 6,
+    "recipe": 93,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 147,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 1,
-      "month": 6,
-      "recipe": 23
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 1,
+    "month": 6,
+    "recipe": 23,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 148,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 2,
-      "month": 6,
-      "recipe": 66
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 2,
+    "month": 6,
+    "recipe": 66,
+    "batch_cook": ""
+  }},
   {
     "pk": 149,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 2,
-      "month": 6,
-      "recipe": 50
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 2,
+    "month": 6,
+    "recipe": 50,
+    "batch_cook": ""
+  }},
   {
     "pk": 150,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 2,
-      "month": 6,
-      "recipe": 53
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 2,
+    "month": 6,
+    "recipe": 53,
+    "batch_cook": ""
+  }},
   {
     "pk": 151,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 2,
-      "month": 6,
-      "recipe": 81
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 2,
+    "month": 6,
+    "recipe": 81,
+    "batch_cook": ""
+  }},
   {
     "pk": 152,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 2,
-      "month": 6,
-      "recipe": 2
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 2,
+    "month": 6,
+    "recipe": 2,
+    "batch_cook": ""
+  }},
   {
     "pk": 153,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 2,
-      "month": 6,
-      "recipe": 99
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 2,
+    "month": 6,
+    "recipe": 99,
+    "batch_cook": ""
+  }},
   {
     "pk": 154,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 2,
-      "month": 6,
-      "recipe": 46
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 2,
+    "month": 6,
+    "recipe": 46,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 155,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 3,
-      "month": 6,
-      "recipe": 30
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 3,
+    "month": 6,
+    "recipe": 30,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 156,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 3,
-      "month": 6,
-      "recipe": 51
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 3,
+    "month": 6,
+    "recipe": 51,
+    "batch_cook": ""
+  }},
   {
     "pk": 157,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 3,
-      "month": 6,
-      "recipe": 79
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 3,
+    "month": 6,
+    "recipe": 79,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 158,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 3,
-      "month": 6,
-      "recipe": 45
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 3,
+    "month": 6,
+    "recipe": 45,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 159,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 3,
-      "month": 6,
-      "recipe": 9
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 3,
+    "month": 6,
+    "recipe": 9,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 160,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 3,
-      "month": 6,
-      "recipe": 93
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 3,
+    "month": 6,
+    "recipe": 93,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 161,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 3,
-      "month": 6,
-      "recipe": 23
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 3,
+    "month": 6,
+    "recipe": 23,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 162,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 4,
-      "month": 6,
-      "recipe": 66
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 4,
+    "month": 6,
+    "recipe": 66,
+    "batch_cook": ""
+  }},
   {
     "pk": 163,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 4,
-      "month": 6,
-      "recipe": 50
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 4,
+    "month": 6,
+    "recipe": 50,
+    "batch_cook": ""
+  }},
   {
     "pk": 164,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 4,
-      "month": 6,
-      "recipe": 53
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 4,
+    "month": 6,
+    "recipe": 53,
+    "batch_cook": ""
+  }},
   {
     "pk": 165,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 4,
-      "month": 6,
-      "recipe": 81
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 4,
+    "month": 6,
+    "recipe": 81,
+    "batch_cook": ""
+  }},
   {
     "pk": 166,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 4,
-      "month": 6,
-      "recipe": 2
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 4,
+    "month": 6,
+    "recipe": 2,
+    "batch_cook": ""
+  }},
   {
     "pk": 167,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 4,
-      "month": 6,
-      "recipe": 99
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 4,
+    "month": 6,
+    "recipe": 99,
+    "batch_cook": ""
+  }},
   {
     "pk": 168,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 4,
-      "month": 6,
-      "recipe": 46
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 4,
+    "month": 6,
+    "recipe": 46,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 169,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 1,
-      "month": 7,
-      "recipe": 52
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 1,
+    "month": 7,
+    "recipe": 52,
+    "batch_cook": ""
+  }},
   {
     "pk": 170,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 1,
-      "month": 7,
-      "recipe": 83
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 1,
+    "month": 7,
+    "recipe": 83,
+    "batch_cook": ""
+  }},
   {
     "pk": 171,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 1,
-      "month": 7,
-      "recipe": 46
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 1,
+    "month": 7,
+    "recipe": 46,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 172,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 1,
-      "month": 7,
-      "recipe": 80
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 1,
+    "month": 7,
+    "recipe": 80,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 173,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 1,
-      "month": 7,
-      "recipe": 5
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 1,
+    "month": 7,
+    "recipe": 5,
+    "batch_cook": ""
+  }},
   {
     "pk": 174,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 1,
-      "month": 7,
-      "recipe": 98
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 1,
+    "month": 7,
+    "recipe": 98,
+    "batch_cook": ""
+  }},
   {
     "pk": 175,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 1,
-      "month": 7,
-      "recipe": 23
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 1,
+    "month": 7,
+    "recipe": 23,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 176,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 2,
-      "month": 7,
-      "recipe": 50
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 2,
+    "month": 7,
+    "recipe": 50,
+    "batch_cook": ""
+  }},
   {
     "pk": 177,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 2,
-      "month": 7,
-      "recipe": 81
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 2,
+    "month": 7,
+    "recipe": 81,
+    "batch_cook": ""
+  }},
   {
     "pk": 178,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 2,
-      "month": 7,
-      "recipe": 53
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 2,
+    "month": 7,
+    "recipe": 53,
+    "batch_cook": ""
+  }},
   {
     "pk": 179,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 2,
-      "month": 7,
-      "recipe": 77
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 2,
+    "month": 7,
+    "recipe": 77,
+    "batch_cook": ""
+  }},
   {
     "pk": 180,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 2,
-      "month": 7,
-      "recipe": 9
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 2,
+    "month": 7,
+    "recipe": 9,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 181,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 2,
-      "month": 7,
-      "recipe": 101
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 2,
+    "month": 7,
+    "recipe": 101,
+    "batch_cook": ""
+  }},
   {
     "pk": 182,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 2,
-      "month": 7,
-      "recipe": 79
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 2,
+    "month": 7,
+    "recipe": 79,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 183,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 3,
-      "month": 7,
-      "recipe": 52
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 3,
+    "month": 7,
+    "recipe": 52,
+    "batch_cook": ""
+  }},
   {
     "pk": 184,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 3,
-      "month": 7,
-      "recipe": 83
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 3,
+    "month": 7,
+    "recipe": 83,
+    "batch_cook": ""
+  }},
   {
     "pk": 185,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 3,
-      "month": 7,
-      "recipe": 46
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 3,
+    "month": 7,
+    "recipe": 46,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 186,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 3,
-      "month": 7,
-      "recipe": 80
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 3,
+    "month": 7,
+    "recipe": 80,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 187,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 3,
-      "month": 7,
-      "recipe": 5
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 3,
+    "month": 7,
+    "recipe": 5,
+    "batch_cook": ""
+  }},
   {
     "pk": 188,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 3,
-      "month": 7,
-      "recipe": 98
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 3,
+    "month": 7,
+    "recipe": 98,
+    "batch_cook": ""
+  }},
   {
     "pk": 189,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 3,
-      "month": 7,
-      "recipe": 23
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 3,
+    "month": 7,
+    "recipe": 23,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 190,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 4,
-      "month": 7,
-      "recipe": 50
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 4,
+    "month": 7,
+    "recipe": 50,
+    "batch_cook": ""
+  }},
   {
     "pk": 191,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 4,
-      "month": 7,
-      "recipe": 81
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 4,
+    "month": 7,
+    "recipe": 81,
+    "batch_cook": ""
+  }},
   {
     "pk": 192,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 4,
-      "month": 7,
-      "recipe": 53
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 4,
+    "month": 7,
+    "recipe": 53,
+    "batch_cook": ""
+  }},
   {
     "pk": 193,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 4,
-      "month": 7,
-      "recipe": 77
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 4,
+    "month": 7,
+    "recipe": 77,
+    "batch_cook": ""
+  }},
   {
     "pk": 194,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 4,
-      "month": 7,
-      "recipe": 9
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 4,
+    "month": 7,
+    "recipe": 9,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 195,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 4,
-      "month": 7,
-      "recipe": 101
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 4,
+    "month": 7,
+    "recipe": 101,
+    "batch_cook": ""
+  }},
   {
     "pk": 196,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 4,
-      "month": 7,
-      "recipe": 79
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 4,
+    "month": 7,
+    "recipe": 79,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 197,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 1,
-      "month": 8,
-      "recipe": 53
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 1,
+    "month": 8,
+    "recipe": 53,
+    "batch_cook": ""
+  }},
   {
     "pk": 198,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 1,
-      "month": 8,
-      "recipe": 40
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 1,
+    "month": 8,
+    "recipe": 40,
+    "batch_cook": ""
+  }},
   {
     "pk": 199,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 1,
-      "month": 8,
-      "recipe": 52
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 1,
+    "month": 8,
+    "recipe": 52,
+    "batch_cook": ""
+  }},
   {
     "pk": 200,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 1,
-      "month": 8,
-      "recipe": 79
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 1,
+    "month": 8,
+    "recipe": 79,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 201,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 1,
-      "month": 8,
-      "recipe": 13
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 1,
+    "month": 8,
+    "recipe": 13,
+    "batch_cook": ""
+  }},
   {
     "pk": 202,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 1,
-      "month": 8,
-      "recipe": 100
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 1,
+    "month": 8,
+    "recipe": 100,
+    "batch_cook": ""
+  }},
   {
     "pk": 203,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 1,
-      "month": 8,
-      "recipe": 19
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 1,
+    "month": 8,
+    "recipe": 19,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 204,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 2,
-      "month": 8,
-      "recipe": 50
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 2,
+    "month": 8,
+    "recipe": 50,
+    "batch_cook": ""
+  }},
   {
     "pk": 205,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 2,
-      "month": 8,
-      "recipe": 59
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 2,
+    "month": 8,
+    "recipe": 59,
+    "batch_cook": ""
+  }},
   {
     "pk": 206,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 2,
-      "month": 8,
-      "recipe": 83
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 2,
+    "month": 8,
+    "recipe": 83,
+    "batch_cook": ""
+  }},
   {
     "pk": 207,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 2,
-      "month": 8,
-      "recipe": 60
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 2,
+    "month": 8,
+    "recipe": 60,
+    "batch_cook": ""
+  }},
   {
     "pk": 208,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 2,
-      "month": 8,
-      "recipe": 15
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 2,
+    "month": 8,
+    "recipe": 15,
+    "batch_cook": ""
+  }},
   {
     "pk": 209,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 2,
-      "month": 8,
-      "recipe": 91
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 2,
+    "month": 8,
+    "recipe": 91,
+    "batch_cook": ""
+  }},
   {
     "pk": 210,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 2,
-      "month": 8,
-      "recipe": 46
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 2,
+    "month": 8,
+    "recipe": 46,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 211,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 3,
-      "month": 8,
-      "recipe": 53
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 3,
+    "month": 8,
+    "recipe": 53,
+    "batch_cook": ""
+  }},
   {
     "pk": 212,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 3,
-      "month": 8,
-      "recipe": 40
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 3,
+    "month": 8,
+    "recipe": 40,
+    "batch_cook": ""
+  }},
   {
     "pk": 213,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 3,
-      "month": 8,
-      "recipe": 52
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 3,
+    "month": 8,
+    "recipe": 52,
+    "batch_cook": ""
+  }},
   {
     "pk": 214,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 3,
-      "month": 8,
-      "recipe": 79
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 3,
+    "month": 8,
+    "recipe": 79,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 215,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 3,
-      "month": 8,
-      "recipe": 13
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 3,
+    "month": 8,
+    "recipe": 13,
+    "batch_cook": ""
+  }},
   {
     "pk": 216,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 3,
-      "month": 8,
-      "recipe": 100
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 3,
+    "month": 8,
+    "recipe": 100,
+    "batch_cook": ""
+  }},
   {
     "pk": 217,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 3,
-      "month": 8,
-      "recipe": 19
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 3,
+    "month": 8,
+    "recipe": 19,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 218,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 4,
-      "month": 8,
-      "recipe": 50
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 4,
+    "month": 8,
+    "recipe": 50,
+    "batch_cook": ""
+  }},
   {
     "pk": 219,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 4,
-      "month": 8,
-      "recipe": 59
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 4,
+    "month": 8,
+    "recipe": 59,
+    "batch_cook": ""
+  }},
   {
     "pk": 220,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 4,
-      "month": 8,
-      "recipe": 83
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 4,
+    "month": 8,
+    "recipe": 83,
+    "batch_cook": ""
+  }},
   {
     "pk": 221,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 4,
-      "month": 8,
-      "recipe": 60
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 4,
+    "month": 8,
+    "recipe": 60,
+    "batch_cook": ""
+  }},
   {
     "pk": 222,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 4,
-      "month": 8,
-      "recipe": 15
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 4,
+    "month": 8,
+    "recipe": 15,
+    "batch_cook": ""
+  }},
   {
     "pk": 223,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 4,
-      "month": 8,
-      "recipe": 91
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 4,
+    "month": 8,
+    "recipe": 91,
+    "batch_cook": ""
+  }},
   {
     "pk": 224,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 4,
-      "month": 8,
-      "recipe": 46
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 4,
+    "month": 8,
+    "recipe": 46,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 225,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 1,
-      "month": 9,
-      "recipe": 61
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 1,
+    "month": 9,
+    "recipe": 61,
+    "batch_cook": ""
+  }},
   {
     "pk": 226,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 1,
-      "month": 9,
-      "recipe": 82
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 1,
+    "month": 9,
+    "recipe": 82,
+    "batch_cook": ""
+  }},
   {
     "pk": 227,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 1,
-      "month": 9,
-      "recipe": 46
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 1,
+    "month": 9,
+    "recipe": 46,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 228,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 1,
-      "month": 9,
-      "recipe": 47
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 1,
+    "month": 9,
+    "recipe": 47,
+    "batch_cook": ""
+  }},
   {
     "pk": 229,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 1,
-      "month": 9,
-      "recipe": 1
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 1,
+    "month": 9,
+    "recipe": 1,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 230,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 1,
-      "month": 9,
-      "recipe": 97
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 1,
+    "month": 9,
+    "recipe": 97,
+    "batch_cook": ""
+  }},
   {
     "pk": 231,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 1,
-      "month": 9,
-      "recipe": 28
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 1,
+    "month": 9,
+    "recipe": 28,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 232,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 2,
-      "month": 9,
-      "recipe": 50
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 2,
+    "month": 9,
+    "recipe": 50,
+    "batch_cook": ""
+  }},
   {
     "pk": 233,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 2,
-      "month": 9,
-      "recipe": 33
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 2,
+    "month": 9,
+    "recipe": 33,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 234,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 2,
-      "month": 9,
-      "recipe": 79
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 2,
+    "month": 9,
+    "recipe": 79,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 235,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 2,
-      "month": 9,
-      "recipe": 60
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 2,
+    "month": 9,
+    "recipe": 60,
+    "batch_cook": ""
+  }},
   {
     "pk": 236,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 2,
-      "month": 9,
-      "recipe": 12
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 2,
+    "month": 9,
+    "recipe": 12,
+    "batch_cook": ""
+  }},
   {
     "pk": 237,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 2,
-      "month": 9,
-      "recipe": 95
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 2,
+    "month": 9,
+    "recipe": 95,
+    "batch_cook": ""
+  }},
   {
     "pk": 238,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 2,
-      "month": 9,
-      "recipe": 49
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 2,
+    "month": 9,
+    "recipe": 49,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 239,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 3,
-      "month": 9,
-      "recipe": 61
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 3,
+    "month": 9,
+    "recipe": 61,
+    "batch_cook": ""
+  }},
   {
     "pk": 240,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 3,
-      "month": 9,
-      "recipe": 82
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 3,
+    "month": 9,
+    "recipe": 82,
+    "batch_cook": ""
+  }},
   {
     "pk": 241,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 3,
-      "month": 9,
-      "recipe": 46
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 3,
+    "month": 9,
+    "recipe": 46,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 242,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 3,
-      "month": 9,
-      "recipe": 47
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 3,
+    "month": 9,
+    "recipe": 47,
+    "batch_cook": ""
+  }},
   {
     "pk": 243,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 3,
-      "month": 9,
-      "recipe": 1
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 3,
+    "month": 9,
+    "recipe": 1,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 244,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 3,
-      "month": 9,
-      "recipe": 97
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 3,
+    "month": 9,
+    "recipe": 97,
+    "batch_cook": ""
+  }},
   {
     "pk": 245,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 3,
-      "month": 9,
-      "recipe": 28
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 3,
+    "month": 9,
+    "recipe": 28,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 246,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 4,
-      "month": 9,
-      "recipe": 50
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 4,
+    "month": 9,
+    "recipe": 50,
+    "batch_cook": ""
+  }},
   {
     "pk": 247,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 4,
-      "month": 9,
-      "recipe": 33
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 4,
+    "month": 9,
+    "recipe": 33,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 248,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 4,
-      "month": 9,
-      "recipe": 79
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 4,
+    "month": 9,
+    "recipe": 79,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 249,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 4,
-      "month": 9,
-      "recipe": 60
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 4,
+    "month": 9,
+    "recipe": 60,
+    "batch_cook": ""
+  }},
   {
     "pk": 250,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 4,
-      "month": 9,
-      "recipe": 12
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 4,
+    "month": 9,
+    "recipe": 12,
+    "batch_cook": ""
+  }},
   {
     "pk": 251,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 4,
-      "month": 9,
-      "recipe": 95
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 4,
+    "month": 9,
+    "recipe": 95,
+    "batch_cook": ""
+  }},
   {
     "pk": 252,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 4,
-      "month": 9,
-      "recipe": 49
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 4,
+    "month": 9,
+    "recipe": 49,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 253,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 1,
-      "month": 10,
-      "recipe": 70
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 1,
+    "month": 10,
+    "recipe": 70,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 254,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 1,
-      "month": 10,
-      "recipe": 85
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 1,
+    "month": 10,
+    "recipe": 85,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 255,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 1,
-      "month": 10,
-      "recipe": 74
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 1,
+    "month": 10,
+    "recipe": 74,
+    "batch_cook": ""
+  }},
   {
     "pk": 256,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 1,
-      "month": 10,
-      "recipe": 72
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 1,
+    "month": 10,
+    "recipe": 72,
+    "batch_cook": ""
+  }},
   {
     "pk": 257,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 1,
-      "month": 10,
-      "recipe": 6
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 1,
+    "month": 10,
+    "recipe": 6,
+    "batch_cook": ""
+  }},
   {
     "pk": 258,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 1,
-      "month": 10,
-      "recipe": 90
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 1,
+    "month": 10,
+    "recipe": 90,
+    "batch_cook": ""
+  }},
   {
     "pk": 259,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 1,
-      "month": 10,
-      "recipe": 20
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 1,
+    "month": 10,
+    "recipe": 20,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 260,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 2,
-      "month": 10,
-      "recipe": 61
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 2,
+    "month": 10,
+    "recipe": 61,
+    "batch_cook": ""
+  }},
   {
     "pk": 261,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 2,
-      "month": 10,
-      "recipe": 49
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 2,
+    "month": 10,
+    "recipe": 49,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 262,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 2,
-      "month": 10,
-      "recipe": 79
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 2,
+    "month": 10,
+    "recipe": 79,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 263,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 2,
-      "month": 10,
-      "recipe": 47
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 2,
+    "month": 10,
+    "recipe": 47,
+    "batch_cook": ""
+  }},
   {
     "pk": 264,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 2,
-      "month": 10,
-      "recipe": 17
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 2,
+    "month": 10,
+    "recipe": 17,
+    "batch_cook": ""
+  }},
   {
     "pk": 265,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 2,
-      "month": 10,
-      "recipe": 95
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 2,
+    "month": 10,
+    "recipe": 95,
+    "batch_cook": ""
+  }},
   {
     "pk": 266,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 2,
-      "month": 10,
-      "recipe": 38
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 2,
+    "month": 10,
+    "recipe": 38,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 267,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 3,
-      "month": 10,
-      "recipe": 70
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 3,
+    "month": 10,
+    "recipe": 70,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 268,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 3,
-      "month": 10,
-      "recipe": 85
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 3,
+    "month": 10,
+    "recipe": 85,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 269,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 3,
-      "month": 10,
-      "recipe": 74
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 3,
+    "month": 10,
+    "recipe": 74,
+    "batch_cook": ""
+  }},
   {
     "pk": 270,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 3,
-      "month": 10,
-      "recipe": 72
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 3,
+    "month": 10,
+    "recipe": 72,
+    "batch_cook": ""
+  }},
   {
     "pk": 271,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 3,
-      "month": 10,
-      "recipe": 6
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 3,
+    "month": 10,
+    "recipe": 6,
+    "batch_cook": ""
+  }},
   {
     "pk": 272,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 3,
-      "month": 10,
-      "recipe": 90
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 3,
+    "month": 10,
+    "recipe": 90,
+    "batch_cook": ""
+  }},
   {
     "pk": 273,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 3,
-      "month": 10,
-      "recipe": 20
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 3,
+    "month": 10,
+    "recipe": 20,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 274,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 4,
-      "month": 10,
-      "recipe": 61
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 4,
+    "month": 10,
+    "recipe": 61,
+    "batch_cook": ""
+  }},
   {
     "pk": 275,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 4,
-      "month": 10,
-      "recipe": 49
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 4,
+    "month": 10,
+    "recipe": 49,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 276,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 4,
-      "month": 10,
-      "recipe": 79
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 4,
+    "month": 10,
+    "recipe": 79,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 277,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 4,
-      "month": 10,
-      "recipe": 47
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 4,
+    "month": 10,
+    "recipe": 47,
+    "batch_cook": ""
+  }},
   {
     "pk": 278,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 4,
-      "month": 10,
-      "recipe": 17
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 4,
+    "month": 10,
+    "recipe": 17,
+    "batch_cook": ""
+  }},
   {
     "pk": 279,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 4,
-      "month": 10,
-      "recipe": 95
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 4,
+    "month": 10,
+    "recipe": 95,
+    "batch_cook": ""
+  }},
   {
     "pk": 280,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 4,
-      "month": 10,
-      "recipe": 38
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 4,
+    "month": 10,
+    "recipe": 38,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 281,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 1,
-      "month": 11,
-      "recipe": 43
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 1,
+    "month": 11,
+    "recipe": 43,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 282,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 1,
-      "month": 11,
-      "recipe": 55
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 1,
+    "month": 11,
+    "recipe": 55,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 283,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 1,
-      "month": 11,
-      "recipe": 84
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 1,
+    "month": 11,
+    "recipe": 84,
+    "batch_cook": ""
+  }},
   {
     "pk": 284,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 1,
-      "month": 11,
-      "recipe": 74
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 1,
+    "month": 11,
+    "recipe": 74,
+    "batch_cook": ""
+  }},
   {
     "pk": 285,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 1,
-      "month": 11,
-      "recipe": 17
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 1,
+    "month": 11,
+    "recipe": 17,
+    "batch_cook": ""
+  }},
   {
     "pk": 286,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 1,
-      "month": 11,
-      "recipe": 90
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 1,
+    "month": 11,
+    "recipe": 90,
+    "batch_cook": ""
+  }},
   {
     "pk": 287,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 1,
-      "month": 11,
-      "recipe": 26
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 1,
+    "month": 11,
+    "recipe": 26,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 288,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 2,
-      "month": 11,
-      "recipe": 38
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 2,
+    "month": 11,
+    "recipe": 38,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 289,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 2,
-      "month": 11,
-      "recipe": 70
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 2,
+    "month": 11,
+    "recipe": 70,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 290,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 2,
-      "month": 11,
-      "recipe": 56
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 2,
+    "month": 11,
+    "recipe": 56,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 291,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 2,
-      "month": 11,
-      "recipe": 72
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 2,
+    "month": 11,
+    "recipe": 72,
+    "batch_cook": ""
+  }},
   {
     "pk": 292,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 2,
-      "month": 11,
-      "recipe": 6
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 2,
+    "month": 11,
+    "recipe": 6,
+    "batch_cook": ""
+  }},
   {
     "pk": 293,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 2,
-      "month": 11,
-      "recipe": 102
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 2,
+    "month": 11,
+    "recipe": 102,
+    "batch_cook": ""
+  }},
   {
     "pk": 294,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 2,
-      "month": 11,
-      "recipe": 86
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 2,
+    "month": 11,
+    "recipe": 86,
+    "batch_cook": ""
+  }},
   {
     "pk": 295,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 3,
-      "month": 11,
-      "recipe": 43
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 3,
+    "month": 11,
+    "recipe": 43,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 296,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 3,
-      "month": 11,
-      "recipe": 55
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 3,
+    "month": 11,
+    "recipe": 55,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 297,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 3,
-      "month": 11,
-      "recipe": 84
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 3,
+    "month": 11,
+    "recipe": 84,
+    "batch_cook": ""
+  }},
   {
     "pk": 298,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 3,
-      "month": 11,
-      "recipe": 74
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 3,
+    "month": 11,
+    "recipe": 74,
+    "batch_cook": ""
+  }},
   {
     "pk": 299,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 3,
-      "month": 11,
-      "recipe": 17
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 3,
+    "month": 11,
+    "recipe": 17,
+    "batch_cook": ""
+  }},
   {
     "pk": 300,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 3,
-      "month": 11,
-      "recipe": 90
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 3,
+    "month": 11,
+    "recipe": 90,
+    "batch_cook": ""
+  }},
   {
     "pk": 301,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 3,
-      "month": 11,
-      "recipe": 26
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 3,
+    "month": 11,
+    "recipe": 26,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 302,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 4,
-      "month": 11,
-      "recipe": 38
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 4,
+    "month": 11,
+    "recipe": 38,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 303,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 4,
-      "month": 11,
-      "recipe": 70
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 4,
+    "month": 11,
+    "recipe": 70,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 304,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 4,
-      "month": 11,
-      "recipe": 56
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 4,
+    "month": 11,
+    "recipe": 56,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 305,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 4,
-      "month": 11,
-      "recipe": 72
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 4,
+    "month": 11,
+    "recipe": 72,
+    "batch_cook": ""
+  }},
   {
     "pk": 306,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 4,
-      "month": 11,
-      "recipe": 6
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 4,
+    "month": 11,
+    "recipe": 6,
+    "batch_cook": ""
+  }},
   {
     "pk": 307,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 4,
-      "month": 11,
-      "recipe": 102
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 4,
+    "month": 11,
+    "recipe": 102,
+    "batch_cook": ""
+  }},
   {
     "pk": 308,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 4,
-      "month": 11,
-      "recipe": 86
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 4,
+    "month": 11,
+    "recipe": 86,
+    "batch_cook": ""
+  }},
   {
     "pk": 309,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 1,
-      "month": 12,
-      "recipe": 72
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 1,
+    "month": 12,
+    "recipe": 72,
+    "batch_cook": ""
+  }},
   {
     "pk": 310,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 1,
-      "month": 12,
-      "recipe": 56
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 1,
+    "month": 12,
+    "recipe": 56,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 311,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 1,
-      "month": 12,
-      "recipe": 55
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 1,
+    "month": 12,
+    "recipe": 55,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 312,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 1,
-      "month": 12,
-      "recipe": 48
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 1,
+    "month": 12,
+    "recipe": 48,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 313,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 1,
-      "month": 12,
-      "recipe": 4
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 1,
+    "month": 12,
+    "recipe": 4,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 314,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 1,
-      "month": 12,
-      "recipe": 102
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 1,
+    "month": 12,
+    "recipe": 102,
+    "batch_cook": ""
+  }},
   {
     "pk": 315,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 1,
-      "month": 12,
-      "recipe": 27
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 1,
+    "month": 12,
+    "recipe": 27,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 316,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 2,
-      "month": 12,
-      "recipe": 67
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 2,
+    "month": 12,
+    "recipe": 67,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 317,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 2,
-      "month": 12,
-      "recipe": 85
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 2,
+    "month": 12,
+    "recipe": 85,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 318,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 2,
-      "month": 12,
-      "recipe": 41
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 2,
+    "month": 12,
+    "recipe": 41,
+    "batch_cook": ""
+  }},
   {
     "pk": 319,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 2,
-      "month": 12,
-      "recipe": 57
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 2,
+    "month": 12,
+    "recipe": 57,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 320,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 2,
-      "month": 12,
-      "recipe": 8
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 2,
+    "month": 12,
+    "recipe": 8,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 321,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 2,
-      "month": 12,
-      "recipe": 103
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 2,
+    "month": 12,
+    "recipe": 103,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 322,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 2,
-      "month": 12,
-      "recipe": 69
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 2,
+    "month": 12,
+    "recipe": 69,
+    "batch_cook": "batch"
+  }},
   {
     "pk": 323,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 3,
-      "month": 12,
-      "recipe": 72
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 3,
+    "month": 12,
+    "recipe": 72,
+    "batch_cook": ""
+  }},
   {
     "pk": 324,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 3,
-      "month": 12,
-      "recipe": 56
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 3,
+    "month": 12,
+    "recipe": 56,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 325,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 3,
-      "month": 12,
-      "recipe": 55
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 3,
+    "month": 12,
+    "recipe": 55,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 326,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 3,
-      "month": 12,
-      "recipe": 48
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 3,
+    "month": 12,
+    "recipe": 48,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 327,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 3,
-      "month": 12,
-      "recipe": 4
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 3,
+    "month": 12,
+    "recipe": 4,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 328,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 3,
-      "month": 12,
-      "recipe": 102
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 3,
+    "month": 12,
+    "recipe": 102,
+    "batch_cook": ""
+  }},
   {
     "pk": 329,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 3,
-      "month": 12,
-      "recipe": 27
-    }
-  },
+"fields": {
+    "day": 7,
+    "week": 3,
+    "month": 12,
+    "recipe": 27,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 330,
     "model": "plan.plan",
-    "fields": {
-      "day": 1,
-      "week": 4,
-      "month": 12,
-      "recipe": 67
-    }
-  },
+"fields": {
+    "day": 1,
+    "week": 4,
+    "month": 12,
+    "recipe": 67,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 331,
     "model": "plan.plan",
-    "fields": {
-      "day": 2,
-      "week": 4,
-      "month": 12,
-      "recipe": 85
-    }
-  },
+"fields": {
+    "day": 2,
+    "week": 4,
+    "month": 12,
+    "recipe": 85,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 332,
     "model": "plan.plan",
-    "fields": {
-      "day": 3,
-      "week": 4,
-      "month": 12,
-      "recipe": 41
-    }
-  },
+"fields": {
+    "day": 3,
+    "week": 4,
+    "month": 12,
+    "recipe": 41,
+    "batch_cook": ""
+  }},
   {
     "pk": 333,
     "model": "plan.plan",
-    "fields": {
-      "day": 4,
-      "week": 4,
-      "month": 12,
-      "recipe": 57
-    }
-  },
+"fields": {
+    "day": 4,
+    "week": 4,
+    "month": 12,
+    "recipe": 57,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 334,
     "model": "plan.plan",
-    "fields": {
-      "day": 5,
-      "week": 4,
-      "month": 12,
-      "recipe": 8
-    }
-  },
+"fields": {
+    "day": 5,
+    "week": 4,
+    "month": 12,
+    "recipe": 8,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 335,
     "model": "plan.plan",
-    "fields": {
-      "day": 6,
-      "week": 4,
-      "month": 12,
-      "recipe": 103
-    }
-  },
+"fields": {
+    "day": 6,
+    "week": 4,
+    "month": 12,
+    "recipe": 103,
+    "batch_cook": "defrost"
+  }},
   {
     "pk": 336,
     "model": "plan.plan",
-    "fields": {
-      "day": 7,
-      "week": 4,
-      "month": 12,
-      "recipe": 69
-    }
-  }
+"fields": {
+    "day": 7,
+    "week": 4,
+    "month": 12,
+    "recipe": 69,
+    "batch_cook": "defrost"
+  }}
 ]

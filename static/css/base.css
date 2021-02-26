@@ -504,6 +504,10 @@ div.container {
     font-size: 1.2rem;
 }
 
+.modal-body > li:only-child {
+  display: none;
+}
+
 .modal-footer {
     justify-content: center;
 }

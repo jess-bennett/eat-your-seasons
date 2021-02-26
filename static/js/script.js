@@ -121,6 +121,10 @@ $(".quantity-icons").click(function() {
     $(".quantity-icons").removeClass("quantity-icons-active");
     $(this).addClass("quantity-icons-active");
 });
+
+$('li').filter(function(){
+    return $.trim($(this).html()) == '';
+}).parents(".recipe-text").hide()
     
 });
 

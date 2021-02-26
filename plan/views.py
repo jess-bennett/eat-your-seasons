@@ -18,6 +18,7 @@ def plan(request):
             months = request.GET['month'].split(',')
             weeks = request.GET['week'].split(',')
             quantity = request.GET.get('quantity', 'four')
+            current_week = request.GET.get('week', '')
             plans = plans.filter(month__name__in=months, week__name__in=weeks)
             recipes = recipes.filter(month__name__in=months).order_by('name')
             months = Month.objects.filter(name__in=months)
@@ -26,7 +27,7 @@ def plan(request):
     context = {
         'plans': plans,
         'current_month': months,
-        'current_week': weeks,
+        'current_week': current_week,
         'recipes': recipes,
         'quantity': quantity,
     }

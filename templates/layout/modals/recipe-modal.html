@@ -9,12 +9,29 @@
       <div class="modal-notes">
         <div class="col-8 text-left">
             <h4><em>{% if quantity %}
+                        {% if recipe.isfrozen == 'Yes' %}
+                            {% if current_week == '1' or current_week == '2' %}
+                                Batch Cook - Make double and freeze half
+                            {% else %}
+                                Defrost previous batch cook and reheat
+                            {% endif %}
+                        {% endif %}<br>
                         {% if quantity == 'one' %}
-                            Makes 2 portions
+                            {% if recipe.isfrozen == 'Yes' %}
+                                {% if current_week == '1' or current_week == '2' %}
+                                    Makes 4 portions
+                                {% endif %}
+                            {% else %}
+                                Makes 2 portions
+                            {% endif %}
                         {% elif quantity == 'two' %}
-                            Makes 4 portions
-                        {% elif quantity == 'four' %}
-                            Makes 8 portions
+                            {% if recipe.isfrozen == 'Yes' %}
+                                {% if current_week == '1' or current_week == '2' %}
+                                    Makes 8 portions
+                                {% endif %}
+                            {% else %}
+                                Makes 4 portions
+                            {% endif %}
                         {% endif %}
                     {% else %}
                         Serves 4
@@ -36,21 +53,53 @@
             {% endif %}
         </div>
       </div>
-      <div class="modal-body text-left">
+      <div class="modal-body text-left recipe-text">
           <h4>Ingredients:</h4>
           <ul>
             {% for ingredient in recipe.quantity_set.all %}
-              <li>{% if quantity == 'one' %}{{ ingredient.for_2 }}{% elif quantity == 'four' %}{{ ingredient.for_8 }}{% else %}{{ ingredient.for_4 }}{% endif %} {{ ingredient.ingredients }}</li>
+                <li>
+                    {% if quantity == 'one' %}
+                            {% if recipe.isfrozen == 'Yes' %}
+                                {% if current_week == '1' or current_week == '2' %}
+                                    {{ ingredient.for_4 }} {{ ingredient.ingredients }}
+                                {% endif %}
+                            {% else %}
+                                {{ ingredient.for_2 }} {{ ingredient.ingredients }}
+                            {% endif %}
+                    {% elif quantity == 'two' %}
+                            {% if recipe.isfrozen == 'Yes' %}
+                                {% if current_week == '1' or current_week == '2' %}
+                                    {{ ingredient.for_8 }} {{ ingredient.ingredients }}
+                                {% endif %}
+                            {% else %}
+                                {{ ingredient.for_4 }} {{ ingredient.ingredients }}
+                            {% endif %}
+                    {% else %}
+                        {{ ingredient.for_4 }} {{ ingredient.ingredients }}
+                    {% endif %}
+                </li>
             {% endfor %}
           </ul>
         
       </div>
       
-      <div class="modal-body text-left">
+      <div class="modal-body text-left recipe-text">
           <h4>Steps:</h4>
           <ol>
             {% for step in recipe.steps.all %}
-              <li>{{ step }}</li>
+              <li>
+            {% if quantity %}
+                {% if recipe.isfrozen == 'Yes' %}
+                    {% if current_week == '1' or current_week == '2' %}
+                        {{ step }}
+                    {% endif %}
+                {% else %}
+                    {{ step }}
+                {% endif %}
+            {% else %}
+                {{ step }}
+            {% endif %}
+            </li>
             {% endfor %}
           </ol>
         
