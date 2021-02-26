@@ -33,23 +33,19 @@
         </div>
         <div class="row pt-3 text-center">
             <div class="offset-3 col-6 align-self-center quantity-options">
-                <div id="one-select" class="col-3 hvr-pop quantity-icons">
+                <div id="one-select" class="hvr-pop quantity-icons">
                     {% include "icons/one-person.svg" %}
                 </div>
-                <div id="two-select" class="col-3 hvr-pop quantity-icons">
+                <div id="two-select" class="hvr-pop quantity-icons">
                     {% include "icons/two-people.svg" %}
                 </div>
+            </div>
+            <div class="col-3 col-md-1 text-right" data-toggle="modal" data-target="#modal-shopping">
+                    {% include "icons/shopping.svg" %}
             </div>
         </div>
         <div class="row pt-3 text-center">
             <h5>Portions are doubled per person to allow for lunch the next day, and doubled again if freezable for batch cooking.</h5>
-        </div>
-        <div>
-                {% for recipe in recipes %}
-                    {% for ingredient in recipe.quantity_set.all %}
-                        {{ ingredient.ingredients }}
-                    {% endfor %}
-                {% endfor %}
         </div>
         <div class="row pt-3">
             <div class="col offset-md-2 col-md-8">
@@ -81,6 +77,7 @@
             </div>
         </div>
     </div>
+        {% include "layout/modals/shopping-modal.html" %} 
     {% for recipe in recipes %}
         {% include "layout/modals/recipe-modal.html" %} 
     {% endfor %}

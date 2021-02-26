@@ -530,7 +530,7 @@ div.container {
     cursor: auto;
 }
 
-.quantity-icons {
+.quantity-icons, #shopping-icon {
     width: 2.5rem;
     height: 2.5rem;
     fill: var(--font);
