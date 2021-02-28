@@ -45,7 +45,7 @@
   {% endif %}
 
   <div class="row">
-    <div id="login-box" class="offset-2 col-8 p-3">
+    <div class="offset-2 col-8 p-3 login-box">
         <form class="login" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form.as_p }}
@@ -55,7 +55,7 @@
         {% endif %}
         <a class="anchor hvr-pop"
             href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-        <button id="login-button" class="hvr-pop" type="submit">{% trans "Sign In" %}</button>
+        <button class="login-button hvr-pop" type="submit">{% trans "Sign In" %}</button>
         </form>
     </div>
   </div>

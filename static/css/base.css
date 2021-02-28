@@ -579,13 +579,13 @@ a.anchor {
     font-size: 1.2rem;
 }
 
-#login-box {
+.login-box {
     border: 2px solid var(--highlights);
     border-radius: 0.2rem;
 }
 
 
-#login-button {
+.login-button {
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 0.2rem;

@@ -18,14 +18,14 @@
             in</a>.{% endblocktrans %}</h4>
 
     <div class="row">
-        <div id="login-box" class="offset-2 col-8 p-3">
+        <div class="offset-2 col-8 p-3 login-box">
             <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button id="login-button" class="hvr-pop" type="submit">{% trans "Sign Up" %} &raquo;</button>
+                <button class="login-button hvr-pop" type="submit">{% trans "Sign Up" %} &raquo;</button>
             </form>
         </div>
     </div>
