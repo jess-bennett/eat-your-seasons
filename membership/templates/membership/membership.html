@@ -39,6 +39,9 @@
         <div class="col-4 text-center">
             <div class="subscription-box is-selected">
                 <h2 class="subtitle">Bronze</h2>
+                <div>
+                    <h4>FREE</h4>
+                </div>
                 <ul class="feature-list">
                     <li>
                         <span>{% include "icons/tick.svg" %}</span>
@@ -61,15 +64,18 @@
                         Access to customisable shopping lists
                     </li>
                 </ul>
-                <div>
-                    <h4>FREE</h4>
-                </div>
             </div>
         </div>
         {% for product in products %}
         <div class="col-4" data-product-id="{{ product.id }}">
             <div class="subscription-box">
                 <h2 class="subtitle">{{ product.name }}</h2>
+                {% for plan in product.plan_set.all %}
+                <div>
+                    <h4 class="interval-type interval-month">{% if plan.interval == 'month' %}{{ plan.human_readable_price }}{% endif %}</h4>
+                    <h4 class="interval-type interval-year">{% if plan.interval == 'year' %}{{ plan.human_readable_price }}{% endif %}</h4>
+                </div>
+            {% endfor %}
                 <ul class="feature-list">
                     {% for feature, value in product.metadata.items %}
                     <li>
@@ -78,12 +84,10 @@
                     </li>
                     {% endfor %}
                 </ul>
-                {% for plan in product.plan_set.all %}
-                    <h4><span class="interval-type interval-month">{% if plan.interval == 'month' %}{{ plan.human_readable_price }}{% endif %}</span><span class="interval-type interval-year">{% if plan.interval == 'year' %}{{ plan.human_readable_price }}{% endif %}</span></h4>
+                
             </div>
-            {% endfor %}
-            {% endfor %}
         </div>
+            {% endfor %}
     </div>
 </div>
 
