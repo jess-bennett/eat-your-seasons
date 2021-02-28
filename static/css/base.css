@@ -568,6 +568,11 @@ div.container {
     height: 1.5rem;
 }
 
+.subscription-box {
+    border: 2px solid var(--highlights);
+    cursor: pointer;
+}
+
 a.anchor {
     text-decoration: none;
     color: var(--highlights);

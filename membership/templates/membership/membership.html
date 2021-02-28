@@ -22,8 +22,10 @@
                 <h3>Pricing Plans</h3>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-4 text-center subscription-box">
                 <p class="subtitle">Bronze</p>
                 <ul class="feature-list">
                     <li>
@@ -52,7 +54,7 @@
                 </div>
             </div>
             {% for product in products %}
-            <div class="col-4">
+            <div class="col-4 subscription-box" data-product-id="{{ product.id }}">
                 <p class="subtitle">{{ product.name }}</p>
                 <ul class="feature-list">
                     {% for feature, value in product.metadata.items %}
@@ -70,6 +72,9 @@
             </div>
             {% endfor %}
         </div>
+    </div>
+
+    
         <p>Payment</p>
         <form action="/charge" method="post" id="payment-form">
             <div class="form-row">
@@ -86,9 +91,8 @@
         
             <input type="submit" class="submit" value="Submit Payment">
         </form>
-    </div>
 {% endblock %}
 
 {% block postloadjs %}
-<script src="{% static 'js/stripe_elements.js' %}"></script>
+<script src="{% static 'js/stripe.js' %}"></script>
 {% endblock %}
