@@ -9,6 +9,7 @@ $(document).ready(function() {
     sessionStorage.setItem("selectedmonth", currentMonth);
     sessionStorage.setItem("selectedweek", currentWeek);
     sessionStorage.setItem("selectedquantity", currentQuantity);
+    $(".interval-year").hide();
 
     if (currentWeek == 1) {
     $("#arrow-left").addClass("disabled");
@@ -124,11 +125,24 @@ $(".quantity-icons").click(function() {
 
 $('li').filter(function(){
     return $.trim($(this).html()) == '';
-}).hide()
+}).hide();
 
 $('li').filter(function(){
     return $.trim($(this).html()) == '';
-}).parents(".recipe-text").hide()
+}).parents(".recipe-text").hide();
+
+$(".subscription-box").click(function() {
+    $(".subscription-box").removeClass("is-selected");
+    $(this).addClass("is-selected");
+});
+
+$(".interval-box").click(function() {
+    $(".interval-box").removeClass("is-selected");
+    $(this).addClass("is-selected");
+    let selectedInterval = $(this).attr("id").substr(0, $(this).attr("id").indexOf('-'));
+    $(".interval-type").hide();
+    $(`.interval-${selectedInterval}`).show();
+});
     
 });
 

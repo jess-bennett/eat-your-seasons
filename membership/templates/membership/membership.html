@@ -25,12 +25,12 @@
 <div class="container">
     <div class="row p-3">
         <div class="col-3 offset-3 text-center">
-            <div class="subscription-box is-selected">
+            <div id="month-select" class="interval-box is-selected">
                 <h3>Monthly</h3>
             </div>
         </div>
         <div class="col-3 text-center">
-            <div class="subscription-box">
+            <div id="year-select" class="interval-box">
                 <h3>Annual</h3>
             </div>
         </div>
@@ -79,9 +79,7 @@
                     {% endfor %}
                 </ul>
                 {% for plan in product.plan_set.all %}
-                <div>
-                    <h4>{% if plan.interval == 'month' %}{{ plan.human_readable_price }}{% endif %}</h4>
-                </div>
+                    <h4><span class="interval-type interval-month">{% if plan.interval == 'month' %}{{ plan.human_readable_price }}{% endif %}</span><span class="interval-type interval-year">{% if plan.interval == 'year' %}{{ plan.human_readable_price }}{% endif %}</span></h4>
             </div>
             {% endfor %}
             {% endfor %}

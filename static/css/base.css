@@ -572,13 +572,17 @@ div.container {
     height: 1.5rem;
 }
 
-.subscription-box {
+.subscription-box, .interval-box {
     border: 2px solid var(--highlights);
     cursor: pointer;
     border-radius: 0.2rem;
 }
 
 .subscription-box.is-selected {
+    border: 4px solid var(--highlights);
+}
+
+.interval-box.is-selected {
     border: 4px solid var(--highlights);
 }
 
