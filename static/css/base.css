@@ -568,6 +568,33 @@ div.container {
     height: 1.5rem;
 }
 
+a.anchor {
+    text-decoration: none;
+    color: var(--highlights);
+    font-weight: bold;
+}
+
+.login {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.login-box {
+    border: 2px solid var(--highlights);
+    border-radius: 0.2rem;
+}
+
+
+.login-button {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+    border: 2px solid var(--highlights);
+    background-color: var(--background);
+    border-radius: 0.2rem;
+    color: var(--highlights);
+}
+
 #footer {
   position: fixed;
   left: 0;
