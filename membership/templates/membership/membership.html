@@ -10,13 +10,12 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col text-center">
             <h1 class="page-heading">My Account</h1>
             </div>
         </div>
-        <a href="/accounts/logout">LOG OUT</a>
         <div class="row">
             <div class="col text-center">
                 <h3>Pricing Plans</h3>
@@ -74,8 +73,8 @@
         </div>
     </div>
 
-    
-        <p>Payment</p>
+    <div class="container">
+        <h3>Payment</h3>
         <form action="/charge" method="post" id="payment-form">
             <div class="form-row">
                 <label for="card-element">
@@ -91,6 +90,12 @@
         
             <input type="submit" class="submit" value="Submit Payment">
         </form>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <a id="logout" class="anchor hvr-pop" href="/accounts/logout">LOG OUT</a>
+        </div>
+    </div>
 {% endblock %}
 
 {% block postloadjs %}

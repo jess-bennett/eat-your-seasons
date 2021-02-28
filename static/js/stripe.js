@@ -16,3 +16,4 @@ function displayError(event) {
     displayError.textContent = '';
   }
 }
+

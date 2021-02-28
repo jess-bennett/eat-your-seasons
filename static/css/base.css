@@ -571,12 +571,21 @@ div.container {
 .subscription-box {
     border: 2px solid var(--highlights);
     cursor: pointer;
+    border-radius: 0.2rem;
 }
+
 
 a.anchor {
     text-decoration: none;
     color: var(--highlights);
     font-weight: bold;
+}
+
+#logout {
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid var(--highlights);
+    border-radius: 0.2rem;
 }
 
 .login {
