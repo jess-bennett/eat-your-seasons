@@ -97,18 +97,18 @@
   <div>
     <div class="row">
       <div class="col-12">
-        <div class="card mx-5 shadow rounded" style="border-radius:50px;border:none">
+        <div id="payment-box">
           <div class="card-body">
-            <h5 class="card-title font-weight-bold">Checkout</h5>
-            <p class="text-muted ">Enter card details.  Your subscription will start immediately</p>
+            <h2>Checkout</h2>
+            <h5>Enter card details.  Your subscription will start immediately</h5>
             <div class="row">
-              <div class="col-6 text-muted">
-                <p>Plan:</p>
-                <p>Total:</p>
-              </div>
               <div class="col-6 text-right">
-                <p id="plan"></p>
-                <p id="price"></p>
+                <h4>Plan:</h4>
+                <h4>Total:</h4>
+              </div>
+              <div class="col-6 text-left">
+                <h4 id="plan"></h4>
+                <h4 id="price"></h4>
                 <p hidden id="priceId"></p>
               </div>
 
@@ -121,7 +121,7 @@
               
               <!-- We'll put the error messages in this element -->
               <div id="card-errors" role="alert"></div>
-              <button id="submit" type="submit">
+              <button class="hvr-pop" id="submit" type="submit">
                 <div class="spinner-border  spinner-border-sm text-light hidden" id="spinner" role="status">
                   <span class="sr-only">Loading...</span>
                 </div>

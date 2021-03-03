@@ -572,10 +572,14 @@ div.container {
     height: 1.5rem;
 }
 
-.subscription-box, .interval-box {
+.subscription-box, .interval-box, #payment-box {
     border: 2px solid var(--highlights);
     cursor: pointer;
     border-radius: 0.2rem;
+}
+
+#payment-box {
+    cursor: auto;
 }
 
 .subscription-box.is-selected {
@@ -586,6 +590,13 @@ div.container {
     border: 4px solid var(--highlights);
 }
 
+#submit {
+    width: 50%;
+    background: var(--background);
+    border-radius: 0.2rem;
+    border: 2px solid var(--highlights);
+    margin-top: 0.5rem;
+}
 
 a.anchor {
     text-decoration: none;
@@ -759,48 +770,4 @@ body {
     }
 
 
-    #submit:hover {
-      filter: contrast(120%);
-    }
-
-    #submit {
-      font-feature-settings: "pnum";
-      --body-color: #f7fafc;
-      --button-color: #556cd6;
-      --accent-color: #556cd6;
-      --gray-border: #e3e8ee;
-      --link-color: #fff;
-      --font-color: #697386;
-      --body-font-family: -apple-system,BlinkMacSystemFont,sans-serif;
-      --radius: 4px;
-      --form-width: 400px;
-      -webkit-box-direction: normal;
-      word-wrap: break-word;
-      box-sizing: border-box;
-      font: inherit;
-      overflow: visible;
-      -webkit-appearance: button;
-      -webkit-font-smoothing: antialiased;
-      margin: 0;
-      font-family: inherit;
-      -webkit-tap-highlight-color: transparent;
-      font-size: 16px;
-      padding: 0 12px;
-      line-height: 32px;
-      outline: none;
-      text-decoration: none;
-      text-transform: none;
-      margin-right: 8px;
-      height: 36px;
-      border-radius: var(--radius);
-      color: #fff;
-      border: 0;
-      margin-top: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all .2s ease;
-      display: block;
-      box-shadow: 0 4px 5.5px 0 rgba(0,0,0,.07);
-      width: 100%;
-      background: var(--button-color);
-    }
+    
