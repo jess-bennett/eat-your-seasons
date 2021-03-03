@@ -39,7 +39,7 @@
     </div>
     <div class="row">
         <div class="col-4 text-center">
-            <div class="subscription-box is-selected">
+            <div id="free-plan" class="subscription-box is-selected">
                 <h2 class="subtitle">Bronze</h2>
                 <div>
                     <h4>FREE</h4>
@@ -71,7 +71,7 @@
         {% for product in products %}
         {% for plan in product.plan_set.all %}
         <div class="col-4 interval-type interval-{{ plan.interval }}" data-product-name="{{ product.name }}" data-product-price="{{ plan.human_readable_price }}" data-product-id="{{ plan.id }}">
-            <div class="subscription-box" onclick="planSelect('{{product.name}}' ,'{{plan.human_readable_price}}', '{{plan.id}}')">
+            <div id="paid-plan" class="subscription-box" onclick="planSelect('{{product.name}}' ,'{{plan.human_readable_price}}', '{{plan.id}}')">
                 <h2 class="subtitle">{{ product.name }}</h2>
                 
                 <ul class="feature-list">
@@ -93,7 +93,7 @@
     </div>
 </div>
 
-<div class="container ">
+<div id="payment-form" class="container">
   <div>
     <div class="row">
       <div class="col-12">

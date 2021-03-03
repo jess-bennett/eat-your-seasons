@@ -10,6 +10,7 @@ $(document).ready(function() {
     sessionStorage.setItem("selectedweek", currentWeek);
     sessionStorage.setItem("selectedquantity", currentQuantity);
     $(".interval-year").hide();
+    $("#payment-form").hide();
 
     if (currentWeek == 1) {
     $("#arrow-left").addClass("disabled");
@@ -134,6 +135,11 @@ $('li').filter(function(){
 $(".subscription-box").click(function() {
     $(".subscription-box").removeClass("is-selected");
     $(this).addClass("is-selected");
+    if ($(this).attr("id") == "free-plan") {
+        $("#payment-form").hide();
+    } else {
+        $("#payment-form").show();
+    }
 });
 
 $(".interval-box").click(function() {
