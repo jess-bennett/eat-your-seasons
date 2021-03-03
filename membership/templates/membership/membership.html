@@ -2,29 +2,48 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center">
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
             <h1 class="page-heading">My Account</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h3>Pricing Plans</h3>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row p-3">
+        <div class="col-3 offset-3 text-center">
+            <div id="month-select-interval" class="interval-box is-selected">
+                <h3>Monthly</h3>
             </div>
         </div>
-        <a href="/accounts/logout">LOG OUT</a>
-        <div class="row">
-            <div class="col text-center">
-                <h3>Pricing Plans</h3>
+        <div class="col-3 text-center">
+            <div id="year-select-interval" class="interval-box">
+                <h3>Annual</h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col-4">
-                <p class="subtitle">Bronze</p>
+    </div>
+    <div class="row">
+        <div class="col-4 text-center">
+            <div id="free-plan" class="subscription-box is-selected">
+                <h2 class="subtitle">Bronze</h2>
+                <div>
+                    <h4>FREE</h4>
+                </div>
                 <ul class="feature-list">
                     <li>
                         <span>{% include "icons/tick.svg" %}</span>
@@ -47,13 +66,14 @@
                         Access to customisable shopping lists
                     </li>
                 </ul>
-                <div>
-                    <p>FREE</p>
-                </div>
             </div>
-            {% for product in products %}
-            <div class="col-4">
-                <p class="subtitle">{{ product.name }}</p>
+        </div>
+        {% for product in products %}
+        {% for plan in product.plan_set.all %}
+        <div class="col-4 interval-type interval-{{ plan.interval }}" data-product-name="{{ product.name }}" data-product-price="{{ plan.human_readable_price }}" data-product-id="{{ plan.id }}">
+            <div id="paid-plan" class="subscription-box" onclick="planSelect('{{product.name}}' ,'{{plan.human_readable_price}}', '{{plan.id}}')">
+                <h2 class="subtitle">{{ product.name }}</h2>
+                
                 <ul class="feature-list">
                     {% for feature, value in product.metadata.items %}
                     <li>
@@ -62,33 +82,63 @@
                     </li>
                     {% endfor %}
                 </ul>
-                {% for plan in product.plan_set.all %}
                 <div>
-                    <p>{{ plan.human_readable_price }}</p>
+                    <h4>{{ plan.human_readable_price }}</h4>
                 </div>
-                {% endfor %}
+                
             </div>
-            {% endfor %}
         </div>
-        <p>Payment</p>
-        <form action="/charge" method="post" id="payment-form">
-            <div class="form-row">
-                <label for="card-element">
-                    Credit or debit card
-                </label>
-                <div id="card-element">
-                    <!-- a Stripe Element will be inserted here. -->
-                </div>
-        
-                <!-- Used to display form errors -->
-                <div id="card-errors" role="alert"></div>
-            </div>
-        
-            <input type="submit" class="submit" value="Submit Payment">
-        </form>
+                {% endfor %}
+        {% endfor %}
     </div>
+</div>
+
+<div id="payment-form" class="container">
+  <div>
+    <div class="row">
+      <div class="col-12">
+        <div id="payment-box">
+          <div class="card-body">
+            <h2>Checkout</h2>
+            <h5>Enter card details.  Your subscription will start immediately</h5>
+            <div class="row">
+              <div class="col-6 text-right">
+                <h4>Plan:</h4>
+                <h4>Total:</h4>
+              </div>
+              <div class="col-6 text-left">
+                <h4 id="plan"></h4>
+                <h4 id="price"></h4>
+                <p hidden id="priceId"></p>
+              </div>
+
+            </div>
+            <br>
+            <form id="subscription-form" >
+              <div id="card-element" class="MyCardElement">
+                <!-- Elements will create input elements here -->
+              </div>
+              
+              <!-- We'll put the error messages in this element -->
+              <div id="card-errors" role="alert"></div>
+              <button class="hvr-pop" id="submit" type="submit">
+                <div class="spinner-border  spinner-border-sm text-light hidden" id="spinner" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+                <span id="button-text">Subscribe</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
 {% endblock %}
 
 {% block postloadjs %}
-<script src="{% static 'js/stripe_elements.js' %}"></script>
+<script src="{% static 'js/stripe.js' %}"></script>
 {% endblock %}
