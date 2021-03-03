@@ -106,7 +106,7 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'eat_your_seasons.wsgi.application'
 
-# AUTH_USER_MODEL = 'membership.User'
+AUTH_USER_MODEL = 'membership.User'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases

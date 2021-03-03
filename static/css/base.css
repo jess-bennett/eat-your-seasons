@@ -609,7 +609,7 @@ a.anchor {
     cursor: pointer;
     border: 2px solid var(--highlights);
     border-radius: 0.2rem;
-    margin-top: 1.5rem;
+    margin: 1.5rem auto;
 }
 
 .login {
