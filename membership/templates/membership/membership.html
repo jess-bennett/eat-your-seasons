@@ -23,32 +23,77 @@
     </div>
 </div>
 
-<div class="container ">
 
-  <div class="row ">
-    {% for p in products %}
-    <div class="col-6">
-      <div class="card mx-5 shadow" style="border-radius: 10px; border:none; ">
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold">{{p.name}}</h5>
-          <p class="card-text text-muted"><svg class="bi bi-check" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-          </svg>{{p.description}}</p>
-
-          {% for plan in p.plan_set.all %}
-          <h5 >{{ plan.human_readable_price }}</h5>
-          <div class="text-right">
-            <input type="checkbox" name="{{p.name}}" value="{{p.id}}" onclick="planSelect('{{p.name}}' ,'{{plan.human_readable_price}}', '{{plan.id}}')">
-          {% endfor %}
-          </div>
+<div class="container">
+    <div class="row p-3">
+        <div class="col-3 offset-3 text-center">
+            <div id="month-select-interval" class="interval-box is-selected">
+                <h3>Monthly</h3>
+            </div>
         </div>
-      </div>
-
+        <div class="col-3 text-center">
+            <div id="year-select-interval" class="interval-box">
+                <h3>Annual</h3>
+            </div>
+        </div>
     </div>
+    <div class="row">
+        <div class="col-4 text-center">
+            <div class="subscription-box is-selected">
+                <h2 class="subtitle">Bronze</h2>
+                <div>
+                    <h4>FREE</h4>
+                </div>
+                <ul class="feature-list">
+                    <li>
+                        <span>{% include "icons/tick.svg" %}</span>
+                        Access to seasonal items
+                    </li>
+                    <li>
+                        <span>{% include "icons/tick.svg" %}</span>
+                        Access to meal suggestions
+                    </li>
+                    <li>
+                        <span>{% include "icons/tick.svg" %}</span>
+                        Access to recipes
+                    </li>
+                    <li>
+                        <span>{% include "icons/cross.svg" %}</span>
+                        Access to meal plans
+                    </li>
+                    <li>
+                        <span>{% include "icons/cross.svg" %}</span>
+                        Access to customisable shopping lists
+                    </li>
+                </ul>
+            </div>
+        </div>
+        {% for product in products %}
+        {% for plan in product.plan_set.all %}
+        <div class="col-4 interval-type interval-{{ plan.interval }}" data-product-name="{{ product.name }}" data-product-price="{{ plan.human_readable_price }}" data-product-id="{{ plan.id }}">
+            <div class="subscription-box" onclick="planSelect('{{product.name}}' ,'{{plan.human_readable_price}}', '{{plan.id}}')">
+                <h2 class="subtitle">{{ product.name }}</h2>
+                
+                <ul class="feature-list">
+                    {% for feature, value in product.metadata.items %}
+                    <li>
+                        <span>{% if value == True %}{% include "icons/tick.svg" %}{% else %}{% include "icons/cross.svg" %}{% endif %}</span>
+                        {{ feature }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <div>
+                    <h4>{{ plan.human_readable_price }}</h4>
+                </div>
+                
+            </div>
+        </div>
+                {% endfor %}
+        {% endfor %}
+    </div>
+</div>
 
-    {% endfor %}
-  </div>
-  <br><br><hr><br><br>
+<div class="container ">
   <div>
     <div class="row">
       <div class="col-12">

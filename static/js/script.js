@@ -140,6 +140,7 @@ $(".interval-box").click(function() {
     $(".interval-box").removeClass("is-selected");
     $(this).addClass("is-selected");
     let selectedInterval = $(this).attr("id").substr(0, $(this).attr("id").indexOf('-'));
+    console.log(selectedInterval);
     $(".interval-type").hide();
     $(`.interval-${selectedInterval}`).show();
 });
