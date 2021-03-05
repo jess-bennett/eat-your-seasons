@@ -31,9 +31,15 @@
     </div>
     {% if user.subscription.status == "active" %}
     <div class="row">
-        <h4>You have been subscribed to our {{ user.subscription.plan.product }} plan since {{ user.subscription.created }}
+        <h4>You have been subscribed to our <strong>{{ user.subscription.plan.product }}</strong> plan since {{ user.subscription.created }}
         </h4>
         <h4>Your next payment will be automatically taken on {{ user.subscription.current_period_end   }}</h4>
+    </div>
+    <div class="row">
+        <div class="col-6 offset-3 text-center hvr-pop">
+            <h3><a class="anchor" href="/membership/cancel">Cancel Subscription</a></h3>
+        </div>
+    </div> 
     {% else %}
     <div class="row">
         <h4>You are not currently subscribed to any of our plans. To start getting some of the benefits of a subscription, just select your preferred plan below, and sign up!</h4>
@@ -113,7 +119,7 @@
 </div>
 
 
-{% if request.user.has_active_subscription %}
+{% if user.subscription.status == "active" %}
 
 {% else %}
 <div id="payment-form" class="container">
