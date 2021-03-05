@@ -28,6 +28,16 @@
     </div>
 </div>
 
+{% if request.user.has_active_subscription %}
+    <p>
+        SUBSCRIBED
+    </p>
+{% else %}
+    <p>
+        NOT SUBSCRIBED
+    </p>
+{% endif %}
+
 
 <div class="container">
     <div class="row p-3">

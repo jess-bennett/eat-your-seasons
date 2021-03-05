@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="page-heading">My Account</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div id="logout" class="col-6 offset-3 text-center hvr-pop">
+            <a class="anchor" href="/accounts/logout">Sign Out</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h3>You are now subscribed!</h3>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block postloadjs %}
+<script src="{% static 'js/stripe.js' %}"></script>
+{% endblock %}
