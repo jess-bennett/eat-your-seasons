@@ -74,4 +74,4 @@ def create_sub(request):
 
 
 def complete(request):
-    return render(request, "complete.html")
+    return redirect('membership:membership')

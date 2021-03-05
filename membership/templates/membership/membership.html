@@ -21,25 +21,28 @@
             <a class="anchor" href="/accounts/logout">Sign Out</a>
         </div>
     </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <h3>Hi {{ user.username }}!</h3>
+    </div>
+    {% if user.subscription.status == "active" %}
+    <div class="row">
+        <h4>You have been subscribed to our {{ user.subscription.plan.product }} plan since {{ user.subscription.created }}
+        </h4>
+        <h4>Your next payment will be automatically taken on {{ user.subscription.current_period_end   }}</h4>
+    {% else %}
+    <div class="row">
+        <h4>You are not currently subscribed to any of our plans. To start getting some of the benefits of a subscription, just select your preferred plan below, and sign up!</h4>
+    </div>
     <div class="row">
         <div class="col text-center">
             <h3>Pricing Plans</h3>
         </div>
     </div>
-</div>
-
-{% if request.user.has_active_subscription %}
-    <p>
-        SUBSCRIBED
-    </p>
-{% else %}
-    <p>
-        NOT SUBSCRIBED
-    </p>
-{% endif %}
-
-
-<div class="container">
     <div class="row p-3">
         <div class="col-3 offset-3 text-center hvr-pop">
             <div id="month-select-interval" class="interval-box is-selected">
@@ -105,9 +108,14 @@
         </div>
                 {% endfor %}
         {% endfor %}
-    </div>
+    </div> 
+    {% endif %}
 </div>
 
+
+{% if request.user.has_active_subscription %}
+
+{% else %}
 <div id="payment-form" class="container">
   <div>
     <div class="row">
@@ -151,6 +159,7 @@
   </div>
 
 </div>
+{% endif %}
 
 {% endblock %}
 
