@@ -85,6 +85,10 @@ def cancel(request):
 
     try:
       stripe.Subscription.delete(sub_id)
+      djstripe_subscription = djstripe.models.Subscription.objects.get(id=sub_id)
+      djstripe_subscription.cancel_at_period_end = True
+      djstripe_subscription.save() 
+      
     except Exception as e:
       return JsonResponse({'error': (e.args[0])}, status =403)
 

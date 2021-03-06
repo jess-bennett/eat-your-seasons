@@ -2,17 +2,20 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from .models import Plan, Week
 from recipes.models import Month, Recipe
+from membership.models import User
 
 
 @login_required
 def plan(request):
     """ A view to return the plan page """
-    if request.user.has_active_subscription:
 
-        plans = Plan.objects.all()
-        months = None
-        weeks = None
-        recipes = Recipe.objects.all()
+    plans = Plan.objects.all()
+    months = None
+    weeks = None
+    recipes = Recipe.objects.all()
+    user = User.objects.all()
+
+    if request.user.subscription:
 
         if request.GET:
             if 'month' in request.GET:
