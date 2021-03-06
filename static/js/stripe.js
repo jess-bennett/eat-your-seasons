@@ -138,7 +138,7 @@ function createPaymentMethod({card}) {
                 }).then((result) => {
                     if (result && result.status === 'active') {
 
-                        window.location.href = '/membership/complete';
+                        window.location.href = '/membership/';
                     }
                     ;
                 }).catch(function (error) {

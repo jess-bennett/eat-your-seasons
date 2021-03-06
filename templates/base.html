@@ -23,18 +23,7 @@
     {% block extracss %}
     {% endblock %}
 
-    {% block corejs %}
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
-        <!-- Stripe JS -->
-        <script src="https://js.stripe.com/v3/"></script>
-        <!-- Main JS Files -->
-        <script src="{% static 'js/script.js' %}"></script>
-    {% endblock %}
-
-    {% block extrajs %}
-    {% endblock %}
+    
 
     <title>Eat Your Seasons{% block extra_title %}{% endblock %}</title>
     </head>
@@ -53,12 +42,25 @@
         {% block content %}
         {% endblock %}
 
-        {% block postloadjs %}
-        {% endblock %}
-
         <footer>
             {% include "layout/footer.html" %}
         </footer>
+    
+        {% block corejs %}
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
+        <!-- Stripe JS -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <!-- Main JS Files -->
+        <script src="{% static 'js/script.js' %}"></script>
+    {% endblock %}
+
+    {% block extrajs %}
+    {% endblock %}
+
+        {% block postloadjs %}
+        {% endblock %}
 
     </body>
 </html>

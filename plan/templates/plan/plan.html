@@ -40,9 +40,15 @@
                     {% include "icons/two-people.svg" %}
                 </div>
             </div>
-            <div class="col-3 col-md-1 text-right" data-toggle="modal" data-target="#modal-shopping">
-                    {% include "icons/shopping.svg" %}
-            </div>
+            {% if user.subscription.plan.product|cut:" " == "Gold" %}
+                <div class="col-3 col-md-1 text-right" data-toggle="modal" data-target="#modal-shopping">
+                        {% include "icons/shopping.svg" %}
+                </div>
+            {% else %}
+                <div class="col-3 col-md-1 text-right">
+                        {% include "icons/shopping.svg" %}
+                </div>
+            {% endif %}
         </div>
         <div class="row pt-3 text-center">
             <h5>Portions are doubled per person to allow for lunch the next day, and doubled again if freezable for batch cooking.</h5>

@@ -74,4 +74,23 @@ def create_sub(request):
 
 
 def complete(request):
-    return render(request, "complete.html")
+    return redirect('membership:membership')
+
+
+def cancel(request):
+  if request.user.is_authenticated:
+    sub_id = request.user.subscription.id
+
+    stripe.api_key = djstripe.settings.STRIPE_SECRET_KEY
+
+    try:
+      stripe.Subscription.delete(sub_id)
+      djstripe_subscription = djstripe.models.Subscription.objects.get(id=sub_id)
+      djstripe_subscription.cancel_at_period_end = True
+      djstripe_subscription.save() 
+      
+    except Exception as e:
+      return JsonResponse({'error': (e.args[0])}, status =403)
+
+
+  return redirect("membership:membership")

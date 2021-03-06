@@ -7,4 +7,5 @@ urlpatterns = [
     path('', views.membership, name='membership'),
     path("create-sub", views.create_sub, name="create sub"),
     path("complete", views.complete, name="complete"),
+    path("cancel", views.cancel, name="cancel"),
 ]
