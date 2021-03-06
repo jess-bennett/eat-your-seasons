@@ -6,7 +6,8 @@ from djstripe.models import Product
 from django.contrib.auth.decorators import login_required
 import djstripe
 from django.http import HttpResponse
-
+from allauth.account.views import PasswordChangeView
+from django.urls import reverse_lazy
 # Create your views here.
 
 
@@ -94,3 +95,7 @@ def cancel(request):
 
 
   return redirect("membership:membership")
+
+  
+class MyPasswordChangeView(PasswordChangeView):
+    success_url = reverse_lazy("membership:membership")

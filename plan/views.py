@@ -15,7 +15,7 @@ def plan(request):
     recipes = Recipe.objects.all()
     user = User.objects.all()
 
-    if request.user.subscription:
+    if request.user.subscription.status == "active":
 
         if request.GET:
             if 'month' in request.GET:
