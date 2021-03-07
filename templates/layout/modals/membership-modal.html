@@ -1,0 +1,25 @@
+<div class="modal fade" id="modal-membership" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        
+      <div class="modal-header">
+        {% include "icons/shopping.svg" %}
+        <h3 class="modal-title" id="exampleModalLongTitle">Shopping List</h3>
+      </div>
+      <div class="modal-notes">
+        <div class="col-8 text-left">
+            <h4><em>
+                Sorry, you need to be a Gold member to access the meal plans.
+            </em></h4>
+        </div>
+      </div>
+      <div class="modal-body text-left">
+          <a href="{% url 'membership:membership' %}">Go to membership page.</a>
+        
+      </div>
+      <div class="modal-footer">
+        <div data-dismiss="modal">{% include "icons/exit.svg" %}</div>
+      </div>
+    </div>
+  </div>
+</div>

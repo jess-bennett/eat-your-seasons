@@ -45,7 +45,7 @@
                         {% include "icons/shopping.svg" %}
                 </div>
             {% else %}
-                <div class="col-3 col-md-1 text-right">
+                <div class="col-3 col-md-1 text-right" data-toggle="modal" data-target="#modal-membership">
                         {% include "icons/shopping.svg" %}
                 </div>
             {% endif %}
@@ -84,6 +84,7 @@
         </div>
     </div>
         {% include "layout/modals/shopping-modal.html" %} 
+        {% include "layout/modals/membership-modal.html" %} 
     {% for recipe in recipes %}
         {% include "layout/modals/recipe-modal.html" %} 
     {% endfor %}

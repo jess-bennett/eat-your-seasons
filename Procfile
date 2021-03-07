@@ -1,0 +1,1 @@
+web: gunicorn eat-your-seasons.wsgi:application

@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from django.shortcuts import render, redirect
 from .models import Plan, Week
 from recipes.models import Month, Recipe
@@ -15,7 +16,7 @@ def plan(request):
     recipes = Recipe.objects.all()
     user = User.objects.all()
 
-    if request.user.subscription.status == "active":
+    if request.user.subscription:
 
         if request.GET:
             if 'month' in request.GET:
@@ -40,4 +41,5 @@ def plan(request):
         return render(request, 'plan/plan.html', context)
     
     else:
+        messages.error(request, 'Sorry, you need to be a Silver or Gold member to access the meal plans.')
         return redirect('membership:membership')

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+    {% load crispy_forms_tags %}
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="page-heading">Dashboard Management</h1>
+            <h4 class="page-subheading"><em>Add Item</em></h4>
+        </div>
+    </div>
+    <div class="row">
+        <form method="POST" action="{% url 'add_item' %}" class="form mb-2">
+            {% csrf_token %}
+            {{ form | crispy }}
+            <div>
+                <a href="{% url 'dashboard' %}">Cancel</a>
+                <button type="submit">Add Item</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}
