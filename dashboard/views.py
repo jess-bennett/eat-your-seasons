@@ -29,6 +29,18 @@ def dashboard(request):
 
     return render(request, 'dashboard/dashboard.html', context)
 
+    
+def dashboard_management(request):
+    """ A view to return the dashboard management page """
+
+    items = Item.objects.all()
+
+    context = {
+        'items': items,
+    }
+
+    return render(request, 'dashboard/dashboard_management.html', context)
+
 
 def add_item(request):
     """Add an item to the dashboard"""

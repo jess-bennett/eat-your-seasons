@@ -21,5 +21,25 @@
     </div>
 </div>
 
+<div class="container">
+        <div class="row pt-3">
+            <div class="col offset-md-2 col-md-8">
+                <table class="table">
+                    <tr>
+                        <th class="text-left">Item</th>
+                        <th class="text-center">Category</th>
+                        <th class="text-right">Months in Season</th>
+                    </tr>
+                    {% for item in items %}
+                    <tr>
+                        <td class="text-left">{{ item.name }}</td>
+                        <td class="text-left">{{ item.category.friendly_name }}</td>
+                        <td class="text-left">{% for month in item.month.all %}{{ month|title }}, {% endfor %}</td>
+                    </tr>    
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+</div>
 
 {% endblock %}
