@@ -37,6 +37,11 @@
                 {% include "icons/fish.svg" %}
             </div>
         </div>
+        {% if request.user.is_superuser %}
+        <div class="row pt-3">
+            <a href="{% url 'dashboard_management' %}">Dashboard Management</a>
+        </div>
+        {% endif %}
         <div class="row pt-3 text-center">
             <div id="seasonal-box" class="offset-1 col-10">
                 <h3>In season this month</h3>
