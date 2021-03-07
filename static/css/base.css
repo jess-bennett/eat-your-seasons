@@ -541,6 +541,13 @@ div.container {
     fill: var(--highlights);
 }
 
+.management-icons {
+    fill: var(--font);
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
 .table {
     border: 2px solid var(--highlights);
     color: var(--font);

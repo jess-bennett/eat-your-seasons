@@ -21,7 +21,30 @@
     </div>
 </div>
 
+<div class="container-fluid">
+        <div class="row pt-3">
+            <div class="offset-1 col-2 text-center">
+                {% include "icons/fruit.svg" %}
+            </div>
+            <div class="col-2 text-center">
+                {% include "icons/vegetables.svg" %}
+            </div>
+            <div class="col-2 text-center">
+                {% include "icons/herbs.svg" %}
+            </div>
+            <div class="col-2 text-center">
+                {% include "icons/meat.svg" %}
+            </div>
+            <div class="col-2 text-center">
+                {% include "icons/fish.svg" %}
+            </div>
+        </div>
+    </div>
+
 <div class="container">
+        <div class="row">
+            Add item
+        </div>
         <div class="row pt-3">
             <div class="col offset-md-2 col-md-8">
                 <table class="table">
@@ -29,12 +52,14 @@
                         <th class="text-left">Item</th>
                         <th class="text-center">Category</th>
                         <th class="text-right">Months in Season</th>
+                        <th class="text-right">Actions</th>
                     </tr>
                     {% for item in items %}
                     <tr>
                         <td class="text-left">{{ item.name }}</td>
                         <td class="text-left">{{ item.category.friendly_name }}</td>
                         <td class="text-left">{% for month in item.month.all %}{{ month|title }}, {% endfor %}</td>
+                        <td class="text-left"><a href="{% url 'edit_item' item.id %}">{% include "icons/edit.svg" %}</a> | <a href="{% url 'delete_item' item.id %}">{% include "icons/delete.svg" %}</a></td>
                     </tr>    
                     {% endfor %}
                 </table>

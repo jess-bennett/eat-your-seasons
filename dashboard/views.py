@@ -34,9 +34,18 @@ def dashboard_management(request):
     """ A view to return the dashboard management page """
 
     items = Item.objects.all()
+    categories = None
+
+    if request.GET:
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            items = items.filter(category__name__in=categories).order_by('name')
+            categories = Category.objects.filter(name__in=categories)
+
 
     context = {
         'items': items,
+        'current_category': categories,
     }
 
     return render(request, 'dashboard/dashboard_management.html', context)
@@ -47,9 +56,10 @@ def add_item(request):
     if request.method == 'POST':
         form = ItemForm(request.POST)
         if form.is_valid():
-            form.save()
+            item = form.save()
             messages.success(request, 'Successfully added item!')
-            return redirect(reverse('add_item'))
+            return redirect(reverse(
+                'dashboard_management') + '?category=' + str(item.category))
         else:
             messages.error(request, 'Failed to add item. Please check the form is valid.')
     else:
@@ -69,9 +79,10 @@ def edit_item(request, item_id):
     if request.method == 'POST':
         form = ItemForm(request.POST, instance=item)
         if form.is_valid():
-            form.save()
+            item = form.save()
             messages.success(request, 'Successfully updated item!')
-            return redirect(reverse('add_item'))
+            return redirect(reverse(
+                'dashboard_management') + '?category=' + str(item.category))
         else:
             messages.error(request, 'Failed to update item. Please check the form is valid.')
     else:
@@ -92,4 +103,5 @@ def delete_item(request, item_id):
     item = get_object_or_404(Item, pk=item_id)
     item.delete()
     messages.success(request, 'Item deleted!')
-    return redirect(reverse('add_item'))
+    return redirect(reverse(
+        'dashboard_management') + '?category=' + str(item.category))
