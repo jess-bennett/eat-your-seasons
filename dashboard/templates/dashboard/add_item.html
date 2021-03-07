@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -10,6 +11,7 @@
 {% endblock %}
 
 {% block content %}
+    {% load crispy_forms_tags %}
 <div class="container">
     <div class="row">
         <div class="col text-center">
@@ -18,7 +20,7 @@
         </div>
     </div>
     <div class="row">
-        <form method="POST" action="{ url 'add_item' }" class="form mb-2">
+        <form method="POST" action="{% url 'add_item' %}" class="form mb-2">
             {% csrf_token %}
             {{ form | crispy }}
             <div>

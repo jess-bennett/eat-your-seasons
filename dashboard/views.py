@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib import messages
 from .models import Item, Category, Month
 from .forms import ItemForm
 
@@ -31,7 +32,17 @@ def dashboard(request):
 
 def add_item(request):
     """Add an item to the dashboard"""
-    form = ItemForm()
+    if request.method == 'POST':
+        form = ItemForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added item!')
+            return redirect(reverse('add_item'))
+        else:
+            messages.error(request, 'Failed to add item. Please check the form is valid.')
+    else:
+        form = ItemForm()
+
     template = 'dashboard/add_item.html'
     context = {
         'form': form,

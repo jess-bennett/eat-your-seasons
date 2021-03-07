@@ -2,6 +2,7 @@ asgiref==3.3.1
 dj-stripe==2.4.3
 Django==3.1.5
 django-allauth==0.44.0
+django-crispy-forms==1.11.1
 jsonfield==3.1.0
 oauthlib==3.1.0
 PyJWT==2.0.1
