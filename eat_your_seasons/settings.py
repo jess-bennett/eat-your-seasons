@@ -22,10 +22,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'w!@m5x$ai#upei&t@df=$70(!fa7ud-5+0)pa6sadwa^4l$^w+'
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['eat-your-seasons.herokuapp.com', 'localhost']
 
@@ -172,8 +172,8 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STRIPE_TEST_PUBLIC_KEY ='pk_test_51ILqM9Eut4w6GzpC0WRatjByjDMPq5nBGC4sQHsq9JX0Kg6g3pkBsEg1CRmuPoYOrR9EKGVQBDNSs2Kn3aqHMoVH00yoZGH0xU'
-STRIPE_TEST_SECRET_KEY = 'sk_test_51ILqM9Eut4w6GzpCjuLQ3oavwxGLvZAhatL9ywzMAP66bD1v6k8qDKjBfc30J1pB3IZSi1EtOI1L63YR7s8B7INr001PXBg24v'
+STRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
+STRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
 STRIPE_LIVE_MODE = False  # Change to True in production
 DJSTRIPE_WEBHOOK_SECRET = "whsec_xxx"
 DJSTRIPE_FOREIGN_KEY_TO_FIELD = "id"
