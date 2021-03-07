@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Item, Category, Month
 from .forms import ItemForm
 
@@ -29,9 +30,13 @@ def dashboard(request):
 
     return render(request, 'dashboard/dashboard.html', context)
 
-    
+
+@login_required
 def dashboard_management(request):
     """ A view to return the dashboard management page """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, this page is only viewable by admin.')
+        return redirect(reverse('dashboard'))
 
     items = Item.objects.all()
     categories = None
@@ -51,8 +56,13 @@ def dashboard_management(request):
     return render(request, 'dashboard/dashboard_management.html', context)
 
 
+@login_required
 def add_item(request):
     """Add an item to the dashboard"""
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, this page is only viewable by admin.')
+        return redirect(reverse('dashboard'))
+
     if request.method == 'POST':
         form = ItemForm(request.POST)
         if form.is_valid():
@@ -73,8 +83,13 @@ def add_item(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_item(request, item_id):
     """Edit an item in the dashboard"""
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, this page is only viewable by admin.')
+        return redirect(reverse('dashboard'))
+
     item = get_object_or_404(Item, pk=item_id)
     if request.method == 'POST':
         form = ItemForm(request.POST, instance=item)
@@ -98,7 +113,12 @@ def edit_item(request, item_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_item(request, item_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, this page is only viewable by admin.')
+        return redirect(reverse('dashboard'))
+
     """Delete an item in the dashboard"""
     item = get_object_or_404(Item, pk=item_id)
     item.delete()
