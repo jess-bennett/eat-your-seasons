@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Item, Category, Month
+from .forms import ItemForm
 
 # Create your views here.
 
@@ -26,3 +27,14 @@ def dashboard(request):
     }
 
     return render(request, 'dashboard/dashboard.html', context)
+
+
+def add_item(request):
+    """Add an item to the dashboard"""
+    form = ItemForm()
+    template = 'dashboard/add_item.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
