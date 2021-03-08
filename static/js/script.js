@@ -4,7 +4,7 @@ $(document).ready(function() {
     let chosenTheme = localStorage.getItem("chosentheme") || "light-theme";
     let currentMonth = sessionStorage.getItem("selectedmonth") || month;
     let currentWeek = sessionStorage.getItem("selectedweek") || 1;
-    let currentQuantity = sessionStorage.getItem("selectedquantity") || 'four';
+    let currentQuantity = sessionStorage.getItem("selectedquantity") || 'two';
     // Set session storage so that it is never undefined
     sessionStorage.setItem("selectedmonth", currentMonth);
     sessionStorage.setItem("selectedweek", currentWeek);
