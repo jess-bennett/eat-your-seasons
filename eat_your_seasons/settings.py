@@ -201,8 +201,8 @@ if 'USE_AWS' in os.environ:
 
 
 # Stripe
-STRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
-STRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
+STRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')
+STRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')
 STRIPE_LIVE_MODE = False  # Change to True in production
 DJSTRIPE_WEBHOOK_SECRET = "whsec_xxx"
 DJSTRIPE_FOREIGN_KEY_TO_FIELD = "id"
