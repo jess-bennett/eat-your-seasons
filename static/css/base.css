@@ -437,7 +437,7 @@ body {
     fill: var(--fish-active);
 }
 
-#seasonal-box {
+#seasonal-box, .management-box {
     border: 2px solid var(--highlights);
   border-radius: 0.2rem;
 }
@@ -560,7 +560,7 @@ div.container {
 }
 
 .management-icons {
-    fill: var(--font);
+    fill: var(--highlights);
     width: 1.5rem;
     height: 1.5rem;
     cursor: pointer;
@@ -671,7 +671,7 @@ a.anchor {
     background-color: var(--background);
     border-radius: 0.2rem;
     color: var(--highlights);
-    width: 80%;
+    width: 60%;
     font-size: 1.6rem;
 }
 
@@ -680,7 +680,14 @@ label {
   width: 20%;
   font-size: 1.2rem;
 }
-input {
+
+.control-label {
+    text-align: center;
+    font-size: 1.6rem;
+    padding-top: 1rem;
+}
+
+input, select {
   width: 60%;
   font-size: 1.2rem;
 }
