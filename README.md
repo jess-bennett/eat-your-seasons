@@ -73,12 +73,9 @@ The site also offers varying levels of membership, from free content for casual 
 | 2   | site visitor        | read suggestions on how to shop more sustainably   | make changes to my own shopping habits   |
 | 3      | site visitor | get inspiration for meals using seasonal produce      | get an idea of how to eat more sustainably      |
 | 4    | site member       | see recipes for meal suggestions | eat more sustainably without having to do additional reseach |
-| 5    | site member    | bookmark recipes    | easily return to recipes that appeal to me |
-| 6    | site member    | share my own seasonal recipes on the site    | contribute my own knowledge to others like me |
-| 7    | paying member  | see weekly, seasonal meal plans   | eat sustainably with less work! |
-| 8    | paying member  | create my own weekly meal plans using the site recipes   |  eat seasonal meals that suit me |
-| 9    | paying member  | change the number of people a meal serves in a recipe   | avoid food waste by only buying as much as I need |
-| 10   | paying member  | see a weekly shopping list for my meal plan    | get the ingredients I need, easily |         
+| 5    | paying member  | see weekly, seasonal meal plans   | eat sustainably with less work! |
+| 6    | paying member  | change the number of people a meal serves in a recipe   | avoid food waste by only buying as much as I need |
+| 7   | paying member  | see a weekly shopping list for my meal plan    | get the ingredients I need, easily |         
 
 ### :earth_africa: Scope Plane
 ---
