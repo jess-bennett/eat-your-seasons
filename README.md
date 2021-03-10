@@ -83,17 +83,17 @@ The site also offers varying levels of membership, from free content for casual 
 **Membership plan types**
 
 | Plan type    | Monthly Price | Yearly Price      | 
-| ------------------ | ---------- | ---------------------------- | --------------------- |
+| ------------------ | ---------- | ---------------------------- | 
 | Site visitor     | N/A       | N/A      |
 | Site member - Bronze     | £0       | £0       |
 | Site member - Silver     | £3.99       | £40.00       |
-| Site member - Gold     | £5.99       | £55.00       |
+| Site member - Gold     | £5.99       | £50.00       |
 
 
 **Site access**
 
 | Feature    | Visitor Access | Bronze member Access      | Silver member Access      |Gold member Access      |
-| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |--------------------- |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
 Seasonal items | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 Meal suggestions | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 Recipes | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
