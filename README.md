@@ -139,7 +139,18 @@ TBC
 ### :dvd: Database Design
 ---
 
-TBC
+During development of the site, SQLite Database was used.
+After deployment to Heroku, PostgreSQL was used.
+
+Several separate databases were implemented, as follows:
+
+#### Dashboard App
+##### Category Model
+| Field    | Key | Validation      | Relationship      | Data type      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
+Name | name | max_length=254 | N/A | CharField |
+Friendly name | friendly_name | max_length=254 | N/A | CharField |
+
 
 ### :crystal_ball: Future Developments
 ---
