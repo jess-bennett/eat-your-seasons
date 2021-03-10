@@ -4,6 +4,7 @@ import json
 from django.http import JsonResponse
 from djstripe.models import Product
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 import djstripe
 from django.http import HttpResponse
 from allauth.account.views import PasswordChangeView

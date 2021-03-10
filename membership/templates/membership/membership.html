@@ -16,23 +16,31 @@
             <h1 class="page-heading">My Account</h1>
         </div>
     </div>
-    <div class="row">
-        <div id="logout" class="col-6 offset-3 text-center hvr-pop">
-            <a class="anchor" href="/accounts/logout">Sign Out</a>
+    <div class="row pt-3">
+        <h4 class="page-subheading">Hi {{ user.username }}!</h4>
+    </div>
+    <div class="row text-center pt-5">
+        <h2>Do you want to...</h2>
+    </div>
+    <div class="row pt-3">
+        <div class="col-2 offset-3 text-center hvr-pop">
+            <a class="anchor" href="/accounts/logout">{% include "icons/sign-out.svg" %}</a>
+            <h4>Sign Out?</h4>
         </div>
-    </div><div class="row">
-        <div class="col-6 offset-3 text-center hvr-pop">
-            <a class="anchor" href="/accounts/password/change">Change password</a>
+        <div class="col-2 text-center hvr-pop">
+            <a class="anchor" href="/accounts/password/change">{% include "icons/padlock.svg" %}</a>
+            <h4>Change Password?</h4>
+        </div>
+        <div id="subscription-btn" class="col-2 text-center hvr-pop">
+            {% include "icons/wallet.svg" %}
+            <h4>Manage Subscription?</h4>
         </div>
     </div>
 </div>
 
 
 
-<div class="container">
-    <div class="row">
-        <h3>Hi {{ user.username }}!</h3>
-    </div>
+<div id="subscription-info" class="container hidden">
     {% if user.subscription.status == "active" %}
     <div class="row">
         <h4>You have been subscribed to our <strong>{{ user.subscription.plan.product }}</strong> plan since {{ user.subscription.created }}
@@ -52,7 +60,7 @@
         {% endif %}
     {% else %}
     <div class="row">
-        <h4>You are not currently subscribed to any of our plans. To start getting some of the benefits of a subscription, just select your preferred plan below, and sign up!</h4>
+        <h4>You are not currently subscribed to any of our paid plans. To start getting some of the benefits of a subscription, just select your preferred plan below, and sign up!</h4>
     </div>
     <div class="row">
         <div class="col text-center">
@@ -161,7 +169,7 @@
               <!-- We'll put the error messages in this element -->
               <div id="card-errors" role="alert"></div>
               <button class="hvr-pop" id="submit" type="submit">
-                <div class="spinner-border  spinner-border-sm text-light hidden" id="spinner" role="status">
+                <div class="spinner-border hidden" id="spinner" role="status">
                   <span class="sr-only">Loading...</span>
                 </div>
                 <span id="button-text">Subscribe</span>
