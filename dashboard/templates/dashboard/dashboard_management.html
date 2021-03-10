@@ -57,9 +57,9 @@
                     {% for item in items %}
                     <tr>
                         <td class="text-left">{{ item.name }}</td>
-                        <td class="text-left">{{ item.category.friendly_name }}</td>
-                        <td class="text-left">{% for month in item.month.all %}{{ month|title }}, {% endfor %}</td>
-                        <td class="text-left"><a href="{% url 'edit_item' item.id %}">{% include "icons/edit.svg" %}</a> | <a href="{% url 'delete_item' item.id %}">{% include "icons/delete.svg" %}</a></td>
+                        <td class="text-center">{{ item.category.friendly_name }}</td>
+                        <td class="text-right">{% for month in item.month.all %}{{ month|title }}, {% endfor %}</td>
+                        <td class="text-right"><a href="{% url 'edit_item' item.id %}">{% include "icons/edit.svg" %}</a> | <a href="{% url 'delete_item' item.id %}">{% include "icons/delete.svg" %}</a></td>
                     </tr>    
                     {% endfor %}
                 </table>
