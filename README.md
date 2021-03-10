@@ -146,10 +146,107 @@ Several separate databases were implemented, as follows:
 
 #### Dashboard App
 ##### Category Model
-| Field    | Key | Validation      | Relationship      | Data type      |
+| Field    | DB Key | Validation      | Relationship      | Data type      |
 | ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
 Name | name | max_length=254 | N/A | CharField |
 Friendly name | friendly_name | max_length=254 | N/A | CharField |
+
+
+##### Month Model
+| Field    | DB Key | Validation      | Relationship      | Data type      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
+Name | name | max_length=254 | N/A | CharField |
+
+##### Item Model
+| Field    | DB Key | Validation      | Relationship      | Data type      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
+Category | category | null=True, blank=True, on_delete=models.SET_NULL | ForeignKey to 'Category' | N/A |
+Month | month | N/A | ManyToManyField to 'Month' | CharField |
+Name | name | max_length=254 | N/A | CharField |
+
+#### Recipes App
+##### Category Model
+| Field    | DB Key | Validation      | Relationship      | Data type      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
+Name | name | max_length=254 | N/A | CharField |
+Friendly name | friendly_name | max_length=254 | N/A | CharField |
+
+
+##### Month Model
+| Field    | DB Key | Validation      | Relationship      | Data type      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
+Name | name | max_length=254 | N/A | CharField |
+
+
+##### Step Model
+| Field    | DB Key | Validation      | Relationship      | Data type      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
+Name | name | max_length=254 | N/A | CharField |
+
+
+##### Ingredient Model
+| Field    | DB Key | Validation      | Relationship      | Data type      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
+Name | name | max_length=254 | N/A | CharField |
+
+
+##### Recipe Model
+| Field    | DB Key | Validation      | Relationship      | Data type      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
+Category | category | null=True, blank=True, on_delete=models.SET_NULL | ForeignKey to 'Category' | N/A |
+Month | month | N/A | ManyToManyField to 'Month' | CharField |
+Name | name | max_length=254 | N/A | CharField |
+Notes | notes | max_length=254 | N/A | CharField |
+Image | image | max_length=254 | N/A | CharField |
+Is Frozen | isfrozen | max_length=254 | N/A | CharField |
+Ingredients | ingredients | N/A | ManyToManyField to 'Ingredient' through 'Quantity' | N/A |
+Steps | steps | N/A | ManyToManyField to 'Step' | N/A |
+
+#### Plan App
+##### Day Model
+| Field    | DB Key | Validation      | Relationship      | Data type      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
+Name | name | max_length=254 | N/A | CharField |
+Friendly name | friendly_name | max_length=254 | N/A | CharField |
+
+##### Week Model
+| Field    | DB Key | Validation      | Relationship      | Data type      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
+Name | name | max_length=254 | N/A | CharField |
+Friendly name | friendly_name | max_length=254 | N/A | CharField |
+
+##### Plan Model
+| Field    | DB Key | Validation      | Relationship      | Data type      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
+Day | day | null=True, blank=True, on_delete=models.SET_NULL | ForeignKey to 'Day' | N/A |
+Week | week | null=True, blank=True, on_delete=models.SET_NULL | ForeignKey to 'Week' | N/A |
+Month | month | null=True, blank=True, on_delete=models.SET_NULL | ForeignKey to 'recipes.Month' | N/A |
+Recipe | recipe | null=True, blank=True, on_delete=models.SET_NULL | ForeignKey to 'recipes.Recipe' | N/A |
+Batch Cook | batch_cook | max_length=254 | N/A | CharField |
+
+#### Membership App
+##### User Model
+| Field    | DB Key | Validation      | Relationship      | Data type      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
+Customer | customer | null=True, blank=True, on_delete=models.SET_NULL | ForeignKey to 'djstripe.Customer' | N/A |
+Subscription | subscription | null=True, blank=True, on_delete=models.SET_NULL | ForeignKey to 'djstripe.Subscription' | N/A |
+
+### DJSTRIPE
+Models from DJSTRIPE were also used including:
+* Customers
+Details about the customer, linked to the data on sign up in Django Allauth
+
+* Subscriptions
+Linking the customer to the Products, Plans & Prices models
+
+* Products
+Details about the subscription product, taken directly from Stripe
+
+* Plans
+Details about the plan (i.e. monthly or annual payment) taken directly from Stripe
+
+* Prices
+Details about the prices for each plan, taken directly from Stripe
 
 
 ### :crystal_ball: Future Developments
