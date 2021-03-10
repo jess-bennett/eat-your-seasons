@@ -144,7 +144,24 @@ TBC
 ### :crystal_ball: Future Developments
 ---
 
-TBC
+There are several features that I would like to have the opportunity to develop in the future given more time:
+
+* Bookmark recipes
+This feature would allow users to save favourite recipes to their profile in order to easily find them again at a later date.
+
+* Share own recipes
+I would like to give the site more of a community-feel, so that users can contribute their own seasonal recipes, based around the items from the 'What's in season' dashboard.
+
+* Create own weekly meal plan
+Following the implementation of the above feature, users would be able to select seasonal recipes from the site and the community to create a personalised weekly meal plan.
+
+* Collate ingredients in the shopping list
+Currently, the ingredients in the shopping list are listed as they are pulled through from each individual recipes. So, you might see:
+** 40g chopped onions
+** 30g chopped onions
+being pulled through from two separate recipes.\
+In future, I would like to add functionality to collate these ingredients so that it shows:
+** 70g chopped onions
 
 ## :construction: Development Process
 
