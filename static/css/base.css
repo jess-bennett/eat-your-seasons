@@ -236,15 +236,17 @@ body {
 }
 
 #landing-page {
-    height: 90vh;
+    height: 100vh;
 }
 
 .page-heading {
+    color: var(--highlights);
     font-size: 2.5rem;
     font-family: 'Merienda One', cursive;
 }
 
 .page-subheading {
+    color: var(--highlights);
     font-size: 1.5rem;
 }
 
@@ -383,6 +385,15 @@ body {
 .food-icons {
     width: 2.25rem;
     height: 2.25rem;
+    cursor: pointer;
+}
+
+.seasonal-eating-icon {
+    width: 100%;
+    height: auto;
+}
+
+.seasons-anchor {
     cursor: pointer;
 }
 
@@ -649,7 +660,6 @@ a.anchor {
 }
 
 .footer-icon {
-    display: none;
     fill: var(--font);
     cursor: pointer;
     height: 1.5rem;
