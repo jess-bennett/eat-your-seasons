@@ -671,6 +671,16 @@ a.anchor {
     background-color: var(--background);
     border-radius: 0.2rem;
     color: var(--highlights);
+    width: 80%;
+    font-size: 1.6rem;
+}
+
+label {
+    text-align: left;
+  width: 20%;
+}
+input {
+  width: 60%;
 }
 
 #footer {
