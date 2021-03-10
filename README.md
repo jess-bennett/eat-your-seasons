@@ -49,6 +49,8 @@ Eat Your Seasons is a site aimed at those wanting to live a more sustainable lif
 \
 [:clapper: Credits](#clapper-credits)\
 \
+              [:teacher: Tutorials](#teacher-tutorials)\
+\
               [:movie_camera: Media](#movie_camera-media)\
 \
               [:trophy: Acknowledgements](#trophy-acknowledgements)
@@ -304,6 +306,11 @@ In future, I would like to add functionality to collate these ingredients so tha
 
 TBC
 
+### :broom: Refactoring
+---
+
+TBC - secret keys!!!
+
 ## :test_tube: Testing  
 
 ### :people_holding_hands: Peer Tests
@@ -367,9 +374,109 @@ TBC
 
 ## :flight_departure: Deployment 
 
-TBC
+The project was created in Gitpod and can be run locally using the following instructions:
+
+### Local Deployment
+
+1. Create a Stripe account and create the appropriate Products and Plans within the dashboard
+
+2. Clone a copy of this repository, entering the following into the Gitpod CLI:\
+``
+gh repo clone jess-bennett/eat-your-seasons
+``
+
+3. Install all requirements from the requirements.txt file with:\
+``
+python3 -m pip install -r requirements.txt
+``
+
+4. Create an env.py file. This needs to contain the following variables:
+
+* os.environ["SECRET_KEY"] = Your secret Django key
+* os.environ["STRIPE_TEST_PUBLIC_KEY"] = Public key obtained from Stripe
+* os.environ["STRIPE_TEST_SECRET_KEY"] = Secret key obtained from Stripe
+* os.environ["DEVELOPMENT"] = '1'
+
+5. Migrate all models with:\
+``
+python3 manage.py migrate
+``
+
+6. Create a super user with:\
+``
+python3 manage.py createsuperuser
+``
+
+7. Load each fixture using:\
+``
+python3 manage.py loaddata <fixture_name>
+``
+
+8. Run the project using:\
+``
+python3 manage.py runserver
+``
+
+### Deployment to Heroku
+
+1. Create a requirements.txt file:\
+``
+pip freeze > requirements.txt
+``
+
+2. Create a Procfile with the following CLI command:\
+``
+echo web: python3 app.py > Procfile
+``
+
+3. Add, Commit and Push to GitHub
+
+4. Create a new project in Heroku
+
+5. Within the Heroku dashboard, select to Deploy via GitHub
+
+6. Add the following under Config Vars:
+
+##### Plan Model
+| Key    | Value | 
+| -------- | ------ | 
+| AWS_ACCESS_KEY_ID | ------ | 
+| AWS_SECRET_ACCESS_KEY | ------ | 
+| DATABASE_URL | ------ | 
+| EMAIL_HOST_PASS | ------ | 
+| EMAIL_HOST_USER | ------ | 
+| SECRET_KEY | ------ | 
+| STRIPE_TEST_PUBLIC_KEY | ------ | 
+| STRIPE_TEST_SECRET_KEY | ------ | 
+| USE_AWS | True | 
+
+7. Set up the Heroku Postgres add-on using Hobby Dev - free
+
+8. Migrate all models to the Postgres database using the following CLI commands:\
+``
+python3 manage.py makemigrations
+``
+
+``
+python3 manage.py migrate
+``
+
+9. Load each fixture using:\
+``
+python3 manage.py loaddata <fixture_name>
+``
+
+10. Create a super user with:\
+``
+python3 manage.py createsuperuser
+``
+
+11. Push your code to GitHub - if automatic deployment has been setup, this will run the app on Heroku pages.
 
 ## :clapper: Credits
+
+### :teacher: Tutorials
+--- 
 
 ### :movie_camera: Media
 ---
