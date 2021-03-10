@@ -233,6 +233,7 @@ body {
     color: var(--font);
     font-family: 'Tenali Ramakrishna', sans-serif;
     padding-bottom: 3rem;
+    font-size: 1.2rem;
 }
 
 #landing-page {
