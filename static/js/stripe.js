@@ -3,7 +3,7 @@ document.getElementById("submit").disabled = true;
 stripeElements();
 
 function stripeElements() {
-    stripe = Stripe('pk_test_51ILqM9Eut4w6GzpC0WRatjByjDMPq5nBGC4sQHsq9JX0Kg6g3pkBsEg1CRmuPoYOrR9EKGVQBDNSs2Kn3aqHMoVH00yoZGH0xU');
+    stripe = Stripe('pk_test_51ILqM9Eut4w6GzpCbSapYftzim5SCys6iFhq17hQBYOcl6ikMkrKyh3yobwDvID6xnLgOhY0bH4cEWVw2ZwFVfGp00tY9ukJP2');
 
     if (document.getElementById('card-element')) {
         let elements = stripe.elements();

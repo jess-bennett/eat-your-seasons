@@ -132,6 +132,10 @@ $('li').filter(function(){
     return $.trim($(this).html()) == '';
 }).parents(".recipe-text").hide();
 
+$("#subscription-btn").click(function(){
+$("#subscription-info").toggleClass("hidden");
+});
+
 $(".subscription-box").click(function() {
     $(".subscription-box").removeClass("is-selected");
     $(this).addClass("is-selected");
