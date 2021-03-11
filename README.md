@@ -134,7 +134,12 @@ The site was designed with a mobile-first approach.
 
 :bulb: **Deviation from wireframe**
 
-TBC
+* Ability to change individual recipe quantities in Plan\
+Originally, I had planned to allow users to change the quantity (i.e. the number of people a recipe was for) for each recipe in the meal plan.
+However, during development I made the decision to just change the option for the week as it looked cleaner on the page, and was less fussy for the user.
+
+* Dashboard Management page\
+I also included a page to allow an admin user to manage the dashboard page and add/edit/delete seasonal items without needing to access the backend of the database.
 
 ### :dvd: Database Design
 ---
@@ -254,22 +259,29 @@ Details about the prices for each plan, taken directly from Stripe
 
 There are several features that I would like to have the opportunity to develop in the future given more time:
 
-* Bookmark recipes
+* Bookmark recipes\
 This feature would allow users to save favourite recipes to their profile in order to easily find them again at a later date.
 
-* Share own recipes
+* Share own recipes\
 I would like to give the site more of a community-feel, so that users can contribute their own seasonal recipes, based around the items from the 'What's in season' dashboard.
 
-* Create own weekly meal plan
+* Create own weekly meal plan\
 Following the implementation of the above feature, users would be able to select seasonal recipes from the site and the community to create a personalised weekly meal plan.
 
-* Collate ingredients in the shopping list
+* Collate ingredients in the shopping list\
 Currently, the ingredients in the shopping list are listed as they are pulled through from each individual recipes. So, you might see:
 ** 40g chopped onions
 ** 30g chopped onions
 being pulled through from two separate recipes.\
 In future, I would like to add functionality to collate these ingredients so that it shows:
 ** 70g chopped onions
+
+* Change subscription type\
+Whilst functionality to cancel a subscription has been implemented, it would be useful in future to allow users to upgrade or downgrade their subscription
+type.
+
+* Extend management pages\
+Currently, there is functionality for an admin user to manage the dashboard page and add/edit/delete seasonal items. In future, it would be nice to extend this to further areas of the website to allow for additional updates to recipes without the need to access the backend of the database.
 
 ## :construction: Development Process
 
@@ -297,6 +309,7 @@ In future, I would like to add functionality to collate these ingredients so tha
 * [Favicon.io](https://favicon.io/)
 * [Gimp](https://www.gimp.org/)
 * [Stripe](https://stripe.com/)
+* [Hover.css](https://ianlunn.github.io/Hover/)
 
 
 ### :bug: Bugs
