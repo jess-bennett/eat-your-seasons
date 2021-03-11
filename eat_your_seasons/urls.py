@@ -21,7 +21,8 @@ from membership.views import MyPasswordChangeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/password/change/', MyPasswordChangeView.as_view(), name="account_change_password"),
+    path('accounts/password/change/', MyPasswordChangeView.as_view(),
+         name="account_change_password"),
     path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),
     path('dashboard/', include('dashboard.urls')),

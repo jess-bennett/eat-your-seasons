@@ -1,6 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
-from .models import Recipe, Category, Month, Quantity
+from .models import Recipe, Month, Quantity
 
 # Create your views here.
 

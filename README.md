@@ -69,7 +69,7 @@ The site also offers varying levels of membership, from free content for casual 
 
 ### :books: User Stories
 
-| User Story ID      | As a/an... | I want to be able to...      | So that I can...      |
+| User Story ID      | As a... | I want to be able to...      | So that I can...      |
 | ------------------ | ---------- | ---------------------------- | --------------------- |
 | 1      | site visitor       | see which foods are currently in season      | make informed choices when doing my shopping      |
 | 2   | site visitor        | read suggestions on how to shop more sustainably   | make changes to my own shopping habits   |

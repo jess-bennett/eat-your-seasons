@@ -80,23 +80,23 @@ def complete(request):
 
 
 def cancel(request):
-  if request.user.is_authenticated:
-    sub_id = request.user.subscription.id
+    if request.user.is_authenticated:
+        sub_id = request.user.subscription.id
 
-    stripe.api_key = djstripe.settings.STRIPE_SECRET_KEY
+        stripe.api_key = djstripe.settings.STRIPE_SECRET_KEY
 
-    try:
-      stripe.Subscription.delete(sub_id)
-      djstripe_subscription = djstripe.models.Subscription.objects.get(id=sub_id)
-      djstripe_subscription.cancel_at_period_end = True
-      djstripe_subscription.save() 
-      
-    except Exception as e:
-      return JsonResponse({'error': (e.args[0])}, status =403)
+        try:
+            stripe.Subscription.delete(sub_id)
+            djstripe_subscription = djstripe.models.\
+                Subscription.objects.get(id=sub_id)
+            djstripe_subscription.cancel_at_period_end = True
+            djstripe_subscription.save()
+
+        except Exception as e:
+            return JsonResponse({'error': (e.args[0])}, status=403)
+
+    return redirect("membership:membership")
 
 
-  return redirect("membership:membership")
-
-  
 class MyPasswordChangeView(PasswordChangeView):
     success_url = reverse_lazy("membership:membership")

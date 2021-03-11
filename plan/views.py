@@ -24,8 +24,11 @@ def plan(request):
                 weeks = request.GET['week'].split(',')
                 quantity = request.GET.get('quantity', 'four')
                 current_week = request.GET.get('week', '')
-                plans = plans.filter(month__name__in=months, week__name__in=weeks)
-                recipe_ids = plans.filter(month__name__in=months, week__name__in=weeks).values_list('recipe')
+                plans = plans.filter(
+                    month__name__in=months, week__name__in=weeks)
+                recipe_ids = plans.filter(
+                    month__name__in=months, week__name__in=weeks).\
+                    values_list('recipe')
                 recipes = recipes.filter(pk__in=recipe_ids).order_by('name')
                 months = Month.objects.filter(name__in=months)
                 weeks = Week.objects.filter(name__in=weeks)
@@ -39,7 +42,9 @@ def plan(request):
         }
 
         return render(request, 'plan/plan.html', context)
-    
+
     else:
-        messages.error(request, 'Sorry, you need to be a Silver or Gold member to access the meal plans.')
+        messages.error(
+            request, 'Sorry, you need to be a Silver or\
+            Gold member to access the meal plans.')
         return redirect('membership:membership')

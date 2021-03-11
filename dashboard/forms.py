@@ -1,10 +1,10 @@
 from django import forms
-from .models import Category, Month, Item
+from .models import Category, Item
 
 
 class ItemForm(forms.ModelForm):
 
-    class Meta: 
+    class Meta:
         model = Item
         fields = '__all__'
 

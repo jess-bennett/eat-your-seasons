@@ -18,7 +18,9 @@ def dashboard(request):
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             months = request.GET['month'].split(',')
-            items = items.filter(category__name__in=categories, month__name__in=months).order_by('name')
+            items = items.filter(
+                category__name__in=categories, month__name__in=months)\
+                .order_by('name')
             categories = Category.objects.filter(name__in=categories)
             months = Month.objects.filter(name__in=months)
 
@@ -44,9 +46,9 @@ def dashboard_management(request):
     if request.GET:
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
-            items = items.filter(category__name__in=categories).order_by('name')
+            items = items.filter(
+                category__name__in=categories).order_by('name')
             categories = Category.objects.filter(name__in=categories)
-
 
     context = {
         'items': items,
@@ -71,7 +73,8 @@ def add_item(request):
             return redirect(reverse(
                 'dashboard_management') + '?category=' + str(item.category))
         else:
-            messages.error(request, 'Failed to add item. Please check the form is valid.')
+            messages.error(
+                request, 'Failed to add item. Please check the form is valid.')
     else:
         form = ItemForm()
 
@@ -99,7 +102,9 @@ def edit_item(request, item_id):
             return redirect(reverse(
                 'dashboard_management') + '?category=' + str(item.category))
         else:
-            messages.error(request, 'Failed to update item. Please check the form is valid.')
+            messages.error(
+                request, 'Failed to update item.\
+                    Please check the form is valid.')
     else:
         form = ItemForm(instance=item)
         messages.info(request, f'You are editing {item.name}')
