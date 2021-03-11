@@ -304,7 +304,15 @@ In future, I would like to add functionality to collate these ingredients so tha
 ### :bug: Bugs
 ---
 
-TBC
+There were no major bugs encountered as such, however there were a couple of issues that required a lot of work to fix which I will outline here.
+
+* Getting the subscription model to work took a lot of time and a lot of research. In the end, I was able to get it working using a tutorial I found on
+[Ordinary Coders](https://www.ordinarycoders.com/blog/article/django-stripe-monthly-subscription). This made use of dj-stripe. In hindsight, it might have been
+more straightforward to set up my own webhooks and pull everything in directly from Stripe, but I am pleased that I at least got it working in the end, and it is something 
+I will revisit in the future.
+
+* Another consideration I had was where to store my svg icons. In theory, they should be stored as static files, however, I wanted to be able to use 'include' from Django templating.
+After reading through an [article](https://css-tricks.com/using-svg/) on svg practices, I was convinced that keeping them in the template folder was the right path for my project.
 
 ### :broom: Refactoring
 ---
