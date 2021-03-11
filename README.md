@@ -372,11 +372,15 @@ Manual testing was carried out on all devices available to me:
 
 #### [JSHint](https://jshint.com/)
 
-The [script.js](/static/js/script.js) file was run through [JSHint.com](https://jshint.com/) TBC
+The [script.js](/static/js/script.js) file was run through [JSHint.com](https://jshint.com/).
+
+The only issues shown were some missing semicolons which have now been rectified.
 
 #### [W3C CSS Validator](http://jigsaw.w3.org/css-validator/)
 
-The [base.css](/static/css/base.css) file was run through [W3C CSS Validator](http://jigsaw.w3.org/css-validator/) TBC
+The [base.css](/static/css/base.css) file was run through [W3C CSS Validator](http://jigsaw.w3.org/css-validator/).
+
+There were no errors within the document and the only warnings were regarding the use of variables (for example: "--fish-active is an unknown vendor extension"), which can be ignored.
 
 #### [W3C Markup Validation Service](https://validator.w3.org/)
 
