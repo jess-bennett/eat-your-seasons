@@ -142,6 +142,10 @@ However, during development I made the decision to just change the option for th
 * Dashboard Management page\
 I also included a page to allow an admin user to manage the dashboard page and add/edit/delete seasonal items without needing to access the backend of the database.
 
+* Navbar\
+In the wireframe, I had planned to have the naviation options across the top on all devices. However, I wanted each page to be as uncluttered as possible to allow the user
+to focus on the content. Therefore, I opted to use a triple-dot icon in place of the menu that would open the menu in full when hovered over (or clicked on mobile devices).
+
 ### :dvd: Database Design
 ---
 
