@@ -325,8 +325,12 @@ Once I realised this, I simply rolled over the Stripe keys to create new ones, a
 ### :people_holding_hands: Peer Tests
 ---
 
-TBC
+I enlisted the help of three family members to test each of the user stories.
 
+![Testing Instructions](testing/peer_test_instructions.jpg)
+
+There was some feedback relating to personal preferences of image styles and colour choices, however no issues were found with the
+actual ease of use or functionality of the site. Therefore, I am happy that these tests were all passed without any need for amendements.
 
 ### :memo: Manual Tests
 ---
