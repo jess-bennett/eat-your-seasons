@@ -35,8 +35,6 @@ Eat Your Seasons is a site aimed at those wanting to live a more sustainable lif
 \
 [:test_tube: Testing](#test_tube-testing)\
 \
-              [:raising_hand: Target-User Tests](#raising_hand-target-user-tests)\
-\
               [:people_holding_hands: Peer Tests](#people_holding_hands-peer-tests)\
 \
               [:memo: Manual Tests](#memo-manual-tests)\
@@ -317,16 +315,14 @@ After reading through an [article](https://css-tricks.com/using-svg/) on svg pra
 ### :broom: Refactoring
 ---
 
-TBC - secret keys!!!
+The main amends I had to make to my code was in relation to my secret keys.
+
+In my endeavours to get the subscription model working, I inadvertently pushed my Stripe keys through to my repository unhidden.
+Once I realised this, I simply rolled over the Stripe keys to create new ones, and made sure that these were kept hidden in my env.py file.
 
 ## :test_tube: Testing  
 
 ### :people_holding_hands: Peer Tests
----
-
-TBC
-
-### :raising_hand: Target User Tests
 ---
 
 TBC
