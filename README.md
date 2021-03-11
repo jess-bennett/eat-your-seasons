@@ -1,3 +1,4 @@
+![Landing Page](wireframes/landing_page.jpg)
 # Eat Your Seasons
 
 :carrot:**Welcome to Eat Your Seasons**:green_apple:\
