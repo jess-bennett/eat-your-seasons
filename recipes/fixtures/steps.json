@@ -2,7 +2,7 @@
     "pk": 1,
     "model": "recipes.step",
     "fields": {
-      "name": "Pre-heat oven to 180C/160Cfan/gas 4"
+      "name": "Pre-heat oven to 180C/160C fan/gas 4"
     }
   },
   {
@@ -639,7 +639,7 @@
     "pk": 92,
     "model": "recipes.step",
     "fields": {
-      "name": "Pre-heat the oven to 190C/170C/gas 5."
+      "name": "Pre-heat the oven to 190C/170C fan/gas 5."
     }
   },
   {
@@ -1150,7 +1150,7 @@
     "pk": 165,
     "model": "recipes.step",
     "fields": {
-      "name": "Pre-heat oven to 180C/fan160C/gas 4"
+      "name": "Pre-heat oven to 180C/fan160C fan/gas 4"
     }
   },
   {
@@ -1857,14 +1857,14 @@
     "pk": 266,
     "model": "recipes.step",
     "fields": {
-      "name": "Pre-heat the oven to 180°C/160°C fan/gas 4."
+      "name": "Pre-heat the oven to 180C/160C fan/gas 4."
     }
   },
   {
     "pk": 267,
     "model": "recipes.step",
     "fields": {
-      "name": "For the béchamel sauce, put a large saucepan over a medium heat, add the butter and flour, then gently heat while stirring to form a paste. Gradually add the milk, stirring continuously."
+      "name": "For the bechamel sauce, put a large saucepan over a medium heat, add the butter and flour, then gently heat while stirring to form a paste. Gradually add the milk, stirring continuously."
     }
   },
   {
@@ -1885,7 +1885,7 @@
     "pk": 270,
     "model": "recipes.step",
     "fields": {
-      "name": "Bring a large pan of salted water to the boil. Add the pasta and cook for a couple of minutes less than stated on the pack instructions. Strain the pasta and put it straight into the béchamel sauce while still hot."
+      "name": "Bring a large pan of salted water to the boil. Add the pasta and cook for a couple of minutes less than stated on the pack instructions. Strain the pasta and put it straight into the bechamel sauce while still hot."
     }
   },
   {
@@ -1927,7 +1927,7 @@
     "pk": 276,
     "model": "recipes.step",
     "fields": {
-      "name": "Pre-heat the oven to 190C/17C fan/gas 5."
+      "name": "Pre-heat the oven to 190C/170C fan/gas 5."
     }
   },
   {
@@ -2095,7 +2095,7 @@
     "pk": 300,
     "model": "recipes.step",
     "fields": {
-      "name": "Pre-heat the oven to 180C/fan 160C/gas 4."
+      "name": "Pre-heat the oven to 180C/160C fan/gas 4."
     }
   },
   {
@@ -2123,7 +2123,7 @@
     "pk": 304,
     "model": "recipes.step",
     "fields": {
-      "name": "Preheat the oven to 180C/fan 160C/gas 4."
+      "name": "Preheat the oven to 180C/160C fan/gas 4."
     }
   },
   {
@@ -2165,7 +2165,7 @@
     "pk": 310,
     "model": "recipes.step",
     "fields": {
-      "name": "Pre-heat the oven to 200C/ 180C fan/gas 6."
+      "name": "Pre-heat the oven to 200C/180C fan/gas 6."
     }
   },
   {
@@ -2592,7 +2592,7 @@
     "pk": 371,
     "model": "recipes.step",
     "fields": {
-      "name": "Preheat oven to 180C/fan160C/gas 4"
+      "name": "Preheat oven to 180C/160C fan/gas 4"
     }
   },
   {
@@ -2865,7 +2865,7 @@
     "pk": 410,
     "model": "recipes.step",
     "fields": {
-      "name": "Preheat oven to 230C/fan 210C/gas 8"
+      "name": "Preheat oven to 230C/210C fan/gas 8"
     }
   },
   {
@@ -3089,7 +3089,7 @@
     "pk": 442,
     "model": "recipes.step",
     "fields": {
-      "name": "Preheat the oven to 200C/fan180C/gas 6."
+      "name": "Preheat the oven to 200C/180C fan/gas 6."
     }
   },
   {
@@ -3131,7 +3131,7 @@
     "pk": 448,
     "model": "recipes.step",
     "fields": {
-      "name": "Roll out the pastry on a lightly floured surface to the thickness of a £1 coin. Trim so it’s a little bigger than the dish. Brush the rim of the dish with a little plant-based milk."
+      "name": "Roll out the pastry on a lightly floured surface to the thickness of a pound coin. Trim so it’s a little bigger than the dish. Brush the rim of the dish with a little plant-based milk."
     }
   },
   {
@@ -3159,7 +3159,7 @@
     "pk": 452,
     "model": "recipes.step",
     "fields": {
-      "name": "Preheat the oven to 200C/fan180C/gas 6."
+      "name": "Preheat the oven to 200C/180C fan/gas 6."
     }
   },
   {
@@ -3201,7 +3201,7 @@
     "pk": 458,
     "model": "recipes.step",
     "fields": {
-      "name": "Preheat the oven to 200C/fan 180C/gas 6"
+      "name": "Preheat the oven to 200C/180C fan/gas 6"
     }
   },
   {
@@ -3222,7 +3222,7 @@
     "pk": 461,
     "model": "recipes.step",
     "fields": {
-      "name": "On a lightly floured surface, roll one half out to the thickness of a £1 coin, then use to line a loose-bottomed tart tin – it should just drape over the sides. Tip in the cooled filling."
+      "name": "On a lightly floured surface, roll one half out to the thickness of a pound coin, then use to line a loose-bottomed tart tin – it should just drape over the sides. Tip in the cooled filling."
     }
   },
   {
@@ -3439,7 +3439,7 @@
     "pk": 492,
     "model": "recipes.step",
     "fields": {
-      "name": "Serve with sauté potatoes."
+      "name": "Serve with saute potatoes."
     }
   },
   {
@@ -3544,7 +3544,7 @@
     "pk": 507,
     "model": "recipes.step",
     "fields": {
-      "name": "Heat the olive oil in a pan and sauté the mushrooms and onions for about 5 minutes until lightly browned."
+      "name": "Heat the olive oil in a pan and saute the mushrooms and onions for about 5 minutes until lightly browned."
     }
   },
   {
@@ -4265,7 +4265,7 @@
     "pk": 610,
     "model": "recipes.step",
     "fields": {
-      "name": "Half-fill a deep saucepan with oil and heat until the temperature reads 180°C on a digital probe thermometer or until a cube of bread turns golden 60 seconds after being added to the pan."
+      "name": "Half-fill a deep saucepan with oil and heat until the temperature reads 180C on a digital probe thermometer or until a cube of bread turns golden 60 seconds after being added to the pan."
     }
   },
   {
@@ -4335,7 +4335,7 @@
     "pk": 620,
     "model": "recipes.step",
     "fields": {
-      "name": "Add the tomatoes, sugar, Worcester sauce and tomato purée. Reduce the heat and simmer for 15 to 20 minutes until thickened. Add the basil and season."
+      "name": "Add the tomatoes, sugar, Worcester sauce and tomato puree. Reduce the heat and simmer for 15 to 20 minutes until thickened. Add the basil and season."
     }
   },
   {
@@ -4398,7 +4398,7 @@
     "pk": 629,
     "model": "recipes.step",
     "fields": {
-      "name": "Pre-heat oven to 200C/fan180C/gas 4"
+      "name": "Pre-heat oven to 200C/180C fan/gas 4"
     }
   },
   {
@@ -4748,7 +4748,7 @@
     "pk": 679,
     "model": "recipes.step",
     "fields": {
-      "name": "On a lightly floured work surface, roll out the pastry the thickness of £1 coin and wide enough to fit a tart tin."
+      "name": "On a lightly floured work surface, roll out the pastry the thickness of pound coin and wide enough to fit a tart tin."
     }
   },
   {
@@ -4874,7 +4874,7 @@
     "pk": 697,
     "model": "recipes.step",
     "fields": {
-      "name": "Preheat oven to 200C/fan180C/gas 4"
+      "name": "Preheat oven to 200C/180C fan/gas 4"
     }
   },
   {
@@ -5056,7 +5056,7 @@
     "pk": 723,
     "model": "recipes.step",
     "fields": {
-      "name": "Preheat the oven to 200C/fan180C/gas 6."
+      "name": "Preheat the oven to 200C/180C fan/gas 6."
     }
   },
   {
@@ -5483,7 +5483,7 @@
     "pk": 784,
     "model": "recipes.step",
     "fields": {
-      "name": "Pre-heat the oven to 200C/fan 180C/gas 6."
+      "name": "Pre-heat the oven to 200C/180C fan/gas 6."
     }
   },
   {
@@ -5525,7 +5525,7 @@
     "pk": 790,
     "model": "recipes.step",
     "fields": {
-      "name": "Cut the chicken breasts horizontally in half to create thinner fillets. Put in a deep, wide frying or sauté pan with the shallots and garlic, then cover with the milk."
+      "name": "Cut the chicken breasts horizontally in half to create thinner fillets. Put in a deep, wide frying or saute pan with the shallots and garlic, then cover with the milk."
     }
   },
   {
@@ -5658,7 +5658,7 @@
     "pk": 809,
     "model": "recipes.step",
     "fields": {
-      "name": "Heat a sauté pan over a medium-high heat, then cook the chicken breasts, skin-side down, for 4 to 5 minutes. Season, then turn the chicken and cook for another minute."
+      "name": "Heat a saute pan over a medium-high heat, then cook the chicken breasts, skin-side down, for 4 to 5 minutes. Season, then turn the chicken and cook for another minute."
     }
   },
   {
@@ -5679,7 +5679,7 @@
     "pk": 812,
     "model": "recipes.step",
     "fields": {
-      "name": "Put the sauté pan back on a medium heat. When hot, fry the garlic cloves for 2 minutes, then add the chicken stock. Simmer for 5 minutes, then add the potatoes and beans."
+      "name": "Put the saute pan back on a medium heat. When hot, fry the garlic cloves for 2 minutes, then add the chicken stock. Simmer for 5 minutes, then add the potatoes and beans."
     }
   },
   {
