@@ -8,6 +8,10 @@ $(document).ready(function() {
   let currentMonth = sessionStorage.getItem("selectedmonth") || month;
   let currentWeek = sessionStorage.getItem("selectedweek") || 1;
   let currentQuantity = sessionStorage.getItem("selectedquantity") || 'two';
+  // Enable tooltips
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
 
   // Set session storage so that it is never undefined
   sessionStorage.setItem("selectedmonth", currentMonth);
