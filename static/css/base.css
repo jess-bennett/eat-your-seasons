@@ -654,8 +654,8 @@ a.anchor {
 
 .account-icons {
   cursor: pointer;
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
   fill: var(--font);
 }
 
@@ -800,6 +800,11 @@ select {
   .footer-icon {
     height: 2.5rem;
     width: 2.5rem;
+  }
+
+  .account-icons {
+  width: 4rem;
+  height: 4rem;
   }
 }
 
