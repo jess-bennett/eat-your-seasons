@@ -8,7 +8,7 @@ from .forms import ItemForm
 
 
 def dashboard(request):
-    """ A view to return the dashboard page """
+    """ A view to return the dashboard page with selected category and month """
 
     items = Item.objects.all()
     categories = None
@@ -35,7 +35,7 @@ def dashboard(request):
 
 @login_required
 def dashboard_management(request):
-    """ A view to return the dashboard management page """
+    """ A view to return the dashboard management page, for admin only """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, this page is only viewable by admin.')
         return redirect(reverse('dashboard'))
@@ -60,7 +60,7 @@ def dashboard_management(request):
 
 @login_required
 def add_item(request):
-    """Add an item to the dashboard"""
+    """A view to add an item to the dashboard, for admin only"""
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, this page is only viewable by admin.')
         return redirect(reverse('dashboard'))
@@ -88,7 +88,7 @@ def add_item(request):
 
 @login_required
 def edit_item(request, item_id):
-    """Edit an item in the dashboard"""
+    """A view to edit an item in the dashboard, for admin only"""
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, this page is only viewable by admin.')
         return redirect(reverse('dashboard'))
@@ -120,6 +120,7 @@ def edit_item(request, item_id):
 
 @login_required
 def delete_item(request, item_id):
+    """A view to delete an item in the dashboard, for admin only"""
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, this page is only viewable by admin.')
         return redirect(reverse('dashboard'))

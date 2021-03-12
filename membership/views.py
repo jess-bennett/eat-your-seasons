@@ -23,6 +23,7 @@ def membership(request):
 
 @login_required
 def create_sub(request):
+    """A view to create a new subscriber"""
     if request.method == 'POST':
         # Reads application/json and returns a response
         data = json.loads(request.body)
@@ -76,10 +77,12 @@ def create_sub(request):
 
 
 def complete(request):
+    """A view to redirect completed subscription signup"""
     return redirect('membership:membership')
 
 
 def cancel(request):
+    """A view to cancel subscription"""
     if request.user.is_authenticated:
         sub_id = request.user.subscription.id
 
@@ -99,4 +102,5 @@ def cancel(request):
 
 
 class MyPasswordChangeView(PasswordChangeView):
+    """A view to change password"""
     success_url = reverse_lazy("membership:membership")

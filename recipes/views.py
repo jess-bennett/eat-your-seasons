@@ -7,7 +7,7 @@ from .models import Recipe, Month, Quantity
 
 @login_required
 def recipes(request):
-    """ A view to return the recipe page """
+    """ A view to return the recipe page, showing current month only """
 
     recipes = Recipe.objects.all()
     quantities = Quantity.objects.all()

@@ -339,6 +339,9 @@ I will revisit in the future.
 * Another consideration I had was where to store my svg icons. In theory, they should be stored as static files, however, I wanted to be able to use 'include' from Django templating.
 After reading through an [article](https://css-tricks.com/using-svg/) on svg practices, I was convinced that keeping them in the template folder was the right path for my project.
 
+* A final issue that has not yet been fixed occurs when changing month using the month header on the dashboard, recipe and plan pages. When clicking on a month, before the page reloads with
+the selected month, the button itself momentarily disappears. This is only a minor issue as functionality isn't affected, but is something I would like to fix in future.
+
 ### :broom: Refactoring
 ---
 
@@ -357,7 +360,7 @@ I enlisted the help of three family members to test each of the user stories.
 ![Testing Instructions](testing/peer_test_instructions.jpg)
 
 There was some feedback relating to personal preferences of image styles and colour choices, however no issues were found with the
-actual ease of use or functionality of the site. Therefore, I am happy that these tests were all passed without any need for amendements.
+actual ease of use or functionality of the site. Therefore, I am happy that these tests were all passed without any need for amendments.
 
 ### :memo: Manual Tests
 ---

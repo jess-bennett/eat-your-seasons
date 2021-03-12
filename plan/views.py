@@ -8,7 +8,7 @@ from membership.models import User
 
 @login_required
 def plan(request):
-    """ A view to return the plan page """
+    """ A view to return the plan page, showing current month, week and quantity. For subscribed members only. """
 
     plans = Plan.objects.all()
     months = None
