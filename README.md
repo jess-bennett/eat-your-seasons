@@ -469,7 +469,9 @@ The only other errors were from duplicate IDs due to repeated code from Django t
 ### :rotating_light: Lighthouse Tests
 ---
 
-TBC
+![Lighthouse Tests](/testing/lighthouse-tests.png)
+
+The outcome of the Lighthouse Tests was generally good. There were some areas where improvement is needed and this is something I would like to revisit in the future. However, as all scores were close or exceeding the 'Good' threshold, I am happy to leave it as it is for now.
 
 ## :flight_departure: Deployment 
 
