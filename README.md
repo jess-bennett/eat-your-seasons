@@ -93,13 +93,14 @@ The site also offers varying levels of membership, from free content for casual 
 
 **Site access**
 
-| Feature    | Visitor Access | Bronze member Access      | Silver member Access      |Gold member Access      |
-| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- |
-Seasonal items | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-Meal suggestions | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-Recipes | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-Meal plans | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
-Shopping lists | :x: | :x: | :x: | :heavy_check_mark: |
+| Feature    | Visitor Access | Bronze member Access      | Silver member Access      |Gold member Access      | Admin Access      |
+| ------------------ | ---------- | ---------------------------- | --------------------- |--------------------- | --------------------- |
+Seasonal items | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+Meal suggestions | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+Recipes | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+Meal plans | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+Shopping lists | :x: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
+Dashboard management | :x: | :x: | :x: | :x: | :heavy_check_mark: |
 
 ### :rainbow: Surface Plane/Design Choices
 ---
