@@ -389,10 +389,11 @@ the selected month, the button itself momentarily disappears. This is only a min
 ### :broom: Refactoring
 ---
 
-The main amends I had to make to my code was in relation to my secret keys.
+:warning: The main amends I had to make to my code was in relation to my secret keys. :warning:
 
 In my endeavours to get the subscription model working, I inadvertently pushed my Stripe keys through to my repository unhidden.
-Once I realised this, I simply rolled over the Stripe keys to create new ones, and made sure that these were kept hidden in my env.py file.
+Once I realised this, I simply rolled over the Stripe keys to create new ones, and made sure that these were kept hidden in my env.py file.\
+Obviously this was quite a significant mistake to make, but something I have learnt from and hopefully something I won't do again!
 
 ## :test_tube: Testing  
 
