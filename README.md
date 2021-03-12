@@ -464,6 +464,8 @@ There were key errors on all pages with regards to the svgs:
 
 I have chosen to ignore these errors as the svgs come directly from [Noun Project](https://thenounproject.com/) and are therefore not my own code to amend.
 
+The only other errors were from duplicate IDs due to repeated code from Django templating. These errors were amended by changing the ID to a class wherever possible, or removing the ID altogether.
+
 ### :rotating_light: Lighthouse Tests
 ---
 
