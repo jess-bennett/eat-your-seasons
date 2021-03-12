@@ -2,75 +2,87 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    {% block meta %}
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="Description" content="Enter your description here"/>
-    {% endblock %}
 
-    {% block extrameta %}
-    {% endblock %}
-    
-    {% block corecss %}
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-        
-        <!-- Main CSS Files -->
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% endblock %}
+<head>
+  {% block meta %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  {% endblock %}
 
-    {% block extracss %}
-    {% endblock %}
-        <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180"
+  {% block extrameta %}
+  {% endblock %}
+
+  {% block corecss %}
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+
+  <!-- Main CSS Files -->
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  {% endblock %}
+
+  {% block extracss %}
+  {% endblock %}
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180"
     href="{% static 'favicons/apple-touch-icon.png' %}">
-    <link rel="icon" type="image/png" sizes="32x32"
+  <link rel="icon" type="image/png" sizes="32x32"
     href="{% static 'favicons/favicon-32x32.png' %}">
-    <link rel="icon" type="image/png" sizes="16x16"
+  <link rel="icon" type="image/png" sizes="16x16"
     href="{% static 'favicons/favicon-16x16.png' %}">
-    
 
-    <title>Eat Your Seasons{% block extra_title %}{% endblock %}</title>
-    </head>
-    <body>
-        <header>
-            {% include "layout/navigation.html" %}
-        </header>
 
-        {% if messages %}
-        <ul class="messages">
-            {% for message in messages %}
-            <li {% if message.tags %} class="{{ message.tags }}" {% endif %}> {{ message }} </li>
-            {% endfor %}
-        </ul>
-        {% endif %}
+  <title>Eat Your Seasons{% block extra_title %}{% endblock %}</title>
+</head>
 
-        {% block page_header %}
-        {% endblock %}
+<body>
+  <header>
+    {% include "layout/navigation.html" %}
+  </header>
 
-        {% block content %}
-        {% endblock %}
+  {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+    <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+      {{ message }} </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
 
-        <footer>
-            {% include "layout/footer.html" %}
-        </footer>
-    
-        {% block corejs %}
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
-        <!-- Stripe JS -->
-        <script src="https://js.stripe.com/v3/"></script>
-        <!-- Main JS Files -->
-        <script src="{% static 'js/script.js' %}"></script>
-    {% endblock %}
+  {% block page_header %}
+  {% endblock %}
 
-    {% block extrajs %}
-    {% endblock %}
+  {% block content %}
+  {% endblock %}
 
-        {% block postloadjs %}
-        {% endblock %}
+  <footer>
+    {% include "layout/footer.html" %}
+  </footer>
 
-    </body>
+  {% block corejs %}
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js">
+  </script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
+    integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+    crossorigin="anonymous"></script>
+  <!-- Stripe JS -->
+  <script src="https://js.stripe.com/v3/"></script>
+  <!-- Main JS Files -->
+  <script src="{% static 'js/script.js' %}"></script>
+  {% endblock %}
+
+  {% block extrajs %}
+  {% endblock %}
+
+  {% block postloadjs %}
+  {% endblock %}
+
+</body>
+
 </html>

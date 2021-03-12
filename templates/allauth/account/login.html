@@ -5,7 +5,6 @@
 
 
 {% block content %}
-
 <div class="container">
   <div class="row">
     <div class="col text-center">
@@ -46,19 +45,20 @@
 
   <div class="row">
     <div class="offset-2 col-8 p-3 login-box">
-        <form class="login" method="POST" action="{% url 'account_login' %}">
+      <form class="login" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form.as_p }}
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}"
-            value="{{ redirect_field_value }}" />
+          value="{{ redirect_field_value }}" />
         {% endif %}
-        <button class="login-button hvr-pop" type="submit">{% trans "Sign In" %}</button><br>
+        <button class="login-button hvr-pop"
+          type="submit">{% trans "Sign In" %}</button><br>
         <h5><a class="anchor hvr-pop"
-            href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a></h5>
-        </form>
+            href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+        </h5>
+      </form>
     </div>
   </div>
 </div>
-
 {% endblock %}

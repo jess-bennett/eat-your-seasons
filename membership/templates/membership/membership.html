@@ -5,137 +5,151 @@
 
 {% block page_header %}
 <div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
+  <div class="row">
+    <div class="col"></div>
+  </div>
 </div>
 {% endblock %}
 
 {% block content %}
 <div class="container">
-    <div class="row">
-        <div class="col text-center">
-            <h1 class="page-heading">My Account</h1>
-        </div>
+  <div class="row">
+    <div class="col text-center">
+      <h1 class="page-heading">My Account</h1>
     </div>
-    <div class="row pt-3 justify-content-center">
-        <h4 class="page-subheading">Hi {{ user.username }}!</h4>
+  </div>
+  <div class="row pt-3 justify-content-center">
+    <h4 class="page-subheading">Hi {{ user.username }}!</h4>
+  </div>
+  <div class="row justify-content-center pt-5">
+    <h2>Do you want to...</h2>
+  </div>
+  <div class="row pt-3">
+    <div class="col-4 text-center hvr-pop">
+      <a class="anchor"
+        href="/accounts/logout">{% include "icons/sign-out.svg" %}</a>
+      <h5>Sign Out?</h5>
     </div>
-    <div class="row justify-content-center pt-5">
-        <h2>Do you want to...</h2>
+    <div class="col-4 text-center hvr-pop">
+      <a class="anchor"
+        href="/accounts/password/change">{% include "icons/padlock.svg" %}</a>
+      <h5>Change Password?</h5>
     </div>
-    <div class="row pt-3">
-        <div class="col-4 text-center hvr-pop">
-            <a class="anchor" href="/accounts/logout">{% include "icons/sign-out.svg" %}</a>
-            <h5>Sign Out?</h5>
-        </div>
-        <div class="col-4 text-center hvr-pop">
-            <a class="anchor" href="/accounts/password/change">{% include "icons/padlock.svg" %}</a>
-            <h5>Change Password?</h5>
-        </div>
-        <div id="subscription-btn" class="col-4 text-center hvr-pop">
-            {% include "icons/wallet.svg" %}
-            <h5>Manage Subscription?</h5>
-        </div>
+    <div id="subscription-btn" class="col-4 text-center hvr-pop">
+      {% include "icons/wallet.svg" %}
+      <h5>Manage Subscription?</h5>
     </div>
+  </div>
 </div>
 
 
 
 <div id="subscription-info" class="container hidden">
-    {% if user.subscription.status == "active" %}
-    <div class="row justify-content-center">
-        <h4>You have been subscribed to our <strong>{{ user.subscription.plan.product }}</strong> plan since {{ user.subscription.created }}
-        </h4>
-        {% if user.subscription.cancel_at_period_end == False %}
-        <h4>Your next payment will be automatically taken on {{ user.subscription.current_period_end   }}</h4>
-        {% else %}
-        <h4>Your subscription has been cancelled and access to paid pages will come to an end on {{ user.subscription.current_period_end   }}</h4>
-        {% endif %}
-    </div>
-        {% if user.subscription.cancel_at_period_end == False %}
-            <div class="row">
-                <div class="col-6 offset-3 text-center hvr-pop">
-                    <h3><a class="anchor" href="/membership/cancel">Cancel Subscription</a></h3>
-                </div>
-            </div> 
-        {% endif %}
+  {% if user.subscription.status == "active" %}
+  <div class="row justify-content-center">
+    <h4>You have been subscribed to our
+      <strong>{{ user.subscription.plan.product }}</strong> plan since
+      {{ user.subscription.created }}
+    </h4>
+    {% if user.subscription.cancel_at_period_end == False %}
+    <h4>Your next payment will be automatically taken on
+      {{ user.subscription.current_period_end   }}</h4>
     {% else %}
-    <div class="row">
-        <h4>You are not currently subscribed to any of our paid plans. To start getting some of the benefits of a subscription, just select your preferred plan below, and sign up!</h4>
-    </div>
-    <div class="row p-3">
-        <div class="col text-center">
-            <h3>Pricing Plans</h3>
-        </div>
-    </div>
-    <div class="row">
-        <div class="p-1 col-8 offset-2 col-md-3 offset-md-3 text-center hvr-pop">
-            <div id="month-select-interval" class="interval-box is-selected">
-                <h3>Monthly</h3>
-            </div>
-        </div>
-        <div class="p-1 col-8 offset-2 col-md-3 offset-md-0 text-center hvr-pop">
-            <div id="year-select-interval" class="interval-box">
-                <h3>Annual</h3>
-            </div>
-        </div>
-    </div>
-    <div class="row p-2">
-        <div class="col-12 col-md-4 text-center hvr-pop">
-            <div id="free-plan" class="subscription-box is-selected">
-                <h2 class="subtitle">Bronze</h2>
-                <ul class="feature-list">
-                    <li>
-                        <span>{% include "icons/tick.svg" %}</span>
-                        Access to seasonal items
-                    </li>
-                    <li>
-                        <span>{% include "icons/tick.svg" %}</span>
-                        Access to meal suggestions
-                    </li>
-                    <li>
-                        <span>{% include "icons/tick.svg" %}</span>
-                        Access to recipes
-                    </li>
-                    <li>
-                        <span>{% include "icons/cross.svg" %}</span>
-                        Access to meal plans
-                    </li>
-                    <li>
-                        <span>{% include "icons/cross.svg" %}</span>
-                        Access to customisable shopping lists
-                    </li>
-                </ul>
-                <div>
-                    <h4>FREE</h4>
-                </div>
-            </div>
-        </div>
-        {% for product in products %}
-        {% for plan in product.plan_set.all %}
-        <div class="pt-1 col-12 col-md-4 hvr-pop interval-type interval-{{ plan.interval }}" data-product-name="{{ product.name }}" data-product-price="{{ plan.human_readable_price }}" data-product-id="{{ plan.id }}">
-            <div id="paid-plan" class="subscription-box" onclick="planSelect('{{product.name}}' ,'{{plan.human_readable_price}}', '{{plan.id}}')">
-                <h2 class="subtitle">{{ product.name }}</h2>
-                
-                <ul class="feature-list">
-                    {% for feature, value in product.metadata.items %}
-                    <li>
-                        <span>{% if value == True %}{% include "icons/tick.svg" %}{% else %}{% include "icons/cross.svg" %}{% endif %}</span>
-                        {{ feature }}
-                    </li>
-                    {% endfor %}
-                </ul>
-                <div>
-                    <h4>{{ plan.human_readable_price }}</h4>
-                </div>
-                
-            </div>
-        </div>
-                {% endfor %}
-        {% endfor %}
-    </div> 
+    <h4>Your subscription has been cancelled and access to paid pages will come
+      to an end on {{ user.subscription.current_period_end   }}</h4>
     {% endif %}
+  </div>
+  {% if user.subscription.cancel_at_period_end == False %}
+  <div class="row">
+    <div class="col-6 offset-3 text-center hvr-pop">
+      <h3><a class="anchor" href="/membership/cancel">Cancel Subscription</a>
+      </h3>
+    </div>
+  </div>
+  {% endif %}
+  {% else %}
+  <div class="row">
+    <h4>You are not currently subscribed to any of our paid plans. To start
+      getting some of the benefits of a subscription, just select your preferred
+      plan below, and sign up!</h4>
+  </div>
+  <div class="row p-3">
+    <div class="col text-center">
+      <h3>Pricing Plans</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="p-1 col-8 offset-2 col-md-3 offset-md-3 text-center hvr-pop">
+      <div id="month-select-interval" class="interval-box is-selected">
+        <h3>Monthly</h3>
+      </div>
+    </div>
+    <div class="p-1 col-8 offset-2 col-md-3 offset-md-0 text-center hvr-pop">
+      <div id="year-select-interval" class="interval-box">
+        <h3>Annual</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="col-12 col-md-4 text-center hvr-pop">
+      <div id="free-plan" class="subscription-box is-selected">
+        <h2 class="subtitle">Bronze</h2>
+        <ul class="feature-list">
+          <li>
+            <span>{% include "icons/tick.svg" %}</span>
+            Access to seasonal items
+          </li>
+          <li>
+            <span>{% include "icons/tick.svg" %}</span>
+            Access to meal suggestions
+          </li>
+          <li>
+            <span>{% include "icons/tick.svg" %}</span>
+            Access to recipes
+          </li>
+          <li>
+            <span>{% include "icons/cross.svg" %}</span>
+            Access to meal plans
+          </li>
+          <li>
+            <span>{% include "icons/cross.svg" %}</span>
+            Access to customisable shopping lists
+          </li>
+        </ul>
+        <div>
+          <h4>FREE</h4>
+        </div>
+      </div>
+    </div>
+    {% for product in products %}
+    {% for plan in product.plan_set.all %}
+    <div
+      class="pt-1 col-12 col-md-4 hvr-pop interval-type interval-{{ plan.interval }}"
+      data-product-name="{{ product.name }}"
+      data-product-price="{{ plan.human_readable_price }}"
+      data-product-id="{{ plan.id }}">
+      <div id="paid-plan" class="subscription-box"
+        onclick="planSelect('{{product.name}}' ,'{{plan.human_readable_price}}', '{{plan.id}}')">
+        <h2 class="subtitle">{{ product.name }}</h2>
+
+        <ul class="feature-list">
+          {% for feature, value in product.metadata.items %}
+          <li>
+            <span>{% if value == True %}{% include "icons/tick.svg" %}{% else %}{% include "icons/cross.svg" %}{% endif %}</span>
+            {{ feature }}
+          </li>
+          {% endfor %}
+        </ul>
+        <div>
+          <h4>{{ plan.human_readable_price }}</h4>
+        </div>
+
+      </div>
+    </div>
+    {% endfor %}
+    {% endfor %}
+  </div>
+  {% endif %}
 </div>
 
 
@@ -149,7 +163,8 @@
         <div id="payment-box">
           <div class="card-body">
             <h2>Checkout</h2>
-            <h5>Enter card details.  Your subscription will start immediately</h5>
+            <h5>Enter card details. Your subscription will start immediately
+            </h5>
             <div class="row">
               <div class="col-6 text-right">
                 <h4>Plan:</h4>
@@ -163,11 +178,11 @@
 
             </div>
             <br>
-            <form id="subscription-form" >
+            <form id="subscription-form">
               <div id="card-element" class="MyCardElement">
                 <!-- Elements will create input elements here -->
               </div>
-              
+
               <!-- We'll put the error messages in this element -->
               <div id="card-errors" role="alert"></div>
               <button class="hvr-pop" id="submit" type="submit">
@@ -183,10 +198,8 @@
       </div>
     </div>
   </div>
-
 </div>
 {% endif %}
-
 {% endblock %}
 
 {% block postloadjs %}

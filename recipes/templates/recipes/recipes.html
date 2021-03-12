@@ -4,38 +4,38 @@
 {% block extra_title %} - Recipes {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    {% include "layout/month-header.html" %}
-    <div class="container-fluid">
-        <div class="row pt-5">
-            <div class="offset-4 col-2 text-center icons-large plan-icons recipes-anchor">
-                {% include "icons/food.svg" %}
-            </div>
-            <div class="col-2 text-center icons-large plan-icons plan-anchor">
-                {% include "icons/calendar.svg" %}
-            </div>
-        </div>
-        <div class="row pt-3 text-center">
-                {% for recipe in recipes %}
-                    <div class="col-6 col-sm-4 col-md-3">
-                        <div class="polaroid hvr-pop" data-toggle="modal" data-target="#modal{{ recipe.id }}">
-                            <img src="{{  MEDIA_URL }}{{ recipe.image }}" alt="{{ recipe.image }}">
-                            <div class="container">
-                                <p>{{ recipe.name }}</p>
-                            </div>
-                        </div>
-                    </div>
-                    {% include "layout/modals/recipe-modal.html" %}     
-                {% endfor %}
-        </div>
+{% include "layout/month-header.html" %}
+<div class="container-fluid">
+  <div class="row pt-5">
+    <div
+      class="offset-4 col-2 text-center icons-large plan-icons recipes-anchor">
+      {% include "icons/food.svg" %}
     </div>
-
-
+    <div class="col-2 text-center icons-large plan-icons plan-anchor">
+      {% include "icons/calendar.svg" %}
+    </div>
+  </div>
+  <div class="row pt-3 text-center">
+    {% for recipe in recipes %}
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="polaroid hvr-pop" data-toggle="modal"
+        data-target="#modal{{ recipe.id }}">
+        <img src="{{  MEDIA_URL }}{{ recipe.image }}" alt="{{ recipe.image }}">
+        <div class="container">
+          <p>{{ recipe.name }}</p>
+        </div>
+      </div>
+    </div>
+    {% include "layout/modals/recipe-modal.html" %}
+    {% endfor %}
+  </div>
+</div>
 {% endblock %}

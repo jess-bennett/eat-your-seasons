@@ -1,15 +1,18 @@
-<div class="modal fade" id="modal-membership" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="modal-membership" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-        
+
       <div class="modal-header">
         {% include "icons/shopping.svg" %}
         <h3 class="modal-title" id="exampleModalLongTitle">Shopping List</h3>
       </div>
       <div class="modal-notes">
         <div class="col">
-            <h4><em>
-                Sorry, you need to be a <a class="anchor hvr-pop" href="{% url 'membership:membership' %}">Gold member</a> to access the shopping lists.
+          <h4><em>
+              Sorry, you need to be a <a class="anchor hvr-pop"
+                href="{% url 'membership:membership' %}">Gold member</a> to
+              access the shopping lists.
             </em></h4>
         </div>
       </div>

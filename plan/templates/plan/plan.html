@@ -4,92 +4,98 @@
 {% block extra_title %} - Meal Plans {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    {% include "layout/month-header.html" %}
-    <div class="container-fluid">
-        <div class="row pt-5">
-            <div class="offset-4 col-2 text-center icons-large plan-icons recipes-anchor">
-                {% include "icons/food.svg" %}
-            </div>
-            <div class="col-2 text-center icons-large plan-icons plan-anchor">
-                {% include "icons/calendar.svg" %}
-            </div>
-        </div>
-        <div class="row pt-3 text-center">
-            <div id="arrow-left" class="offset-3 col-1 hvr-pop">
-                {% include "icons/arrow-left.svg" %}
-            </div>
-            <div class="col-4 align-self-center">
-                <h4 id="week-title" class="page-subheading">Week </h4>
-            </div>
-            <div id="arrow-right" class="col-1 hvr-pop">
-                {% include "icons/arrow-right.svg" %}
-            </div>
-        </div>
-        <div class="row pt-3 text-center">
-            <div class="offset-3 col-6 align-self-center quantity-options">
-                <div id="one-select" class="hvr-pop quantity-icons">
-                    {% include "icons/one-person.svg" %}
-                </div>
-                <div id="two-select" class="hvr-pop quantity-icons">
-                    {% include "icons/two-people.svg" %}
-                </div>
-            </div>
-            {% if user.subscription.plan.product|cut:" " == "Gold" %}
-                <div class="col-3 col-md-1 text-right" data-toggle="modal" data-target="#modal-shopping">
-                        {% include "icons/shopping.svg" %}
-                </div>
-            {% else %}
-                <div class="col-3 col-md-1 text-right" data-toggle="modal" data-target="#modal-membership">
-                        {% include "icons/shopping.svg" %}
-                </div>
-            {% endif %}
-        </div>
-        <div class="row pt-3">
-            <div class="col text-center">
-                <h4>Portions are doubled per person to allow for lunch the next day, and doubled again if freezable for batch cooking.</h4>
-            </div>
-        </div>
-        <div class="row pt-3">
-            <div class="col offset-md-2 col-md-8 table-responsive">
-                <table class="table table-hover">
-                    <tr>
-                        <th class="text-left">Day</th>
-                        <th class="text-center">Meal</th>
-                        <th class="text-right">Notes</th>
-                    </tr>
-                    {% for plan in plans %}
-                    <tr>
-                        <td class="text-left">{{ plan.day.friendly_name }}</td>
-                        <td class="select-recipe text-center" data-toggle="modal" data-target="#modal{{ plan.recipe.pk }}"><span class="hvr-pop">{{ plan.recipe }}</span></td>
-                        <td class="text-right">
-                            {% if plan.recipe.isfrozen == "Yes" %}
-                                {% include "icons/freeze.svg" %}
-                            {% endif %}
-                            {% if plan.recipe.category|cut:" " == "omni" %}
-                                {% include "icons/omni.svg" %}
-                            {% elif plan.recipe.category|cut:" " == "veggie" %}
-                                {% include "icons/veggie.svg" %}
-                            {% elif plan.recipe.category|cut:" " == "vegan" %}
-                                {% include "icons/vegan.svg" %}
-                            {% endif %}
-                        </td>
-                    </tr>    
-                    {% endfor %}
-                </table>
-            </div>
-        </div>
+{% include "layout/month-header.html" %}
+<div class="container-fluid">
+  <div class="row pt-5">
+    <div
+      class="offset-4 col-2 text-center icons-large plan-icons recipes-anchor">
+      {% include "icons/food.svg" %}
     </div>
-        {% include "layout/modals/shopping-modal.html" %} 
-        {% include "layout/modals/membership-modal.html" %} 
-    {% for recipe in recipes %}
-        {% include "layout/modals/recipe-modal.html" %} 
-    {% endfor %}
+    <div class="col-2 text-center icons-large plan-icons plan-anchor">
+      {% include "icons/calendar.svg" %}
+    </div>
+  </div>
+  <div class="row pt-3 text-center">
+    <div id="arrow-left" class="offset-3 col-1 hvr-pop">
+      {% include "icons/arrow-left.svg" %}
+    </div>
+    <div class="col-4 align-self-center">
+      <h4 id="week-title" class="page-subheading">Week </h4>
+    </div>
+    <div id="arrow-right" class="col-1 hvr-pop">
+      {% include "icons/arrow-right.svg" %}
+    </div>
+  </div>
+  <div class="row pt-3 text-center">
+    <div class="offset-3 col-6 align-self-center quantity-options">
+      <div id="one-select" class="hvr-pop quantity-icons">
+        {% include "icons/one-person.svg" %}
+      </div>
+      <div id="two-select" class="hvr-pop quantity-icons">
+        {% include "icons/two-people.svg" %}
+      </div>
+    </div>
+    {% if user.subscription.plan.product|cut:" " == "Gold" %}
+    <div class="col-3 col-md-1 text-right" data-toggle="modal"
+      data-target="#modal-shopping">
+      {% include "icons/shopping.svg" %}
+    </div>
+    {% else %}
+    <div class="col-3 col-md-1 text-right" data-toggle="modal"
+      data-target="#modal-membership">
+      {% include "icons/shopping.svg" %}
+    </div>
+    {% endif %}
+  </div>
+  <div class="row pt-3">
+    <div class="col text-center">
+      <h4>Portions are doubled per person to allow for lunch the next day, and
+        doubled again if freezable for batch cooking.</h4>
+    </div>
+  </div>
+  <div class="row pt-3">
+    <div class="col offset-md-2 col-md-8 table-responsive">
+      <table class="table table-hover">
+        <tr>
+          <th class="text-left">Day</th>
+          <th class="text-center">Meal</th>
+          <th class="text-right">Notes</th>
+        </tr>
+        {% for plan in plans %}
+        <tr>
+          <td class="text-left">{{ plan.day.friendly_name }}</td>
+          <td class="select-recipe text-center" data-toggle="modal"
+            data-target="#modal{{ plan.recipe.pk }}"><span
+              class="hvr-pop">{{ plan.recipe }}</span></td>
+          <td class="text-right">
+            {% if plan.recipe.isfrozen == "Yes" %}
+            {% include "icons/freeze.svg" %}
+            {% endif %}
+            {% if plan.recipe.category|cut:" " == "omni" %}
+            {% include "icons/omni.svg" %}
+            {% elif plan.recipe.category|cut:" " == "veggie" %}
+            {% include "icons/veggie.svg" %}
+            {% elif plan.recipe.category|cut:" " == "vegan" %}
+            {% include "icons/vegan.svg" %}
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+</div>
+{% include "layout/modals/shopping-modal.html" %}
+{% include "layout/modals/membership-modal.html" %}
+{% for recipe in recipes %}
+{% include "layout/modals/recipe-modal.html" %}
+{% endfor %}
 {% endblock %}
