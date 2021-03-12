@@ -329,7 +329,51 @@ Currently, there is functionality for an admin user to manage the dashboard page
 ### :bug: Bugs
 ---
 
-There were no major bugs encountered as such, however there were a couple of issues that required a lot of work to fix which I will outline here.
+#### Django password validator error
+After amending my code to conform to pep8 standards, I found that the Django password validator no longer worked.\
+The fix was simply to revert the code back to how it had been, ignoring the pep8 error!
+
+**Original code**
+```
+AUTH_PASSWORD_VALIDATORS = [
+    {
+        'NAME': 'django.contrib.auth.password_validation.\
+        UserAttributeSimilarityValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.\
+        MinimumLengthValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.\
+        CommonPasswordValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.\
+        NumericPasswordValidator',
+    },
+]
+```
+
+**Modified code**
+```
+AUTH_PASSWORD_VALIDATORS = [
+    {
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    },
+]
+```
+
+Aside from this bug, there were a couple of issues that required a lot of work to fix which I will outline here.
 
 * Getting the subscription model to work took a lot of time and a lot of research. In the end, I was able to get it working using a tutorial I found on
 [Ordinary Coders](https://www.ordinarycoders.com/blog/article/django-stripe-monthly-subscription). This made use of dj-stripe. In hindsight, it might have been
