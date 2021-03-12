@@ -593,9 +593,9 @@ tutorial to implement the Stripe subscription model for my site.
 
 :star: My mentor, [Simen](https://www.linkedin.com/in/simendaehlin/), who has been a constant source of support and has always gone above and beyond to help me achieve what I set out to achieve. He has also pushed me on each project to achieve more than I thought I wanted to achieve :grinning: 
 
-:star: My Mum, Dad and sister Lizzie for being excellent last-minute site-testers when circumnstances forced me to complete this project long before I was ready!
+:star: My Mum, Dad and sister Lizzie for being excellent last-minute site-testers when circumstances forced me to complete this project long before I was ready!
 
 :star: [Suzanne](https://www.linkedin.com/in/suzanne-van-den-berg-41ab6b51/), a fellow CI student who I 'met' by chance when desperately seeking help with my Stripe subscription. She has been an unexpected source of support and made a lonely end to the project less lonely!
 
-:star: And finally, my incredible husband Tom who has been my biggest support throughout. This wasn't quite the ending to the course that either of us imagined, but happily, we will have plenty of time to celebrate in the future. Thank you :heart:
+:star: And finally, my incredible husband Tom who has been my biggest support throughout. This wasn't quite the ending to the course that either of us imagined, but happily, we will have plenty of time to celebrate in the future :heart:
 
