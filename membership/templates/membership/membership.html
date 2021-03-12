@@ -18,10 +18,10 @@
             <h1 class="page-heading">My Account</h1>
         </div>
     </div>
-    <div class="row pt-3">
+    <div class="row pt-3 justify-content-center">
         <h4 class="page-subheading">Hi {{ user.username }}!</h4>
     </div>
-    <div class="row text-center pt-5">
+    <div class="row justify-content-center pt-5">
         <h2>Do you want to...</h2>
     </div>
     <div class="row pt-3">
@@ -44,7 +44,7 @@
 
 <div id="subscription-info" class="container hidden">
     {% if user.subscription.status == "active" %}
-    <div class="row">
+    <div class="row justify-content-center">
         <h4>You have been subscribed to our <strong>{{ user.subscription.plan.product }}</strong> plan since {{ user.subscription.created }}
         </h4>
         {% if user.subscription.cancel_at_period_end == False %}
