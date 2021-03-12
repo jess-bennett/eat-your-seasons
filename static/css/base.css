@@ -298,6 +298,7 @@ body {
 .month-select h2 {
   padding: 0.5rem;
   border-radius: 0.2rem;
+  font-size: 100%;
 }
 
 .month-select.current h2 {
@@ -727,7 +728,6 @@ select {
 #footer:hover #menu-horizontal {
   display: none;
 }
-
 
 
 @media (min-width: 992px) {
