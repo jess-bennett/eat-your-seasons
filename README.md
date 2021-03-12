@@ -302,22 +302,28 @@ Currently, there is functionality for an admin user to manage the dashboard page
 * [Python](https://www.python.org/)
 
 **Libraries & Frameworks**
-* [Django](https://www.djangoproject.com/)
 * [Bootstrap](https://getbootstrap.com/)
-* [Noun Project](https://thenounproject.com/)
+* [Django](https://www.djangoproject.com/)
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+* [dj-stripe](https://dj-stripe.readthedocs.io/en/master/#:~:text=Stripe%20Made%20Easy-,Introduction,soon%20as%20they%20are%20updated!)
 * [Google Fonts](https://fonts.google.com/)
+* [Gunicorn](https://pypi.org/project/gunicorn/)
 * [jQuery](https://jquery.com/)
-* [Popper](https://popper.js.org/)
 * [NeedPix](https://www.needpix.com/)
+* [Noun Project](https://thenounproject.com/)
+* [pip](https://pip.pypa.io/en/stable/)
+* [Popper](https://popper.js.org/)
+* [Psycopg2](https://pypi.org/project/psycopg2/)
+* [Stripe](https://stripe.com/)
 
 **Tools**
+* [Favicon.io](https://favicon.io/)
 * [GitHub](https://github.com/)
 * [Gitpod](https://gitpod.io/)
 * [Heroku](https://heroku.com/)
-* [Favicon.io](https://favicon.io/)
-* [Gimp](https://www.gimp.org/)
-* [Stripe](https://stripe.com/)
 * [Hover.css](https://ianlunn.github.io/Hover/)
+* [Gimp](https://www.gimp.org/)
 
 
 ### :bug: Bugs
