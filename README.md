@@ -136,14 +136,14 @@ The site was designed with a mobile-first approach.
 
 :bulb: **Deviation from wireframe**
 
-* Ability to change individual recipe quantities in Plan\
+* **Ability to change individual recipe quantities in Plan**\
 Originally, I had planned to allow users to change the quantity (i.e. the number of people a recipe was for) for each recipe in the meal plan.
 However, during development I made the decision to just change the option for the week as it looked cleaner on the page, and was less fussy for the user.
 
-* Dashboard Management page\
+* **Dashboard Management page**\
 I also included a page to allow an admin user to manage the dashboard page and add/edit/delete seasonal items without needing to access the backend of the database.
 
-* Navbar\
+* **Navbar**\
 In the wireframe, I had planned to have the naviation options across the top on all devices. However, I wanted each page to be as uncluttered as possible to allow the user
 to focus on the content. Therefore, I opted to use a triple-dot icon in place of the menu that would open the menu in full when hovered over (or clicked on mobile devices).
 
@@ -242,8 +242,9 @@ Batch Cook | batch_cook | max_length=254 | N/A | CharField |
 Customer | customer | null=True, blank=True, on_delete=models.SET_NULL | ForeignKey to 'djstripe.Customer' | N/A |
 Subscription | subscription | null=True, blank=True, on_delete=models.SET_NULL | ForeignKey to 'djstripe.Subscription' | N/A |
 
-### DJSTRIPE
-Models from DJSTRIPE were also used including:
+### dj-stripe
+*dj-stripe is a plugin that implements all of the Stripe models for Django*\
+Models from dj-stripe were also used including:
 * Customers
 Details about the customer, linked to the data on sign up in Django Allauth
 
@@ -276,11 +277,12 @@ Following the implementation of the above feature, users would be able to select
 
 * Collate ingredients in the shopping list\
 Currently, the ingredients in the shopping list are listed as they are pulled through from each individual recipes. So, you might see:
-** 40g chopped onions
-** 30g chopped onions
+    * 40g chopped onions
+    * 30g chopped onions
 being pulled through from two separate recipes.\
-In future, I would like to add functionality to collate these ingredients so that it shows:
-** 70g chopped onions
+
+    In future, I would like to add functionality to collate these ingredients so that it shows:
+    * 70g chopped onions
 
 * Change subscription type\
 Whilst functionality to cancel a subscription has been implemented, it would be useful in future to allow users to upgrade or downgrade their subscription
