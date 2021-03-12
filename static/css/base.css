@@ -553,7 +553,7 @@ div.container {
 }
 
 .quantity-icons,
-#shopping-icon {
+.shopping-icon {
   width: 2.5rem;
   height: 2.5rem;
   fill: var(--font);
