@@ -26,13 +26,9 @@ Eat Your Seasons is a site aimed at those wanting to live a more sustainable lif
 \
               [:unlock: Technologies Used](#unlock-technologies-used)\
 \
-              [:computer: External Sources Used](#computer-external-sources-used)\
-\
               [:bug: Bugs](#bug-bugs)\
 \
               [:broom: Refactoring](#broom-refactoring)\
-\
-              [:deciduous_tree: Branches](#deciduous_tree-branches)\
 \
 [:test_tube: Testing](#test_tube-testing)\
 \
@@ -579,8 +575,27 @@ python3 manage.py createsuperuser
 ### :teacher: Tutorials
 --- 
 
+Aside from the tutorials provided by [Code Institute](https://codeinstitute.net/), I used an [Ordinary Coders](https://www.ordinarycoders.com/blog/article/django-stripe-monthly-subscription)
+tutorial to implement the Stripe subscription model for my site. 
+
 ### :movie_camera: Media
 ---
 
+* Images for the recipes were sourced from [NeedPix](https://www.needpix.com/)
+* All icons and page illustrations were taken from [Noun Project](https://thenounproject.com/)
+
 ### :trophy: Acknowledgements
 ---
+
+**I would like to thank:**
+
+:star: [Code Institute](https://codeinstitute.net/) for this course. It's been incredibly challenging and rewarding and I feel that I have learnt an enormous amount over the past year. I look forward to putting it all into practice in the near future.
+
+:star: My mentor, [Simen](https://www.linkedin.com/in/simendaehlin/), who has been a constant source of support and has always gone above and beyond to help me achieve what I set out to achieve. He has also pushed me on each project to achieve more than I thought I wanted to achieve :grinning: 
+
+:star: My Mum, Dad and sister Lizzie for being excellent last-minute site-testers when circumnstances forced me to complete this project long before I was ready!
+
+:star: [Suzanne](https://www.linkedin.com/in/suzanne-van-den-berg-41ab6b51/), a fellow CI student who I 'met' by chance when desperately seeking help with my Stripe subscription. She has been an unexpected source of support and made a lonely end to the project less lonely!
+
+:star: And finally, my incredible husband Tom who has been my biggest support throughout. This wasn't quite the ending to the course that either of us imagined, but happily, we will have plenty of time to celebrate in the future. Thank you :heart:
+
