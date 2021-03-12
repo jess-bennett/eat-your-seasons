@@ -8,7 +8,7 @@
         <div class="offset-8 col-2 nav-menu">
                 {% include "icons/menu-vertical.svg" %}
         </div>
-        <div class="offset-4 offset-md-7 col-2 col-md-1 text-right nav-item" title="My Account">
+        <div class="offset-2 offset-md-7 col-2 col-md-1 text-right nav-item" title="My Account">
             <a href="{% url 'membership:membership' %}" class="hvr-pop">{% include "icons/member.svg" %}</a>
         </div>
         <div id="nav-dashboard" class="col-2 col-md-1 text-right hvr-pop nav-item" title="Dashboard">
@@ -17,6 +17,9 @@
         <div class="col-2 col-md-1 text-right theme-select hvr-pop nav-item" title="Dark/Light">
                 {% include "icons/sun.svg" %}
                 {% include "icons/moon.svg" %}
+        </div>
+        <div class="d-md-none col-2 nav-item">
+                {% include "icons/menu-horizontal.svg" %}
         </div>
     </div>
 </nav>
