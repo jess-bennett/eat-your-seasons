@@ -454,7 +454,15 @@ Because the site is largely hidden from unregistered users, I also couldn't chec
 
 Therefore, I used the source code shown in Google Dev Tools for direct input. 
 
-TBC
+**Outcome**
+
+There were key errors on all pages with regards to the svgs:
+* Attribute title not allowed on element svg at this point.
+* Attribute marker not allowed on element path at this point.
+* Attribute overflow not allowed on element path at this point.
+* Attribute xmlns:dc not allowed here.
+
+I have chosen to ignore these errors as the svgs come directly from [Noun Project](https://thenounproject.com/) and are therefore not my own code to amend.
 
 ### :rotating_light: Lighthouse Tests
 ---
