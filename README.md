@@ -427,7 +427,9 @@ Manual testing was carried out on all devices available to me:
     * Safari (Using [Lambdatest](https://www.lambdatest.com/))
     * Opera 
 
-    TBC
+There were no issues found in any of the tests, and the site renders well on all devices. All user stories were satisfied by the Peer and Manual tests.
+
+The full testing frame can be found [here](testing/testing-frame.pdf).
 
 ### :heavy_check_mark: Online Validators
 ---
