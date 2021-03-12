@@ -525,7 +525,7 @@
     "pk": 15,
     "model": "recipes.recipe",
     "fields": {
-      "name": "Salade Ni�oise",
+      "name": "Salade Nicoise",
       "notes": "",
       "image": "fish.jpg",
       "category": 1,
@@ -1971,7 +1971,7 @@
     "fields": {
       "name": "Cheddar and spring onion cakes",
       "notes": "",
-      "image": "Spring onion",
+      "image": "spring-onions.jpg",
       "category": 3,
       "isfrozen": "Yes",
       "month": [
@@ -2682,7 +2682,7 @@
     "fields": {
       "name": "Quick-charred spring onion and sweet potato salad",
       "notes": "",
-      "image": "Spring onion",
+      "image": "spring-onions.jpg",
       "category": 3,
       "isfrozen": "No",
       "month": [
