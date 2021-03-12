@@ -2851,7 +2851,7 @@
     "pk": 408,
     "model": "recipes.ingredient",
     "fields": {
-      "name": "plant-based crème fraiche"
+      "name": "plant-based creme fraiche"
     }
   },
   {

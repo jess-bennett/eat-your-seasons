@@ -2144,7 +2144,7 @@
     "pk": 307,
     "model": "recipes.step",
     "fields": {
-      "name": "Mix the cream, mustard, nutmeg and Gruyère together in a jug, then pour over the layered vegetables. Bake for 1 hour 30 minutes until the top is golden and the vegetables are tender when pierced with a knife."
+      "name": "Mix the cream, mustard, nutmeg and Gruyere together in a jug, then pour over the layered vegetables. Bake for 1 hour 30 minutes until the top is golden and the vegetables are tender when pierced with a knife."
     }
   },
   {
@@ -3187,7 +3187,7 @@
     "pk": 456,
     "model": "recipes.step",
     "fields": {
-      "name": "Whisk the eggs, cream, chives and Gruyère together, season well, then pour on top of the leeks and kale. Return to the oven and bake for 15-20 minutes until golden and set."
+      "name": "Whisk the eggs, cream, chives and Gruyere together, season well, then pour on top of the leeks and kale. Return to the oven and bake for 15-20 minutes until golden and set."
     }
   },
   {
@@ -3467,7 +3467,7 @@
     "pk": 496,
     "model": "recipes.step",
     "fields": {
-      "name": "Stir in the spinach, two thirds of the pesto, the crème fraîche and the remaining thyme. Cook for another minute or so until the spinach has wilted, then serve with the remaining pesto drizzled over the top"
+      "name": "Stir in the spinach, two thirds of the pesto, the creme fraîche and the remaining thyme. Cook for another minute or so until the spinach has wilted, then serve with the remaining pesto drizzled over the top"
     }
   },
   {
@@ -3880,7 +3880,7 @@
     "pk": 555,
     "model": "recipes.step",
     "fields": {
-      "name": "Add the crème fraîche and a little of the reserved cooking water to loosen."
+      "name": "Add the creme fraîche and a little of the reserved cooking water to loosen."
     }
   },
   {
@@ -5287,7 +5287,7 @@
     "pk": 756,
     "model": "recipes.step",
     "fields": {
-      "name": "Stir the crème fraîche and parsley into the sauce and serve immediately with the broccoli."
+      "name": "Stir the creme fraîche and parsley into the sauce and serve immediately with the broccoli."
     }
   },
   {
